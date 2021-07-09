@@ -6,7 +6,10 @@
       "level": 0,
       "school": "C",
       "time": [{ "numer": 1, "unit": "action" }],
-      "range": { "type": "point", "distance": { "type": "feet", "amount": 10 } },
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 10 }
+      },
       "components": {
         "s": true,
         "m": "1 Law rune per creature, 3 Air runes, 1 Earth rune"
@@ -23,12 +26,40 @@
       "level": 0,
       "school": "E",
       "time": [{ "numer": 1, "unit": "action" }],
-      "range": { "type": "point", "distance": { "type": "feet", "amount": 60 } },
-	  "components": {
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
         "s": true,
         "m": "2 Nature runes, 3 Water runes, 3 Earth runes"
       },
-	  "duration": [{ "type": "instant" }],
+      "duration": [{ "type": "instant" }],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          { "name": "Artificer", "source": "TCE" },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
       "entries": [
         "[icon](https://s3.amazonaws.com/files.d20.io/images/177603834/1JSBNljLrK7iAQhENBEKXw/med.png)",
         "You crush your runes and cast a low level binding curse spell that stops a creature from moving. Make a ranged spell attack against a creature within range. On hit, it takes 1d6 force damage and are bound by spectral roots. In addition, until the end of its next turn, the creature's speed is reduced to 0."
