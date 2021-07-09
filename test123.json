@@ -2,7 +2,7 @@
 	"spell": [
 	  {
 		"name": "Schmire Schmolt",
-		"source": "PHB",
+		"source": "Standard Spellbook",
 		"level": 0,
 		"school": "V",
 		"time": [{ "number": 1, "unit": "action" }],
