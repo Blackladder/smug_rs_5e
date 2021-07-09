@@ -13,10 +13,9 @@
       },
       "duration": [{ "type": "instant" }],
       "entries": [
-        "You crush your runes and you and up to 8 willing creatures teleport to Lumbridge Castle courtyard."
+        " [icon](https://s3.amazonaws.com/files.d20.io/images/177670351/P-buuUmVfhRfVFQfF9BbZQ/max.png) You crush your runes and you and up to 8 willing creatures teleport to Lumbridge Castle courtyard."
       ]
     },
-    ,
     {
       "name": "Aid",
       "source": "PHB",
