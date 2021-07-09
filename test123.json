@@ -26,37 +26,6 @@
       "spellAttack": ["R"],
       "miscTags": ["SCL"],
       "areaTags": ["ST"],
-      "classes": {
-        "fromClassList": [
-          { "name": "Sorcerer", "source": "PHB" },
-          { "name": "Wizard", "source": "PHB" },
-          { "name": "Artificer (Revisited)", "source": "UAArtificerRevisited" },
-          { "name": "Artificer", "source": "TCE" }
-        ],
-        "fromSubclass": [
-          {
-            "class": { "name": "Sorcerer", "source": "PHB" },
-            "subclass": {
-              "name": "Giant Soul (UA)",
-              "source": "UAGiantSoulSorcerer",
-              "subSubclass": "Fire"
-            }
-          }
-        ]
-      },
-      "races": [
-        {
-          "name": "Elf (Eladrin)",
-          "source": "UAEladrinAndGith",
-          "baseName": "Elf",
-          "baseSource": "PHB"
-        }
-      ],
-      "backgrounds": [
-        { "name": "Boros Legionnaire", "source": "GGR" },
-        { "name": "Gruul Anarch", "source": "GGR" },
-        { "name": "Rakdos Cultist", "source": "GGR" }
-      ]
     }
   ]
 }
