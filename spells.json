@@ -2,115 +2,94 @@
   "spell": [
     {
       "name": "Lumbridge Teleport",
+      "source": "StandardSpellbook",
       "level": 0,
       "school": "C",
       "time": [{ "numer": 1, "unit": "action" }],
-      "range": { "type": "self", "distance": { "type": "feet", "amount": 60 } },
+      "range": { "type": "point", "distance": { "type": "feet", "amount": 10 } },
       "components": {
-        "v": true,
         "s": true,
         "m": "1 Law rune per creature, 3 Air runes, 1 Earth rune"
       },
       "duration": [{ "type": "instant" }],
       "entries": [
-        " [icon](https://s3.amazonaws.com/files.d20.io/images/177670351/P-buuUmVfhRfVFQfF9BbZQ/max.png) You crush your runes and you and up to 8 willing creatures teleport to Lumbridge Castle courtyard."
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/177670351/P-buuUmVfhRfVFQfF9BbZQ/max.png)",
+        "You crush your runes and you and up to 8 willing creatures teleport to Lumbridge Castle courtyard."
       ]
     },
     {
-      "name": "Aid",
+      "name": "Bind",
+      "source": "StandardSpellbook",
+      "level": 0,
+      "school": "E",
+      "time": [{ "numer": 1, "unit": "action" }],
+      "range": { "type": "point", "distance": { "type": "feet", "amount": 60 } },
+	  "components": {
+        "s": true,
+        "m": "2 Nature runes, 3 Water runes, 3 Earth runes"
+      },
+	  "duration": [{ "type": "instant" }],
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/177603834/1JSBNljLrK7iAQhENBEKXw/med.png)",
+        "You crush your runes and cast a low level binding curse spell that stops a creature from moving. Make a ranged spell attack against a creature within range. On hit, it takes 1d6 force damage and are bound by spectral roots. In addition, until the end of its next turn, the creature's speed is reduced to 0."
+      ]
+    },
+    {
+      "name": "Fire Bolt",
       "source": "PHB",
-      "page": 211,
+      "page": 242,
       "srd": true,
-      "level": 2,
-      "school": "A",
+      "level": 0,
+      "school": "V",
       "time": [{ "number": 1, "unit": "action" }],
       "range": {
         "type": "point",
-        "distance": { "type": "feet", "amount": 30 }
+        "distance": { "type": "feet", "amount": 120 }
       },
-      "components": {
-        "v": true,
-        "s": true,
-        "m": "a tiny strip of white cloth"
-      },
-      "duration": [
-        { "type": "timed", "duration": { "type": "hour", "amount": 8 } }
-      ],
+      "components": { "v": true, "s": true },
+      "duration": [{ "type": "instant" }],
       "entries": [
-        "Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target's hit point maximum and current hit points increase by 5 for the duration."
+        "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d10} fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried.",
+        "This spell's damage increases by {@dice 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10})."
       ],
-      "entriesHigherLevel": [
-        {
-          "type": "entries",
-          "name": "At Higher Levels",
-          "entries": [
-            "When you cast this spell using a spell slot of 3rd level or higher, a target's hit points increase by an additional 5 for each slot level above 2nd."
-          ]
-        }
-      ],
-      "areaTags": ["MT"],
+      "scalingLevelDice": {
+        "label": "fire damage",
+        "scaling": { "1": "1d10", "5": "2d10", "11": "3d10", "17": "4d10" }
+      },
+      "damageInflict": ["fire"],
+      "spellAttack": ["R"],
+      "miscTags": ["SCL"],
+      "areaTags": ["ST"],
       "classes": {
         "fromClassList": [
-          { "name": "Cleric", "source": "PHB" },
-          { "name": "Paladin", "source": "PHB" },
-          { "name": "Artificer", "source": "UAArtificer" },
+          { "name": "Sorcerer", "source": "PHB" },
+          { "name": "Wizard", "source": "PHB" },
           { "name": "Artificer (Revisited)", "source": "UAArtificerRevisited" },
           { "name": "Artificer", "source": "TCE" }
         ],
         "fromSubclass": [
           {
-            "class": { "name": "Cleric", "source": "PHB" },
-            "subclass": {
-              "name": "Protection (UA)",
-              "source": "UAClericDivineDomains"
-            }
-          },
-          {
-            "class": { "name": "Cleric", "source": "PHB" },
-            "subclass": { "name": "Solidarity (PSA)", "source": "PSA" }
-          },
-          {
-            "class": { "name": "Cleric", "source": "PHB" },
-            "subclass": {
-              "name": "Unity (UA)",
-              "source": "UA2020SubclassesPt2"
-            }
-          },
-          {
-            "class": { "name": "Cleric", "source": "PHB" },
-            "subclass": { "name": "Peace", "source": "TCE" }
-          },
-          {
             "class": { "name": "Sorcerer", "source": "PHB" },
-            "subclass": { "name": "Clockwork Soul", "source": "TCE" }
+            "subclass": {
+              "name": "Giant Soul (UA)",
+              "source": "UAGiantSoulSorcerer",
+              "subSubclass": "Fire"
+            }
           }
-        ],
-        "fromClassListVariant": [
-          {
-            "name": "Bard",
-            "source": "PHB",
-            "definedInSource": "UAClassFeatureVariants"
-          },
-          {
-            "name": "Ranger",
-            "source": "PHB",
-            "definedInSource": "UAClassFeatureVariants"
-          },
-          { "name": "Bard", "source": "PHB", "definedInSource": "TCE" },
-          { "name": "Ranger", "source": "PHB", "definedInSource": "TCE" }
         ]
       },
       "races": [
         {
-          "name": "Halfling (Mark of Hospitality)",
-          "source": "ERLW",
-          "baseName": "Halfling",
+          "name": "Elf (Eladrin)",
+          "source": "UAEladrinAndGith",
+          "baseName": "Elf",
           "baseSource": "PHB"
         }
       ],
       "backgrounds": [
         { "name": "Boros Legionnaire", "source": "GGR" },
-        { "name": "Selesnya Initiate", "source": "GGR" }
+        { "name": "Gruul Anarch", "source": "GGR" },
+        { "name": "Rakdos Cultist", "source": "GGR" }
       ]
     }
   ]
