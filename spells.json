@@ -16,7 +16,6 @@
       },
       "duration": [{ "type": "instant" }],
       "entries": [
-        "[icon](https://s3.amazonaws.com/files.d20.io/images/177670351/P-buuUmVfhRfVFQfF9BbZQ/max.png)",
         "You crush your runes and you and up to 8 willing creatures teleport to Lumbridge Castle courtyard."
       ]
     },
@@ -61,7 +60,6 @@
         ]
       },
       "entries": [
-        "[icon](https://s3.amazonaws.com/files.d20.io/images/177603834/1JSBNljLrK7iAQhENBEKXw/med.png)",
         "You crush your runes and cast a low level binding curse spell that stops a creature from moving. Make a ranged spell attack against a creature within range. On hit, it takes 1d6 force damage and are bound by spectral roots. In addition, until the end of its next turn, the creature's speed is reduced to 0."
       ]
     },
