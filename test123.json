@@ -13,8 +13,8 @@
 		"components": { "v": true, "s": true },
 		"duration": [{ "type": "instant" }],
 		"entries": [
-			"[image](https://oldschool.runescape.wiki/w/File:Fire_Strike.png)",
-			"You crush your runes and conjure a small orb of fire to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes fire damage equal to {@damage 5d2} + your spellcasting ability modifier."
+			"[image](https://oldschool.runescape.wiki/w/File:Fire_Strike.png) {@damage 5d2}",
+			"You crush your runes and conjure a small orb of fire to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes fire damage equal to 5d2 + your spellcasting ability modifier."
 		],
 		"damageInflict": ["fire"],
 		"spellAttack": ["R"],
