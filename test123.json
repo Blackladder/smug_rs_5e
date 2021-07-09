@@ -26,10 +26,7 @@
 		"areaTags": ["ST"],
 		"classes": {
 		  "fromClassList": [
-			{ "name": "Sorcerer", "source": "PHB" },
-			{ "name": "Wizard", "source": "PHB" },
-			{ "name": "Artificer (Revisited)", "source": "UAArtificerRevisited" },
-			{ "name": "Artificer", "source": "TCE" }
+			{ "name": "Spellcaster", "source": "All" }
 		  ]
 		}
 	  }
