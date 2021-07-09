@@ -15,7 +15,11 @@
         "m": "1 Law rune per creature, 3 Air runes, 1 Earth rune"
       },
       "duration": [{ "type": "instant" }],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
       "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/177670351/P-buuUmVfhRfVFQfF9BbZQ/max.png)",
         "You crush your runes and you and up to 8 willing creatures teleport to Lumbridge Castle courtyard."
       ]
     },
@@ -35,39 +39,16 @@
       },
       "duration": [{ "type": "instant" }],
       "classes": {
-        "fromClassList": [
-          {
-            "name": "Cleric",
-            "source": "PHB"
-          },
-          {
-            "name": "Druid",
-            "source": "PHB"
-          },
-          {
-            "name": "Sorcerer",
-            "source": "PHB"
-          },
-          { "name": "Artificer", "source": "TCE" },
-          {
-            "name": "Warlock",
-            "source": "PHB"
-          },
-          {
-            "name": "Wizard",
-            "source": "PHB"
-          }
-        ]
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
       },
       "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/177603834/1JSBNljLrK7iAQhENBEKXw/med.png)",
         "You crush your runes and cast a low level binding curse spell that stops a creature from moving. Make a ranged spell attack against a creature within range. On hit, it takes 1d6 force damage and are bound by spectral roots. In addition, until the end of its next turn, the creature's speed is reduced to 0."
       ]
     },
     {
-      "name": "Fire Bolt",
-      "source": "PHB",
-      "page": 242,
-      "srd": true,
+      "name": "Fire Strike",
+      "source": "Standard Spellbook",
       "level": 0,
       "school": "V",
       "time": [{ "number": 1, "unit": "action" }],
@@ -78,48 +59,16 @@
       "components": { "v": true, "s": true },
       "duration": [{ "type": "instant" }],
       "entries": [
-        "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d10} fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried.",
-        "This spell's damage increases by {@dice 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10})."
+        "[image](https://imgsrv.roll20.net/?src=https%3A//oldschool.runescape.wiki/images/4/4b/Fire_Strike.png)",
+        "You crush your runes and conjure a small orb of fire to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes fire damage equal to 5d2 + your spellcasting ability modifier."
       ],
-      "scalingLevelDice": {
-        "label": "fire damage",
-        "scaling": { "1": "1d10", "5": "2d10", "11": "3d10", "17": "4d10" }
-      },
       "damageInflict": ["fire"],
       "spellAttack": ["R"],
       "miscTags": ["SCL"],
       "areaTags": ["ST"],
       "classes": {
-        "fromClassList": [
-          { "name": "Sorcerer", "source": "PHB" },
-          { "name": "Wizard", "source": "PHB" },
-          { "name": "Artificer (Revisited)", "source": "UAArtificerRevisited" },
-          { "name": "Artificer", "source": "TCE" }
-        ],
-        "fromSubclass": [
-          {
-            "class": { "name": "Sorcerer", "source": "PHB" },
-            "subclass": {
-              "name": "Giant Soul (UA)",
-              "source": "UAGiantSoulSorcerer",
-              "subSubclass": "Fire"
-            }
-          }
-        ]
-      },
-      "races": [
-        {
-          "name": "Elf (Eladrin)",
-          "source": "UAEladrinAndGith",
-          "baseName": "Elf",
-          "baseSource": "PHB"
-        }
-      ],
-      "backgrounds": [
-        { "name": "Boros Legionnaire", "source": "GGR" },
-        { "name": "Gruul Anarch", "source": "GGR" },
-        { "name": "Rakdos Cultist", "source": "GGR" }
-      ]
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
     }
   ]
 }
