@@ -29,7 +29,7 @@
       "areaTags": ["ST"]
     },
     {
-      "name": "Test 3",
+      "name": "Test 4",
       "source": "PHB",
       "page": 242,
       "srd": true,
@@ -56,7 +56,10 @@
       "areaTags": ["ST"],
       "classes": {
         "fromClassList": [
-          { "name": "Spellcaster", "source": "PHB" }
+          { "name": "Sorcerer", "source": "PHB" },
+          { "name": "Wizard", "source": "PHB" },
+          { "name": "Artificer (Revisited)", "source": "UAArtificerRevisited" },
+          { "name": "Artificer", "source": "TCE" }
         ]
       }
     }
