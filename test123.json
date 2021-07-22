@@ -29,7 +29,7 @@
       "areaTags": ["ST"]
     },
     {
-      "name": "Shmire Shmolt",
+      "name": "Test 3",
       "source": "PHB",
       "page": 242,
       "srd": true,
@@ -55,7 +55,9 @@
       "miscTags": ["SCL"],
       "areaTags": ["ST"],
       "classes": {
-        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+        "fromClassList": [
+          { "name": "Spellcaster", "source": "PHB" }
+        ]
       }
     }
   ]
