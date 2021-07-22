@@ -47,6 +47,7 @@
         "You crush your runes and cast a low level binding curse spell that stops a creature from moving. Make a ranged spell attack against a creature within range. On hit, it takes 1d6 force damage and are bound by spectral roots. In addition, until the end of its next turn, the creature's speed is reduced to 0."
       ],
       "damageInflict": ["force"],
+      "spellAttack": ["R"],
       "areaTags": ["ST"]
     },
     {
@@ -506,6 +507,7 @@
         }
       ],
       "damageInflict": ["force"],
+      "spellAttack": ["R"],
       "areaTags": ["ST"]
     },
     {

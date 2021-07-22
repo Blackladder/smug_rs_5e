@@ -3,12 +3,13 @@
     {
       "name": "Bind",
       "source": "StandardSpellbook",
+	  "srd": true,
       "level": 0,
       "school": "E",
       "time": [{ "numer": 1, "unit": "action" }],
       "range": {
         "type": "point",
-        "distance": { "type": "feet", "amount": 60 }
+        "distance": { "type": "feet", "distance": { "type": "feet", "amount": 120 } }
       },
       "components": {
         "s": true,
@@ -23,6 +24,7 @@
         "You crush your runes and cast a low level binding curse spell that stops a creature from moving. Make a ranged spell attack against a creature within range. On hit, it takes 1d6 force damage and are bound by spectral roots. In addition, until the end of its next turn, the creature's speed is reduced to 0."
       ],
       "damageInflict": ["force"],
+	  "spellAttack": ["R"],
       "areaTags": ["ST"]
     },
     {
