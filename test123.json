@@ -21,14 +21,15 @@
       },
       "entries": [
         "[icon](https://s3.amazonaws.com/files.d20.io/images/177603834/1JSBNljLrK7iAQhENBEKXw/med.png)",
-        "You crush your runes and cast a low level binding curse spell that stops a creature from moving. Make a ranged spell attack against a creature within range. On hit, it takes 1d6 force damage and are bound by spectral roots. In addition, until the end of its next turn, the creature's speed is reduced to 0."
+        "You crush your runes and cast a low level binding curse spell that stops a creature from moving. Make a ranged spell attack against a creature within range. On hit, it takes {@damage 1d6} force damage and are bound by spectral roots. In addition, until the end of its next turn, the creature's speed is reduced to 0."
       ],
       "damageInflict": ["force"],
 	  "spellAttack": ["R"],
+	  "miscTags": ["SCL"],
       "areaTags": ["ST"]
     },
     {
-      "name": "Fire Bolt",
+      "name": "Shmire Shmolt",
       "source": "PHB",
       "page": 242,
       "srd": true,
@@ -54,12 +55,7 @@
       "miscTags": ["SCL"],
       "areaTags": ["ST"],
       "classes": {
-        "fromClassList": [
-          { "name": "Sorcerer", "source": "PHB" },
-          { "name": "Wizard", "source": "PHB" },
-          { "name": "Artificer (Revisited)", "source": "UAArtificerRevisited" },
-          { "name": "Artificer", "source": "TCE" }
-        ]
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
       }
     }
   ]
