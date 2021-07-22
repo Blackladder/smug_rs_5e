@@ -1,48 +1,64 @@
 {
-	"spell": [
-		{
-			"name": "Acid Splash",
-			"source": "PHB",
-			"page": 211,
-			"srd": true,
-			"level": 0,
-			"school": "C",
-			"time": [{ "number": 1, "unit": "action" }],
-			"range": {
-			  "type": "point",
-			  "distance": { "type": "feet", "amount": 60 }
-			},
-			"components": { "v": true, "s": true },
-			"duration": [{ "type": "instant" }],
-			"entries": [
-			  "You hurl a bubble of acid. Choose one creature you can see within range, or choose two creatures you can see within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take {@damage 1d6} acid damage.",
-			  "This spell's damage increases by {@dice 1d6} when you reach 5th level ({@damage 2d6}), 11th level ({@damage 3d6}), and 17th level ({@damage 4d6})."
-			],
-			"scalingLevelDice": {
-			  "label": "acid damage",
-			  "scaling": { "1": "1d6", "5": "2d6", "11": "3d6", "17": "4d6" }
-			},
-			"damageInflict": ["acid"],
-			"savingThrow": ["dexterity"],
-			"miscTags": ["SCL", "SGT"],
-			"areaTags": ["ST", "MT"],
-			"classes": {
-			  "fromClassList": [
-				{ "name": "Sorcerer", "source": "PHB" },
-				{ "name": "Wizard", "source": "PHB" },
-				{ "name": "Artificer (Revisited)", "source": "UAArtificerRevisited" },
-				{ "name": "Artificer", "source": "TCE" }
-			  ],
-			  "fromClassListVariant": [
-				{
-				  "name": "Druid",
-				  "source": "PHB",
-				  "definedInSource": "UAClassFeatureVariants"
-				}
-			  ]
-			},
-			"backgrounds": [{ "name": "Simic Scientist", "source": "GGR" }]
-		  }
-	]
-  }
-  
+  "spell": [
+    {
+      "name": "Bind",
+      "source": "StandardSpellbook",
+      "level": 0,
+      "school": "E",
+      "time": [{ "numer": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Nature runes, 3 Water runes, 3 Earth runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/177603834/1JSBNljLrK7iAQhENBEKXw/med.png)",
+        "You crush your runes and cast a low level binding curse spell that stops a creature from moving. Make a ranged spell attack against a creature within range. On hit, it takes 1d6 force damage and are bound by spectral roots. In addition, until the end of its next turn, the creature's speed is reduced to 0."
+      ],
+      "damageInflict": ["force"],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "Fire Bolt",
+      "source": "PHB",
+      "page": 242,
+      "srd": true,
+      "level": 0,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": { "v": true, "s": true },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d10} fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried.",
+        "This spell's damage increases by {@dice 1d10} when you reach 5th level ({@damage 2d10}), 11th level ({@damage 3d10}), and 17th level ({@damage 4d10})."
+      ],
+      "scalingLevelDice": {
+        "label": "fire damage",
+        "scaling": { "1": "1d10", "5": "2d10", "11": "3d10", "17": "4d10" }
+      },
+      "damageInflict": ["fire"],
+      "spellAttack": ["R"],
+      "miscTags": ["SCL"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [
+          { "name": "Sorcerer", "source": "PHB" },
+          { "name": "Wizard", "source": "PHB" },
+          { "name": "Artificer (Revisited)", "source": "UAArtificerRevisited" },
+          { "name": "Artificer", "source": "TCE" }
+        ]
+      }
+    }
+  ]
+}

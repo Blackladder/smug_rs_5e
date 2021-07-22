@@ -1643,7 +1643,10 @@
       "level": 4,
       "school": "V",
       "time": [{ "number": 1, "unit": "bonus action" }],
-      "range": { "type": "point", "distance": { "type": "feet", "amount":60 } },
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
       "components": {
         "s": true,
         "m": "10 earth runes, 3 astral runes, 2 death runes, all of which the spell consumes"
@@ -1728,7 +1731,10 @@
       "level": 6,
       "school": "T",
       "time": [{ "number": 1, "unit": "action" }],
-      "range": { "type": "point", "distance": { "type": "feet", "amount":30 } },
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 30 }
+      },
       "components": {
         "s": true,
         "m": "3 astral runes, 2 law runes, 1 nature rune, all of which the spell consumes"
@@ -1750,7 +1756,10 @@
       "level": 6,
       "school": "V",
       "time": [{ "number": 1, "unit": "bonus action" }],
-      "range": { "type": "point", "distance": { "type": "feet", "amount":60 } },
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
       "components": {
         "s": true,
         "m": "20 earth runes, 6 astral runes, 4 death runes, all of which the spell consumes"
@@ -1813,7 +1822,10 @@
       "level": 7,
       "school": "C",
       "time": [{ "number": 1, "unit": "bonus action" }],
-      "range": { "type": "point", "distance": { "type": "feet", "amount":120 } },
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
       "components": {
         "s": true,
         "m": "20 fire runes, 20 earth runes, 10 astral runes, all of which the spell consumes"
