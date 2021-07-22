@@ -1,31 +1,48 @@
 {
 	"spell": [
-	  {
-		"name": "Fire Strike",
-		"source": "Standard Spellbook",
-		"level": 0,
-		"school": "V",
-		"time": [{ "number": 1, "unit": "action" }],
-		"range": {
-		  "type": "point",
-		  "distance": { "type": "feet", "amount": 120 }
-		},
-		"components": { "v": true, "s": true },
-		"duration": [{ "type": "instant" }],
-		"entries": [
-			"[image](https://oldschool.runescape.wiki/w/File:Fire_Strike.png) {@damage 5d2}",
-			"You crush your runes and conjure a small orb of fire to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes fire damage equal to 5d2 + your spellcasting ability modifier."
-		],
-		"damageInflict": ["fire"],
-		"spellAttack": ["R"],
-		"miscTags": ["SCL"],
-		"areaTags": ["ST"],
-		"classes": {
-		  "fromClassList": [
-			{ "name": "Spellcaster", "source": "All" }
-		  ]
-		}
-	  }
+		{
+			"name": "Acid Splash",
+			"source": "PHB",
+			"page": 211,
+			"srd": true,
+			"level": 0,
+			"school": "C",
+			"time": [{ "number": 1, "unit": "action" }],
+			"range": {
+			  "type": "point",
+			  "distance": { "type": "feet", "amount": 60 }
+			},
+			"components": { "v": true, "s": true },
+			"duration": [{ "type": "instant" }],
+			"entries": [
+			  "You hurl a bubble of acid. Choose one creature you can see within range, or choose two creatures you can see within range that are within 5 feet of each other. A target must succeed on a Dexterity saving throw or take {@damage 1d6} acid damage.",
+			  "This spell's damage increases by {@dice 1d6} when you reach 5th level ({@damage 2d6}), 11th level ({@damage 3d6}), and 17th level ({@damage 4d6})."
+			],
+			"scalingLevelDice": {
+			  "label": "acid damage",
+			  "scaling": { "1": "1d6", "5": "2d6", "11": "3d6", "17": "4d6" }
+			},
+			"damageInflict": ["acid"],
+			"savingThrow": ["dexterity"],
+			"miscTags": ["SCL", "SGT"],
+			"areaTags": ["ST", "MT"],
+			"classes": {
+			  "fromClassList": [
+				{ "name": "Sorcerer", "source": "PHB" },
+				{ "name": "Wizard", "source": "PHB" },
+				{ "name": "Artificer (Revisited)", "source": "UAArtificerRevisited" },
+				{ "name": "Artificer", "source": "TCE" }
+			  ],
+			  "fromClassListVariant": [
+				{
+				  "name": "Druid",
+				  "source": "PHB",
+				  "definedInSource": "UAClassFeatureVariants"
+				}
+			  ]
+			},
+			"backgrounds": [{ "name": "Simic Scientist", "source": "GGR" }]
+		  }
 	]
   }
   

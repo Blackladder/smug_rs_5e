@@ -1137,7 +1137,7 @@
       "entries": [
         "[image](https://s3.amazonaws.com/files.d20.io/images/196509476/bn52h2F6LTHp0EFOUc3XdQ/max.png)",
         "You must be wielding a Guthix Staff, Staff of Balance, or Void Knight Mace in order to cast this spell.",
-        "You crush your runes and call down the power of Guthix to summon spectral claws to eviscerate and bind a creature. Make a ranged spell attack against the target. On a hit, massive purple claws rise from the ground and attack the target, dealing 6d6 slashing damage and 6d6 force damage.",      
+        "You crush your runes and call down the power of Guthix to summon spectral claws to eviscerate and bind a creature. Make a ranged spell attack against the target. On a hit, massive purple claws rise from the ground and attack the target, dealing 6d6 slashing damage and 6d6 force damage.",
         "Hit or miss, the claws immediately attempt to bind the target. The target must succeed on a Wisdom saving throw or become paralyzed for one minute. If your attack hit the target, it makes this initial saving throw at disadvantage. A creature affected by this spell makes another Wisdom saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["slashing", "force"],
@@ -1320,7 +1320,13 @@
       "source": "Standard Spellbook",
       "level": 7,
       "school": "A",
-      "time": [{ "number": 1, "unit": "reaction","condition": "which you take when you see a creature within 60 feet of you casting a spell" }],
+      "time": [
+        {
+          "number": 1,
+          "unit": "reaction",
+          "condition": "which you take when you see a creature within 60 feet of you casting a spell"
+        }
+      ],
       "range": {
         "type": "point",
         "distance": { "type": "feet", "amount": 120 }
@@ -1470,6 +1476,820 @@
         "You crush your runes and conjure a massive orb of air to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes thunder damage equal to 12d10 + your spellcasting ability modifier."
       ],
       "damageInflict": ["thunder"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Cure Plant",
+      "source": "Lunar Spellbook",
+      "level": 1,
+      "school": "T",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "1 Astral rune, 8 Earth runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/192006164/zhwhnat1aqLt4D3lYtuX8Q/max.png)",
+        "You crush your runes and channel revitalizing energy into nearby plants and earth. Choose a spot within range. In a 20-foot cube, all plant life of your choice is brought back to a living, healthy state, and the surrounding soil is rendered enriched and full of nutrients."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 2nd level or higher, the size of the cube is doubled for each slot level above 1st, spending additional runes equal to those listed in Components for each spell slot above 1st."
+          ]
+        }
+      ],
+      "areaTags": ["C"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Stat Spy",
+      "source": "Lunar Spellbook",
+      "level": 2,
+      "school": "D",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": { "type": "point", "distance": { "type": "self" } },
+      "components": {
+        "s": true,
+        "m": "2 Astral runes, 2 Cosmic runes, 2 Body runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/192005298/ACfz0KV5D1XRT9IXBWxX_g/med.png)",
+        "You crush your runes and gain some insight on a particular creature. When you cast this spell, name a specific creature or envision one with which you are familiar, then roll a d6. On a 1-4, the spell fails and you learn no information. On a 5-6, the spell succeeds, and you learn the following about the creature:",
+        "• Ability scores",
+        "• Saving throw modifiers",
+        "• Proficient skills",
+        "The DM may inform you of additional traits. You may only cast this spell on a particular creature once per day. You automatically succeed in casting this spell if you have seen the creature in person."
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Geomancy",
+      "source": "Lunar Spellbook",
+      "level": 3,
+      "school": "D",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": { "type": "point", "distance": { "type": "self" } },
+      "components": {
+        "s": true,
+        "m": "3 Astral runes, 3 Nature runes, 8 Earth runes, all of which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": { "type": "hour", "amount": 1 },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/192005298/ACfz0KV5D1XRT9IXBWxX_g/med.png)",
+        "You crush your runes and gain remote vision on a location. Choose a location that you have visited at least once in the past. An invisible arcane eye appears in this location. The eye has 120 feet of vision, shares any special senses you posses, and can see in every direction. As a bonus action, you may switch your vision between your own eyes, and the arcane eye, or vice versa. As an action, you can move the eye up to 30 feet in any direction. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter."
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Health Potion Share",
+      "source": "Lunar Spellbook",
+      "level": 3,
+      "school": "T",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 10 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Astral runes, 10 Water runes, 10 Earth runes, all of which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": { "type": "minute", "amount": 1 }
+        }
+      ],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/192007775/SDnx8VBUph5VhSpAix-w0Q/max.png)",
+        "You crush your runes and turn your body into a conduit for sharing the effects of potions. The next time you consume a potion or similar item, any regained hit points that potion or item grants is also regained for all creatures of your choice within 10 feet. The spell then ends."
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Monster Examine",
+      "source": "Lunar Spellbook",
+      "level": 3,
+      "school": "D",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": { "type": "point", "distance": { "type": "self" } },
+      "components": {
+        "s": true,
+        "m": "1 Astral rune, 1 Cosmic rune, 1 Mind rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/192004741/vI65LwBCfHp8rqn4iVQZFw/max.png)",
+        "You crush your runes and gain some insight on a particular species of creature. When you cast this spell, name a specific species or envision one with which you are familiar, then roll a d6. On a 1-4, the spell fails and you learn no information. On a 5-6, the spell succeeds, and you learn the following about the species:",
+        "• Damage vulnerabilities",
+        "• Damage resistances and immunities",
+        "• Condition immunities",
+        "The DM may inform you of additional traits. You may only cast this spell on a particular species once per day. You automatically succeed in casting this spell if you have seen a creature from this particular species in person."
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Contact Other",
+      "source": "Lunar Spellbook",
+      "level": 4,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": { "type": "point", "distance": { "type": "self" } },
+      "components": {
+        "s": true,
+        "m": "2 air runes, 1 astral rune, 1 cosmic rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/192004184/1K0QH0MIy7-FtJ3x-uM5Jw/med.png)",
+        "A spell for long distance communication. You crush your runes and create a telepathic link between yourself and a intelligent creature with which you are familiar. Using Contact Other to contact a person you need to speak for a clue requirement does NOT advance your progress in the Treasure Trail. You must speak to the person through normal means."
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Revenge",
+      "source": "Lunar Spellbook",
+      "level": 4,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "bonus action" }],
+      "range": { "type": "point", "distance": { "type": "feet", "amount":60 } },
+      "components": {
+        "s": true,
+        "m": "10 earth runes, 3 astral runes, 2 death runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/192007593/DcnGVB4_g9owwqDL3OiM2A/max.png)",
+        "A spell for reflecting damage. You crush your runes and create a shimmering force ready to reflect damage back at the attacker around a willing creatuer within range. Anytime in the next minute when the affected creature takes damage, they may use their reaction to deal half of the damage they took back at the attacker. The spell ends if you cast it again."
+      ],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Bake Pie",
+      "source": "Lunar Spellbook",
+      "level": 4,
+      "school": "C",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": { "type": "point", "distance": { "type": "feet", "amount": 5 } },
+      "components": {
+        "s": true,
+        "m": "1 Astral rune, 4 Water runes, 5 Fire runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/192009062/OpciKmEBMwfM3ydiAzavsg/med.png)",
+        "You crush your runes and magically conjure a delicious baked pie within range. The pie has 3 servings that can be eaten as a bonus action. Each creature that eats a serving gains temporary hit points equal to 3d10 + your spellcasting ability modifier, and gains an additional benefit depending on the flavor of pie conjured:",
+        "• Cadavaberry: resistance to necrotic damage for 1 hour.",
+        "• Dwellberry: resistance to psychic damage for 1 hour.",
+        "• Jangerberry: resistance to acid damage for 1 hour.",
+        "• Poison Ivyberry: resistance to radiant damage for 1 hour.",
+        "• Redberry: resistance to poison damage for 1 hour.",
+        "• Strawberry: resistance to thunder damage for 1 hour.",
+        "• Whiteberry: resistance to force damage for 1 hour."
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Magic Imbue",
+      "source": "Lunar Spellbook",
+      "level": 6,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "bonus action" }],
+      "range": { "type": "point", "distance": { "type": "touch" } },
+      "components": {
+        "s": true,
+        "m": "7 fire runes, 7 water runes, 1 astral rune, all of which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": { "type": "hour", "amount": 1 },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/192005865/jVWGQt_71nJpyiaP1zsmBA/med.png)",
+        "You charge a weapon with magic energy. When you cast this spell on a weapon you or another creature is holding, it is charged with magic and gains +1 to attack and damage rolls and deals an additional 2d10 force damage."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 7th level or higher, the extra damage increases to 1d10 for each slot level above 6th."
+          ]
+        }
+      ],
+      "damageInflict": ["force"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Energy Transfer",
+      "source": "Lunar Spellbook",
+      "level": 6,
+      "school": "T",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": { "type": "point", "distance": { "type": "feet", "amount":30 } },
+      "components": {
+        "s": true,
+        "m": "3 astral runes, 2 law runes, 1 nature rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/192009988/rLE0xyJvAlla9u0Y3nw_VQ/max.png)",
+        "You charge a weapon with magic energy. When you cast this spell on a weapon you or another creature is holding, it is charged with magic and gains +1 to attack and damage rolls and deals an additional 2d10 force damage."
+      ],
+      "damageInflict": ["force"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Revenge",
+      "source": "Lunar Spellbook",
+      "level": 6,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "bonus action" }],
+      "range": { "type": "point", "distance": { "type": "feet", "amount":60 } },
+      "components": {
+        "s": true,
+        "m": "20 earth runes, 6 astral runes, 4 death runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/192007569/9l466-VF-4LbxqahrV_aDA/max.png)",
+        "A spell for reflecting damage. You crush your runes and create a shimmering force ready to reflect damage back at the attacker around a willing creatuer within range. Anytime in the next minute when the affected creature takes damage, they may use their reaction to deal damage to the attacker equal to the what they took. The spell ends if you cast it again."
+      ],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Vengance",
+      "source": "Lunar Spellbook",
+      "level": 7,
+      "school": "E",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": { "type": "point", "distance": { "type": "touch" } },
+      "components": {
+        "s": true,
+        "m": "2 astral runes, 5 body runes, 1 cosmic rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/192005668/yauiSuG_50GYCo8UJVQaaA/med.png)",
+        "A spell that allows for a quickened sleep. You crush your runes and you or a willing creature you touch fall unconscious for the spell’s duration. The spell ends on a target early if it takes damage or someone uses an action to shake or slap it awake. If a target remains unconscious for the full duration, that target gains the benefit of a long rest apart from the spell slot used to cast this spell."
+      ],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Spellbook swap",
+      "source": "Lunar Spellbook",
+      "level": 7,
+      "school": "T",
+      "time": [{ "number": 1, "unit": "bonus action" }],
+      "range": { "type": "point", "distance": { "type": "self" } },
+      "components": {
+        "s": true,
+        "m": "1 law rune, 2 cosmic runes, 3 astral runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/192008208/v-CbeELGpc9ZqXUqd6eLWQ/max.png)",
+        "When cast, pick any 7th level or lower spell you can cast. Roll a 1d20+[your spell mod] vs 10+[spell level]. If you succeed, you can use this bonus action to cast the spell. Only works for spells that are 1 action or bonus action in casting time."
+      ],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Superglass make",
+      "source": "Lunar Spellbook",
+      "level": 7,
+      "school": "C",
+      "time": [{ "number": 1, "unit": "bonus action" }],
+      "range": { "type": "point", "distance": { "type": "feet", "amount":120 } },
+      "components": {
+        "s": true,
+        "m": "20 fire runes, 20 earth runes, 10 astral runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/192013287/dDLab6uy0IsO_yGxfT6PIw/max.png)",
+        "Casting this spell creates either a dome that has an up to 5ft radius or a up to 10ft long, 10ft high wall of \"Superglass\" to appear where you choose within 120ft. The Superglass is nearly completely transparent, and harmless to the touch. The Superglass possess an AC of 19 and HP of 100 and is vulnerable to bludgeoning damage. You can move the Superglass as part of your movement, if it is a dome and you are inside it, or if it is a wall and you are within 10ft of it. The Superglass is immune to fire, lightning, and cold damage and stops any cones or otherwise of those types from passing it. You and allies you designate can freely move through and cast spells through the dome, however projectile weapons such as bows will hit it. The dome regains 1d6+[spellcastingmodifier] hit points at the start of each of your turns."
+      ],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Magical Potion Share",
+      "source": "Lunar Spellbook",
+      "level": 8,
+      "school": "T",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 10 }
+      },
+      "components": {
+        "s": true,
+        "m": "20 fire runes, 20 earth runes, 10 astral runes, all of which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": { "type": "minute", "amount": 1 }
+        }
+      ],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/192008852/TXv25r9mS7fN3SPTy-BhjQ/max.png)",
+        "You crush your runes and turn your body into a conduit for sharing the effects of potions. The next time the target consumes a potion or similar item,  every friendly creature within 10ft will also receive the effect. The spell then ends."
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Blood Rush",
+      "source": "Ancient Spellbook",
+      "level": 5,
+      "school": "N",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Chaos runes, 2 Death runes, 1 Blood rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191433146/BcY6h4SiBO5iqdEdpIfFgQ/max.png)",
+        "You crush your runes and extract some blood from a creature within range. Make a ranged spell attack against the target. On a hit, the target takes necrotic damage equal to 7d10 + your spellcasting ability modifier, and you regain a number of hit points equal to the necrotic damage dealt. The hit target then rolls a d12, gaining a level of exhaustion on a 1."
+      ],
+      "damageInflict": ["necrotic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Ice Rush",
+      "source": "Ancient Spellbook",
+      "level": 5,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Chaos runes, 2 Death runes, 2 Water runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191433721/KLKeAsN7P_c6uag7CyXsJA/max.png)",
+        "You crush your runes and surround a creature within range with freezing air and snow. Make a ranged spell attack against the target. On a hit, the target takes cold damage equal to 7d10 + your spellcasting ability modifier. Until the end of their second turn after being hit with this spell, the target's movement speed is reduced to 0, it may not take bonus actions or reactions, regardless of the target's abilities or magic items, it can't make more than one melee or ranged attack during its turn, and all attacks against the target are made with advantage. A creature affected by this spell makes a Strength saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["cold"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Shadow Rush",
+      "source": "Ancient Spellbook",
+      "level": 5,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Chaos runes, 2 Death runes, 1 Soul rune, 1 Air rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191427274/TO1fneti5nwpIAHbDXrlow/med.png)",
+        "You crush your runes and project your shadow upon a creature within range to disorient them. Make a ranged spell attack against the target. On a hit, the target takes psychic damage equal to 7d10 + your spellcasting ability modifier. A hit target must then make an Intelligence saving throw. On a failure, for the next minute, the target has disadvantage on all attack rolls and ability checks, and all attack rolls have advantage against the target. A creature affected by this spell makes an Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["psychic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Smoke Rush",
+      "source": "Ancient Spellbook",
+      "level": 5,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Chaos runes, 2 Death runes, 1 Air rune, 1 Fire rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191425242/1D8vUlEVDFXB9IioZP0xUQ/max.png)",
+        "You crush your runes and conjure a rope of smoke that debilitates a creature within range. Make a ranged spell attack against the target. On a hit, the target takes poison damage equal to 7d10 + your spellcasting ability modifier. A hit target must then make a Constitution saving throw. On a failure, for the next minute, the target takes 3d10 poison damage at the start of each of its turns and has disadvantage on saving throws. A creature affected by this spell makes a Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["psychic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Blood Burst",
+      "source": "Ancient Spellbook",
+      "level": 6,
+      "school": "N",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "4 Chaos runes, 2 Death runes, 2 Blood runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191440313/fCqLDjw_5-h1e73ELoPv5Q/max.png)",
+        "You crush your runes and extract some blood from a group of creatures within range. Make a ranged spell attack against each creature within in a 30-foot cube within range. On a hit, a target takes necrotic damage equal to 7d10 + your spellcasting ability modifier, and you regain a number of hit points equal to the necrotic damage dealt. A hit target then rolls a d12, gaining a level of exhaustion on a 1."
+      ],
+      "damageInflict": ["necrotic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Ice Burst",
+      "source": "Ancient Spellbook",
+      "level": 6,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "4 Chaos runes, 2 Death runes, 4 Water runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191440622/_uNAsYpCiOQ__QKsRkJs9Q/max.png)",
+        "You crush your runes and surround a group of creatures within range with freezing air and snow. Make a ranged spell attack against each creature within in a 30-foot cube within range. On a hit, a target takes cold damage equal to 7d10 + your spellcasting ability modifier. Until the end of their second turn after being hit with this spell, a target's movement speed is reduced to 0, it may not take bonus actions or reactions, regardless of a target's abilities or magic items, it can't make more than one melee or ranged attack during its turn, and all attacks against a target are made with advantage. A creature affected by this spell makes a Strength saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["cold"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Shadow Burst",
+      "source": "Ancient Spellbook",
+      "level": 6,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "4 Chaos runes, 2 Death runes, 2 Soul runes, 1 Air rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191440100/11WYUcLlRM2wWdueCW_ROg/med.png)",
+        "You crush your runes and cause a group of creature's shadows to rise and attack and disorient them. Make a ranged spell attack against each creature within in a 30-foot cube within range. On a hit, a target takes psychic damage equal to 7d10 + your spellcasting ability modifier. A hit target must then make an Intelligence saving throw. On a failure, for the next minute, that target has disadvantage on all attack rolls and ability checks, and all attack rolls have advantage against that target. A creature affected by this spell makes an Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["psychic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Smoke Burst",
+      "source": "Ancient Spellbook",
+      "level": 6,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Chaos runes, 2 Death runes, 1 Air rune, 1 Fire rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191439101/Zvd9ASjyt9t43xO3wvrPXw/max.png)",
+        "You crush your runes and conjure a cloud of smoke that debilitates creatures within range. Make a ranged spell attack against each creature within in a 30-foot cube within range. On a hit, a target takes poison damage equal to 7d10 + your spellcasting ability modifier. A hit target must then make a Constitution saving throw. On a failure, for the next minute, that target takes 3d10 poison damage at the start of each of its turns and has disadvantage on saving throws. A creature affected by this spell makes a Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["psychic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Kharyrll (Canifis) Teleport",
+      "source": "Ancient Spellbook",
+      "level": 6,
+      "school": "C",
+      "time": [{ "numer": 1, "unit": "action" }],
+      "range": {
+        "type": "radius",
+        "distance": { "type": "feet", "amount": 10 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Law runes per creature, 1 Blood rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/233853152/OlsBK8j0MLvkVng5OX4LJQ/max.png)",
+        "You crush your runes and you and up to 8 willing creatures teleport to the Hair of the Dog Tavern in Canifis, which is where the an ancient fortress called Kharyrll used to stand in the second and third ages."
+      ],
+      "areaTags": ["MT"]
+    },
+    {
+      "name": "Blood Blitz",
+      "source": "Ancient Spellbook",
+      "level": 7,
+      "school": "N",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Death runes, 4 Blood rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191444332/Z9-gg6a81PPhHhqAGFeD6g/max.png)",
+        "You crush your runes and drain a large amount of blood from a creature within range. Make a ranged spell attack against the target. On a hit, the target takes necrotic damage equal to 12d10 + your spellcasting ability modifier, and you regain a number of hit points equal to the necrotic damage dealt. The hit target then rolls a d6, gaining a level of exhaustion on a 1."
+      ],
+      "damageInflict": ["necrotic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Ice Blitz",
+      "source": "Ancient Spellbook",
+      "level": 7,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Death runes, 2 Blood runes, 3 Water runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191444520/OaGAVwLeiEQHNBlne0qH2g/max.png)",
+        "You crush your runes and encase a creature within range in a solid block of ice. Make a ranged spell attack against the target. On a hit, the target takes cold damage equal to 12d10 + your spellcasting ability modifier. Until the end of their fourth turn after being hit with this spell, the target's movement speed is reduced to 0, it may not take bonus actions or reactions, regardless of the target's abilities or magic items, it can't make more than one melee or ranged attack during its turn, and all attacks against the target are made with advantage. A creature affected by this spell makes a Strength saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["cold"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Shadow Blitz",
+      "source": "Ancient Spellbook",
+      "level": 7,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Death runes, 2 Blood runes, 2 Soul runes, 2 Air runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191441861/feGQktGPEN12G-Zj4TVhpw/max.png)",
+        "You crush your runes and have your shadow assault a creature within range to disorient them. Make a ranged spell attack against the target. On a hit, the target takes psychic damage equal to 12d10 + your spellcasting ability modifier. A hit target must then make an Intelligence saving throw. On a failure, for the next minute, the target has disadvantage on all attack rolls and ability checks as well as rolls a d10 and subtracts the number rolled from those rolls, and all attack rolls have advantage against the target. A creature affected by this spell makes an Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["psychic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Smoke Blitz",
+      "source": "Ancient Spellbook",
+      "level": 7,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Death runes, 2 Blood runes, 2 Air runes, 2 Fire runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191441560/fas4s55qvfhyL37cUelSIw/max.png)",
+        "You crush your runes and conjure a rope of toxic smoke that debilitates a creature within range. Make a ranged spell attack against the target. On a hit, the target takes poison damage equal to 12d10 + your spellcasting ability modifier. A hit target must then make a Constitution saving throw. On a failure, for the next two minutes, the target takes 6d10 poison damage at the start of each of its turns and has disadvantage on saving throws. A creature affected by this spell makes a Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["psychic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Blood Barrage",
+      "source": "Ancient Spellbook",
+      "level": 8,
+      "school": "N",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "4 Death runes, 4 Blood rune, 1 Soul rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191447823/Xe1auxqbwdLLcs6xOhxfsA/max.png)",
+        "You crush your runes and drain a large amount of blood from a group of creatures within range. Make a ranged spell attack against each creature within in a 60-foot cube within range. On a hit, a target takes necrotic damage equal to 12d10 + your spellcasting ability modifier, and you regain a number of hit points equal to the necrotic damage dealt. A hit target then rolls a d6, gaining a level of exhaustion on a 1."
+      ],
+      "damageInflict": ["necrotic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Ice Barrage",
+      "source": "Ancient Spellbook",
+      "level": 8,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "4 Death runes, 2 Blood runes, 6 Water runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191449374/FCVFldMxsv1XL8Jtn6W2fA/max.png)",
+        "You crush your runes and encase a group of creatures within range in solid blocks of ice. Make a ranged spell attack against each creature within in a 60-foot cube within range. On a hit, a target takes cold damage equal to 12d10 + your spellcasting ability modifier. Until the end of their fourth turn after being hit with this spell, a target's movement speed is reduced to 0, it may not take bonus actions or reactions, regardless of a target's abilities or magic items, it can't make more than one melee or ranged attack during its turn, and all attacks against a target are made with advantage. A creature affected by this spell makes a Strength saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["cold"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Shadow Barrage",
+      "source": "Ancient Spellbook",
+      "level": 8,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "4 Death runes, 2 Blood runes, 3 Soul runes, 4 Air runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191447431/HCp6ImPhbVMJkyYCjg994w/med.png)",
+        "You crush your runes and cause a group of creature's shadows to emerge and assault and disorient them. Make a ranged spell attack against each creature within in a 60-foot cube within range. On a hit, a target takes psychic damage equal to 12d10 + your spellcasting ability modifier. A hit target must then make an Intelligence saving throw. On a failure, for the next minute, that target has disadvantage on all attack rolls and ability checks as well as rolls a d10 and subtracts the number rolled from those rolls, and all attack rolls have advantage against that target. A creature affected by this spell makes an Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["psychic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Smoke Barrage",
+      "source": "Ancient Spellbook",
+      "level": 8,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "4 Death runes, 2 Blood runes, 4 Air runes, 4 Fire runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191446347/usQVV1yg5ImaOa95QSaMkw/max.png)",
+        "You crush your runes and conjure a toxic cloud of smoke that debilitates creatures within range. Make a ranged spell attack against each creature within in a 60-foot cube within range. On a hit, a target takes poison damage equal to 12d10 + your spellcasting ability modifier. A hit target must then make a Constitution saving throw. On a failure, for the next two minutes, that target takes 6d10 poison damage at the start of each of its turns and has disadvantage on saving throws. A creature affected by this spell makes a Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["psychic"],
       "spellAttack": ["R"],
       "areaTags": ["ST"],
       "classes": {
