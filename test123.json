@@ -1,36 +1,32 @@
 {
   "spell": [
     {
-      "name": "Bind",
-      "source": "StandardSpellbook",
-      "srd": true,
-      "level": 0,
-      "school": "E",
-      "time": [{ "numer": 1, "unit": "action" }],
-      "range": {
-        "type": "point",
-        "distance": {
-          "type": "feet",
-          "distance": { "type": "feet", "amount": 120 }
-        }
-      },
-      "components": {
-        "s": true,
-        "m": "2 Nature runes, 3 Water runes, 3 Earth runes, all of which the spell consumes"
-      },
-      "duration": [{ "type": "instant" }],
-      "classes": {
-        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-      },
-      "entries": [
-        "[icon](https://s3.amazonaws.com/files.d20.io/images/177603834/1JSBNljLrK7iAQhENBEKXw/med.png)",
-		"Attack Roll: [[1d20 | 1d20 + @{spell_attack_mod}[SPELL]]]",
-        "You crush your runes and cast a low level binding curse spell that stops a creature from moving. Make a ranged spell attack against a creature within range. On hit, it takes {@damage 1d6} force damage and are bound by spectral roots. In addition, until the end of its next turn, the creature's speed is reduced to 0."
-      ],
-      "damageInflict": ["force"],
-      "spellAttack": ["R"],
-      "miscTags": ["SCL"],
-      "areaTags": ["ST"]
-    }
+		"name": "Fire Bolt",
+		"source": "Standard Spellbook",
+		"level": 2,
+		"school": "V",
+		"time": [{ "number": 1, "unit": "action" }],
+		"range": {
+		  "type": "point",
+		  "distance": { "type": "feet", "amount": 60 }
+		},
+		"components": {
+		  "s": true,
+		  "m": "1 Chaos rune, 3 Air runes, 4 Fire runes, all of which the spell consumes"
+		},
+		"duration": [{ "type": "instant" }],
+		"entries": [
+		  "[image](https://oldschool.runescape.wiki/images/1/17/Fire_Bolt_icon_%28mobile%29.png)",
+		  "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
+		  "Damage roll: [[4d6 + @{spellcasting_ability}[MOD]]] (Crit: +[[4d6]])",
+		  "You crush your runes and conjure an orb of fire to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes fire damage equal to 4d6 + your spellcasting ability modifier."
+		],
+		"damageInflict": ["fire"],
+		"spellAttack": ["R"],
+		"areaTags": ["ST"],
+		"classes": {
+		  "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+		}
+	  }
   ]
 }
