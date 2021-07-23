@@ -101,7 +101,7 @@
       "entries": [
         "[image](https://oldschool.runescape.wiki/images/4/40/Fire_Strike_icon_%28mobile%29.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[5d2 + @{spellcasting_ability}[MOD]]] (Crit: +[[5d2]])",
+        "Damage roll: [[5d2 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d2]])",
         "You crush your runes and conjure a small orb of fire to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes fire damage equal to 5d2 + your spellcasting ability modifier."
       ],
       "damageInflict": ["fire"],
@@ -129,7 +129,7 @@
       "entries": [
         "[image](https://oldschool.runescape.wiki/images/a/a9/Wind_Strike_icon_%28mobile%29.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[5d2 + @{spellcasting_ability}[MOD]]] (Crit: +[[5d2]])",
+        "Damage roll: [[5d2 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d2]])",
         "You crush your runes and conjure a small orb of air to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes thunder damage equal to 5d2 + your spellcasting ability modifier."
       ],
       "damageInflict": ["thunder"],
@@ -157,7 +157,7 @@
       "entries": [
         "[image](https://oldschool.runescape.wiki/images/a/ad/Water_Strike_icon_%28mobile%29.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[5d2 + @{spellcasting_ability}[MOD]]] (Crit: +[[5d2]])",
+        "Damage roll: [[5d2 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d2]])",
         "You crush your runes and conjure a small orb of water to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes cold damage equal to 5d2 + your spellcasting ability modifier."
       ],
       "damageInflict": ["cold"],
@@ -185,7 +185,7 @@
       "entries": [
         "[image](https://imgsrv.roll20.net/?src=https%3A//oldschool.runescape.wiki/images/4/4b/Fire_Strike.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[5d2 + @{spellcasting_ability}[MOD]]] (Crit: +[[5d2]])",
+        "Damage roll: [[5d2 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d2]])",
         "You crush your runes and conjure a small orb of earth to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes force damage equal to 5d2 + your spellcasting ability modifier."
       ],
       "damageInflict": ["force"],
@@ -323,7 +323,7 @@
       "entries": [
         "[image](https://oldschool.runescape.wiki/images/1/17/Fire_Bolt_icon_%28mobile%29.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[4d6 + @{spellcasting_ability}[MOD]]] (Crit: +[[4d6]])",
+        "Damage roll: [[4d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[4d6]])",
         "You crush your runes and conjure an orb of fire to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes fire damage equal to 4d6 + your spellcasting ability modifier."
       ],
       "damageInflict": ["fire"],
@@ -351,7 +351,7 @@
       "entries": [
         "[image](https://oldschool.runescape.wiki/images/9/91/Earth_Bolt_icon_%28mobile%29.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[4d6 + @{spellcasting_ability}[MOD]]] (Crit: +[[4d6]])",
+        "Damage roll: [[4d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[4d6]])",
         "You crush your runes and conjure an orb of earth to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes force damage equal to 4d6 + your spellcasting ability modifier."
       ],
       "damageInflict": ["force"],
@@ -379,7 +379,7 @@
       "entries": [
         "[image](https://oldschool.runescape.wiki/images/8/85/Water_Bolt_icon_%28mobile%29.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[4d6 + @{spellcasting_ability}[MOD]]] (Crit: +[[4d6]])",
+        "Damage roll: [[4d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[4d6]])",
         "You crush your runes and conjure an orb of water to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes cold damage equal to 4d6 + your spellcasting ability modifier."
       ],
       "damageInflict": ["cold"],
@@ -407,7 +407,7 @@
       "entries": [
         "[image](https://oldschool.runescape.wiki/images/b/ba/Wind_Bolt_icon_%28mobile%29.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[4d6 + @{spellcasting_ability}[MOD]]] (Crit: +[[4d6]])",
+        "Damage roll: [[4d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[4d6]])",
         "You crush your runes and conjure an orb of air to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes thunder damage equal to 4d6 + your spellcasting ability modifier."
       ],
       "damageInflict": ["thunder"],
@@ -598,7 +598,7 @@
       "entries": [
         "[image](https://s3.amazonaws.com/files.d20.io/images/177659144/zGkFDdrgbofNEDTUmHSZiA/med.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[6d6 + @{spellcasting_ability}[MOD]]] (Crit: +[[6d6]]) | Undead (([[6d8 + @{spellcasting_ability}[MOD]]] (Crit: +[[6d8]])))",
+        "Damage roll: [[6d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[6d6]]) | Undead (([[6d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[6d8]])))",
         "You crush your runes and conjure a surge of radiant energy to strike a creature within range. Make a ranged spell attack against the target. On a hit, the target takes radiant damage equal to 6d6 + your spellcasting ability modifier. If the target is undead, it instead takes radiant damage equal to 6d8 + your spellcasting ability modifier."
       ],
       "damageInflict": ["radiant"],
@@ -751,7 +751,7 @@
       "entries": [
         "[image](https://oldschool.runescape.wiki/images/b/b5/Fire_Blast_icon_%28mobile%29.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[5d8 + @{spellcasting_ability}[MOD]]] (Crit: +[[5d8]])",
+        "Damage roll: [[5d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d8]])",
         "You crush your runes and conjure a large orb of fire to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes fire damage equal to 5d8 + your spellcasting ability modifier."
       ],
       "damageInflict": ["fire"],
@@ -779,7 +779,7 @@
       "entries": [
         "[image](https://oldschool.runescape.wiki/images/3/3c/Earth_Blast_icon_%28mobile%29.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[5d8 + @{spellcasting_ability}[MOD]]] (Crit: +[[5d8]])",
+        "Damage roll: [[5d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d8]])",
         "You crush your runes and conjure a large orb of earth to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes force damage equal to 5d8 + your spellcasting ability modifier."
       ],
       "damageInflict": ["force"],
@@ -807,7 +807,7 @@
       "entries": [
         "[image](https://oldschool.runescape.wiki/images/c/c2/Water_Blast_icon_%28mobile%29.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[5d8 + @{spellcasting_ability}[MOD]]] (Crit: +[[5d8]])",
+        "Damage roll: [[5d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d8]])",
         "You crush your runes and conjure a large orb of water to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes cold damage equal to 5d8 + your spellcasting ability modifier."
       ],
       "damageInflict": ["cold"],
@@ -835,7 +835,7 @@
       "entries": [
         "[image](https://oldschool.runescape.wiki/images/b/bf/Wind_Blast_icon_%28mobile%29.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[5d8 + @{spellcasting_ability}[MOD]]] (Crit: +[[5d8]])",
+        "Damage roll: [[5d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d8]])",
         "You crush your runes and conjure a large orb of air to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes thunder damage equal to 5d8 + your spellcasting ability modifier."
       ],
       "damageInflict": ["thunder"],
@@ -1270,7 +1270,7 @@
       "entries": [
         "[image](https://oldschool.runescape.wiki/images/b/b3/Fire_Wave_icon_%28mobile%29.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[7d12 + @{spellcasting_ability}[MOD]]] (Crit: +[[7d12]])",
+        "Damage roll: [[7d12 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d12]])",
         "You crush your runes and conjure a huge orb of fire to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes fire damage equal to 7d12 + your spellcasting ability modifier."
       ],
       "damageInflict": ["fire"],
@@ -1298,7 +1298,7 @@
       "entries": [
         "[image](https://oldschool.runescape.wiki/images/3/32/Earth_Wave_icon_%28mobile%29.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[7d12 + @{spellcasting_ability}[MOD]]] (Crit: +[[7d12]])",
+        "Damage roll: [[7d12 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d12]])",
         "You crush your runes and conjure a huge orb of earth to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes force damage equal to 7d12 + your spellcasting ability modifier."
       ],
       "damageInflict": ["force"],
@@ -1326,7 +1326,7 @@
       "entries": [
         "[image](https://oldschool.runescape.wiki/images/2/26/Water_Wave_icon_%28mobile%29.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[7d12 + @{spellcasting_ability}[MOD]]] (Crit: +[[7d12]])",
+        "Damage roll: [[7d12 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d12]])",
         "You crush your runes and conjure a huge orb of water to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes cold damage equal to 7d12 + your spellcasting ability modifier."
       ],
       "damageInflict": ["cold"],
@@ -1354,7 +1354,7 @@
       "entries": [
         "[image](https://oldschool.runescape.wiki/images/3/3c/Wind_Wave_icon_%28mobile%29.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[7d12 + @{spellcasting_ability}[MOD]]] (Crit: +[[7d12]])",
+        "Damage roll: [[7d12 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d12]])",
         "You crush your runes and conjure a huge orb of air to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes thunder damage equal to 7d12 + your spellcasting ability modifier."
       ],
       "damageInflict": ["thunder"],
@@ -1445,7 +1445,7 @@
       "entries": [
         "[image](https://oldschool.runescape.wiki/images/d/dc/Fire_Surge_icon_%28mobile%29.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[12d10 + @{spellcasting_ability}[MOD]]] (Crit: +[[12d10]])",
+        "Damage roll: [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
         "You crush your runes and conjure a massive orb of fire to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes fire damage equal to 12d10 + your spellcasting ability modifier."
       ],
       "damageInflict": ["fire"],
@@ -1473,7 +1473,7 @@
       "entries": [
         "[image](https://oldschool.runescape.wiki/images/1/18/Earth_Surge_icon_%28mobile%29.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[12d10 + @{spellcasting_ability}[MOD]]] (Crit: +[[12d10]])",
+        "Damage roll: [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
         "You crush your runes and conjure a massive orb of earth to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes force damage equal to 12d10 + your spellcasting ability modifier."
       ],
       "damageInflict": ["force"],
@@ -1501,7 +1501,7 @@
       "entries": [
         "[image](https://oldschool.runescape.wiki/images/a/a5/Water_Surge_icon_%28mobile%29.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[12d10 + @{spellcasting_ability}[MOD]]] (Crit: +[[12d10]])",
+        "Damage roll: [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
         "You crush your runes and conjure a massive orb of water to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes cold damage equal to 12d10 + your spellcasting ability modifier."
       ],
       "damageInflict": ["cold"],
@@ -1529,7 +1529,7 @@
       "entries": [
         "[image](https://oldschool.runescape.wiki/images/c/c5/Wind_Surge_icon_%28mobile%29.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[12d10 + @{spellcasting_ability}[MOD]]] (Crit: +[[12d10]])",
+        "Damage roll: [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
         "You crush your runes and conjure a massive orb of air to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes thunder damage equal to 12d10 + your spellcasting ability modifier."
       ],
       "damageInflict": ["thunder"],
@@ -1943,7 +1943,7 @@
       "entries": [
         "[image](https://s3.amazonaws.com/files.d20.io/images/191433146/BcY6h4SiBO5iqdEdpIfFgQ/max.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[7d10 + @{spellcasting_ability}[MOD]]] (Crit: +[[7d10]])",
+        "Damage roll: [[7d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d10]])",
         "You crush your runes and extract some blood from a creature within range. Make a ranged spell attack against the target. On a hit, the target takes necrotic damage equal to 7d10 + your spellcasting ability modifier, and you regain a number of hit points equal to the necrotic damage dealt. The hit target then rolls a d12, gaining a level of exhaustion on a 1."
       ],
       "damageInflict": ["necrotic"],
@@ -1971,7 +1971,7 @@
       "entries": [
         "[image](https://s3.amazonaws.com/files.d20.io/images/191433721/KLKeAsN7P_c6uag7CyXsJA/max.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[7d10 + @{spellcasting_ability}[MOD]]] (Crit: +[[7d10]])",
+        "Damage roll: [[7d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d10]])",
         "You crush your runes and surround a creature within range with freezing air and snow. Make a ranged spell attack against the target. On a hit, the target takes cold damage equal to 7d10 + your spellcasting ability modifier. Until the end of their second turn after being hit with this spell, the target's movement speed is reduced to 0, it may not take bonus actions or reactions, regardless of the target's abilities or magic items, it can't make more than one melee or ranged attack during its turn, and all attacks against the target are made with advantage. A creature affected by this spell makes a Strength saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["cold"],
@@ -1999,7 +1999,7 @@
       "entries": [
         "[image](https://s3.amazonaws.com/files.d20.io/images/191427274/TO1fneti5nwpIAHbDXrlow/med.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[7d10 + @{spellcasting_ability}[MOD]]] (Crit: +[[7d10]])",
+        "Damage roll: [[7d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d10]])",
         "You crush your runes and project your shadow upon a creature within range to disorient them. Make a ranged spell attack against the target. On a hit, the target takes psychic damage equal to 7d10 + your spellcasting ability modifier. A hit target must then make an Intelligence saving throw. On a failure, for the next minute, the target has disadvantage on all attack rolls and ability checks, and all attack rolls have advantage against the target. A creature affected by this spell makes an Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["psychic"],
@@ -2027,7 +2027,7 @@
       "entries": [
         "[image](https://s3.amazonaws.com/files.d20.io/images/191425242/1D8vUlEVDFXB9IioZP0xUQ/max.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[7d10 + @{spellcasting_ability}[MOD]]] (Crit: +[[7d10]])",
+        "Damage roll: [[7d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d10]])",
         "You crush your runes and conjure a rope of smoke that debilitates a creature within range. Make a ranged spell attack against the target. On a hit, the target takes poison damage equal to 7d10 + your spellcasting ability modifier. A hit target must then make a Constitution saving throw. On a failure, for the next minute, the target takes 3d10 poison damage at the start of each of its turns and has disadvantage on saving throws. A creature affected by this spell makes a Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["psychic"],
@@ -2055,7 +2055,7 @@
       "entries": [
         "[image](https://s3.amazonaws.com/files.d20.io/images/191440313/fCqLDjw_5-h1e73ELoPv5Q/max.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[7d10 + @{spellcasting_ability}[MOD]]] (Crit: +[[7d10]])",
+        "Damage roll: [[7d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d10]])",
         "You crush your runes and extract some blood from a group of creatures within range. Make a ranged spell attack against each creature within in a 30-foot cube within range. On a hit, a target takes necrotic damage equal to 7d10 + your spellcasting ability modifier, and you regain a number of hit points equal to the necrotic damage dealt. A hit target then rolls a d12, gaining a level of exhaustion on a 1."
       ],
       "damageInflict": ["necrotic"],
@@ -2083,7 +2083,7 @@
       "entries": [
         "[image](https://s3.amazonaws.com/files.d20.io/images/191440622/_uNAsYpCiOQ__QKsRkJs9Q/max.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[7d10 + @{spellcasting_ability}[MOD]]] (Crit: +[[7d10]])",
+        "Damage roll: [[7d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d10]])",
         "You crush your runes and surround a group of creatures within range with freezing air and snow. Make a ranged spell attack against each creature within in a 30-foot cube within range. On a hit, a target takes cold damage equal to 7d10 + your spellcasting ability modifier. Until the end of their second turn after being hit with this spell, a target's movement speed is reduced to 0, it may not take bonus actions or reactions, regardless of a target's abilities or magic items, it can't make more than one melee or ranged attack during its turn, and all attacks against a target are made with advantage. A creature affected by this spell makes a Strength saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["cold"],
@@ -2111,7 +2111,7 @@
       "entries": [
         "[image](https://s3.amazonaws.com/files.d20.io/images/191440100/11WYUcLlRM2wWdueCW_ROg/med.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[7d10 + @{spellcasting_ability}[MOD]]] (Crit: +[[7d10]])",
+        "Damage roll: [[7d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d10]])",
         "You crush your runes and cause a group of creature's shadows to rise and attack and disorient them. Make a ranged spell attack against each creature within in a 30-foot cube within range. On a hit, a target takes psychic damage equal to 7d10 + your spellcasting ability modifier. A hit target must then make an Intelligence saving throw. On a failure, for the next minute, that target has disadvantage on all attack rolls and ability checks, and all attack rolls have advantage against that target. A creature affected by this spell makes an Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["psychic"],
@@ -2139,7 +2139,7 @@
       "entries": [
         "[image](https://s3.amazonaws.com/files.d20.io/images/191439101/Zvd9ASjyt9t43xO3wvrPXw/max.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[7d10 + @{spellcasting_ability}[MOD]]] (Crit: +[[7d10]])",
+        "Damage roll: [[7d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d10]])",
         "You crush your runes and conjure a cloud of smoke that debilitates creatures within range. Make a ranged spell attack against each creature within in a 30-foot cube within range. On a hit, a target takes poison damage equal to 7d10 + your spellcasting ability modifier. A hit target must then make a Constitution saving throw. On a failure, for the next minute, that target takes 3d10 poison damage at the start of each of its turns and has disadvantage on saving throws. A creature affected by this spell makes a Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["psychic"],
@@ -2191,7 +2191,7 @@
       "entries": [
         "[image](https://s3.amazonaws.com/files.d20.io/images/191444332/Z9-gg6a81PPhHhqAGFeD6g/max.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[12d10 + @{spellcasting_ability}[MOD]]] (Crit: +[[12d10]])",
+        "Damage roll: [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
         "You crush your runes and drain a large amount of blood from a creature within range. Make a ranged spell attack against the target. On a hit, the target takes necrotic damage equal to 12d10 + your spellcasting ability modifier, and you regain a number of hit points equal to the necrotic damage dealt. The hit target then rolls a d6, gaining a level of exhaustion on a 1."
       ],
       "damageInflict": ["necrotic"],
@@ -2219,7 +2219,7 @@
       "entries": [
         "[image](https://s3.amazonaws.com/files.d20.io/images/191444520/OaGAVwLeiEQHNBlne0qH2g/max.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[12d10 + @{spellcasting_ability}[MOD]]] (Crit: +[[12d10]])",
+        "Damage roll: [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
         "You crush your runes and encase a creature within range in a solid block of ice. Make a ranged spell attack against the target. On a hit, the target takes cold damage equal to 12d10 + your spellcasting ability modifier. Until the end of their fourth turn after being hit with this spell, the target's movement speed is reduced to 0, it may not take bonus actions or reactions, regardless of the target's abilities or magic items, it can't make more than one melee or ranged attack during its turn, and all attacks against the target are made with advantage. A creature affected by this spell makes a Strength saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["cold"],
@@ -2247,7 +2247,7 @@
       "entries": [
         "[image](https://s3.amazonaws.com/files.d20.io/images/191441861/feGQktGPEN12G-Zj4TVhpw/max.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[12d10 + @{spellcasting_ability}[MOD]]] (Crit: +[[12d10]])",
+        "Damage roll: [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
         "You crush your runes and have your shadow assault a creature within range to disorient them. Make a ranged spell attack against the target. On a hit, the target takes psychic damage equal to 12d10 + your spellcasting ability modifier. A hit target must then make an Intelligence saving throw. On a failure, for the next minute, the target has disadvantage on all attack rolls and ability checks as well as rolls a d10 and subtracts the number rolled from those rolls, and all attack rolls have advantage against the target. A creature affected by this spell makes an Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["psychic"],
@@ -2275,7 +2275,7 @@
       "entries": [
         "[image](https://s3.amazonaws.com/files.d20.io/images/191441560/fas4s55qvfhyL37cUelSIw/max.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[12d10 + @{spellcasting_ability}[MOD]]] (Crit: +[[12d10]])",
+        "Damage roll: [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
         "You crush your runes and conjure a rope of toxic smoke that debilitates a creature within range. Make a ranged spell attack against the target. On a hit, the target takes poison damage equal to 12d10 + your spellcasting ability modifier. A hit target must then make a Constitution saving throw. On a failure, for the next two minutes, the target takes 6d10 poison damage at the start of each of its turns and has disadvantage on saving throws. A creature affected by this spell makes a Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["psychic"],
@@ -2303,7 +2303,7 @@
       "entries": [
         "[image](https://s3.amazonaws.com/files.d20.io/images/191447823/Xe1auxqbwdLLcs6xOhxfsA/max.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[12d10 + @{spellcasting_ability}[MOD]]] (Crit: +[[12d10]])",
+        "Damage roll: [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
         "You crush your runes and drain a large amount of blood from a group of creatures within range. Make a ranged spell attack against each creature within in a 60-foot cube within range. On a hit, a target takes necrotic damage equal to 12d10 + your spellcasting ability modifier, and you regain a number of hit points equal to the necrotic damage dealt. A hit target then rolls a d6, gaining a level of exhaustion on a 1."
       ],
       "damageInflict": ["necrotic"],
@@ -2331,7 +2331,7 @@
       "entries": [
         "[image](https://s3.amazonaws.com/files.d20.io/images/191449374/FCVFldMxsv1XL8Jtn6W2fA/max.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[12d10 + @{spellcasting_ability}[MOD]]] (Crit: +[[12d10]])",
+        "Damage roll: [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
         "You crush your runes and encase a group of creatures within range in solid blocks of ice. Make a ranged spell attack against each creature within in a 60-foot cube within range. On a hit, a target takes cold damage equal to 12d10 + your spellcasting ability modifier. Until the end of their fourth turn after being hit with this spell, a target's movement speed is reduced to 0, it may not take bonus actions or reactions, regardless of a target's abilities or magic items, it can't make more than one melee or ranged attack during its turn, and all attacks against a target are made with advantage. A creature affected by this spell makes a Strength saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["cold"],
@@ -2359,7 +2359,7 @@
       "entries": [
         "[image](https://s3.amazonaws.com/files.d20.io/images/191447431/HCp6ImPhbVMJkyYCjg994w/med.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[12d10 + @{spellcasting_ability}[MOD]]] (Crit: +[[12d10]])",
+        "Damage roll: [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
         "You crush your runes and cause a group of creature's shadows to emerge and assault and disorient them. Make a ranged spell attack against each creature within in a 60-foot cube within range. On a hit, a target takes psychic damage equal to 12d10 + your spellcasting ability modifier. A hit target must then make an Intelligence saving throw. On a failure, for the next minute, that target has disadvantage on all attack rolls and ability checks as well as rolls a d10 and subtracts the number rolled from those rolls, and all attack rolls have advantage against that target. A creature affected by this spell makes an Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["psychic"],
@@ -2387,7 +2387,7 @@
       "entries": [
         "[image](https://s3.amazonaws.com/files.d20.io/images/191446347/usQVV1yg5ImaOa95QSaMkw/max.png)",
         "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-        "Damage roll: [[12d10 + @{spellcasting_ability}[MOD]]] (Crit: +[[12d10]])",
+        "Damage roll: [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
         "You crush your runes and conjure a toxic cloud of smoke that debilitates creatures within range. Make a ranged spell attack against each creature within in a 60-foot cube within range. On a hit, a target takes poison damage equal to 12d10 + your spellcasting ability modifier. A hit target must then make a Constitution saving throw. On a failure, for the next two minutes, that target takes 6d10 poison damage at the start of each of its turns and has disadvantage on saving throws. A creature affected by this spell makes a Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["psychic"],
