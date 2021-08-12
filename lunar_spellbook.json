@@ -1,0 +1,657 @@
+{
+    "spell": [
+        {
+            "name": "Cure Plant",
+            "source": "Lunar Spellbook",
+            "level": 1,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "s": true,
+                "m": "1 Astral rune, 8 Earth runes, all of which the spell consumes"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "[image](https://s3.amazonaws.com/files.d20.io/images/192006164/zhwhnat1aqLt4D3lYtuX8Q/max.png)",
+                "You crush your runes and channel revitalizing energy into nearby plants and earth. Choose a spot within range. In a 20-foot cube, all plant life of your choice is brought back to a living, healthy state, and the surrounding soil is rendered enriched and full of nutrients."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the size of the cube is doubled for each slot level above 1st, spending additional runes equal to those listed in Components for each spell slot above 1st."
+                    ]
+                }
+            ],
+            "areaTags": [
+                "C"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Spellcaster",
+                        "source": "All"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Stat Spy",
+            "source": "Lunar Spellbook",
+            "level": 2,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "self"
+            },
+            "components": {
+                "s": true,
+                "m": "2 Astral runes, 2 Cosmic runes, 2 Body runes, all of which the spell consumes"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "[image](https://s3.amazonaws.com/files.d20.io/images/192005298/ACfz0KV5D1XRT9IXBWxX_g/med.png)",
+                "You crush your runes and gain some insight on a particular creature. When you cast this spell, name a specific creature or envision one with which you are familiar, then roll a d6. On a 1-4, the spell fails and you learn no information. On a 5-6, the spell succeeds, and you learn the following about the creature:",
+                "• Ability scores",
+                "• Saving throw modifiers",
+                "• Proficient skills",
+                "The DM may inform you of additional traits. You may only cast this spell on a particular creature once per day. You automatically succeed in casting this spell if you have seen the creature in person."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Spellcaster",
+                        "source": "All"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Geomancy",
+            "source": "Lunar Spellbook",
+            "level": 3,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "self"
+            },
+            "components": {
+                "s": true,
+                "m": "3 Astral runes, 3 Nature runes, 8 Earth runes, all of which the spell consumes"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "[image](https://s3.amazonaws.com/files.d20.io/images/192005298/ACfz0KV5D1XRT9IXBWxX_g/med.png)",
+                "You crush your runes and gain remote vision on a location. Choose a location that you have visited at least once in the past. An invisible arcane eye appears in this location. The eye has 120 feet of vision, shares any special senses you posses, and can see in every direction. As a bonus action, you may switch your vision between your own eyes, and the arcane eye, or vice versa. As an action, you can move the eye up to 30 feet in any direction. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Spellcaster",
+                        "source": "All"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Health Potion Share",
+            "source": "Lunar Spellbook",
+            "level": 3,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 10
+                }
+            },
+            "components": {
+                "s": true,
+                "m": "2 Astral runes, 10 Water runes, 10 Earth runes, all of which the spell consumes"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "[image](https://s3.amazonaws.com/files.d20.io/images/192007775/SDnx8VBUph5VhSpAix-w0Q/max.png)",
+                "You crush your runes and turn your body into a conduit for sharing the effects of potions. The next time you consume a potion or similar item, any regained hit points that potion or item grants is also regained for all creatures of your choice within 10 feet. The spell then ends."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Spellcaster",
+                        "source": "All"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Monster Examine",
+            "source": "Lunar Spellbook",
+            "level": 3,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "self"
+            },
+            "components": {
+                "s": true,
+                "m": "1 Astral rune, 1 Cosmic rune, 1 Mind rune, all of which the spell consumes"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "[image](https://s3.amazonaws.com/files.d20.io/images/192004741/vI65LwBCfHp8rqn4iVQZFw/max.png)",
+                "You crush your runes and gain some insight on a particular species of creature. When you cast this spell, name a specific species or envision one with which you are familiar, then roll a d6. On a 1-4, the spell fails and you learn no information. On a 5-6, the spell succeeds, and you learn the following about the species:",
+                "• Damage vulnerabilities",
+                "• Damage resistances and immunities",
+                "• Condition immunities",
+                "The DM may inform you of additional traits. You may only cast this spell on a particular species once per day. You automatically succeed in casting this spell if you have seen a creature from this particular species in person."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Spellcaster",
+                        "source": "All"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Contact Other",
+            "source": "Lunar Spellbook",
+            "level": 4,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "self"
+            },
+            "components": {
+                "s": true,
+                "m": "2 air runes, 1 astral rune, 1 cosmic rune, all of which the spell consumes"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "[image](https://s3.amazonaws.com/files.d20.io/images/192004184/1K0QH0MIy7-FtJ3x-uM5Jw/med.png)",
+                "A spell for long distance communication. You crush your runes and create a telepathic link between yourself and a intelligent creature with which you are familiar. Using Contact Other to contact a person you need to speak for a clue requirement does NOT advance your progress in the Treasure Trail. You must speak to the person through normal means."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Spellcaster",
+                        "source": "All"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Revenge",
+            "source": "Lunar Spellbook",
+            "level": 4,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "s": true,
+                "m": "10 earth runes, 3 astral runes, 2 death runes, all of which the spell consumes"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "[image](https://s3.amazonaws.com/files.d20.io/images/192007593/DcnGVB4_g9owwqDL3OiM2A/max.png)",
+                "A spell for reflecting damage. You crush your runes and create a shimmering force ready to reflect damage back at the attacker around a willing creatuer within range. Anytime in the next minute when the affected creature takes damage, they may use their reaction to deal half of the damage they took back at the attacker. The spell ends if you cast it again."
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Spellcaster",
+                        "source": "All"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Bake Pie",
+            "source": "Lunar Spellbook",
+            "level": 4,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 5
+                }
+            },
+            "components": {
+                "s": true,
+                "m": "1 Astral rune, 4 Water runes, 5 Fire runes, all of which the spell consumes"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "[image](https://s3.amazonaws.com/files.d20.io/images/192009062/OpciKmEBMwfM3ydiAzavsg/med.png)",
+                "You crush your runes and magically conjure a delicious baked pie within range. The pie has 3 servings that can be eaten as a bonus action. Each creature that eats a serving gains temporary hit points equal to 3d10 + your spellcasting ability modifier, and gains an additional benefit depending on the flavor of pie conjured:",
+                "• Cadavaberry: resistance to necrotic damage for 1 hour.",
+                "• Dwellberry: resistance to psychic damage for 1 hour.",
+                "• Jangerberry: resistance to acid damage for 1 hour.",
+                "• Poison Ivyberry: resistance to radiant damage for 1 hour.",
+                "• Redberry: resistance to poison damage for 1 hour.",
+                "• Strawberry: resistance to thunder damage for 1 hour.",
+                "• Whiteberry: resistance to force damage for 1 hour."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Spellcaster",
+                        "source": "All"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Magic Imbue",
+            "source": "Lunar Spellbook",
+            "level": 6,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus action"
+                }
+            ],
+            "range": {
+                "type": "touch"
+            },
+            "components": {
+                "s": true,
+                "m": "7 fire runes, 7 water runes, 1 astral rune, all of which the spell consumes"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "hour",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "[image](https://s3.amazonaws.com/files.d20.io/images/192005865/jVWGQt_71nJpyiaP1zsmBA/med.png)",
+                "You charge a weapon with magic energy. When you cast this spell on a weapon you or another creature is holding, it is charged with magic and gains +1 to attack and damage rolls and deals an additional 2d10 force damage."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 7th level or higher, the extra damage increases to 1d10 for each slot level above 6th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "force"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Spellcaster",
+                        "source": "All"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Energy Transfer",
+            "source": "Lunar Spellbook",
+            "level": 6,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "s": true,
+                "m": "3 astral runes, 2 law runes, 1 nature rune, all of which the spell consumes"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "[image](https://s3.amazonaws.com/files.d20.io/images/192009988/rLE0xyJvAlla9u0Y3nw_VQ/max.png)",
+                "You charge a weapon with magic energy. When you cast this spell on a weapon you or another creature is holding, it is charged with magic and gains +1 to attack and damage rolls and deals an additional 2d10 force damage."
+            ],
+            "damageInflict": [
+                "force"
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Spellcaster",
+                        "source": "All"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Revenge",
+            "source": "Lunar Spellbook",
+            "level": 6,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "s": true,
+                "m": "20 earth runes, 6 astral runes, 4 death runes, all of which the spell consumes"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "[image](https://s3.amazonaws.com/files.d20.io/images/192007569/9l466-VF-4LbxqahrV_aDA/max.png)",
+                "A spell for reflecting damage. You crush your runes and create a shimmering force ready to reflect damage back at the attacker around a willing creatuer within range. Anytime in the next minute when the affected creature takes damage, they may use their reaction to deal damage to the attacker equal to the what they took. The spell ends if you cast it again."
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Spellcaster",
+                        "source": "All"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Vengance",
+            "source": "Lunar Spellbook",
+            "level": 7,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "touch"
+            },
+            "components": {
+                "s": true,
+                "m": "2 astral runes, 5 body runes, 1 cosmic rune, all of which the spell consumes"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "[image](https://s3.amazonaws.com/files.d20.io/images/192005668/yauiSuG_50GYCo8UJVQaaA/med.png)",
+                "A spell that allows for a quickened sleep. You crush your runes and you or a willing creature you touch fall unconscious for the spell’s duration. The spell ends on a target early if it takes damage or someone uses an action to shake or slap it awake. If a target remains unconscious for the full duration, that target gains the benefit of a long rest apart from the spell slot used to cast this spell."
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Spellcaster",
+                        "source": "All"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Spellbook swap",
+            "source": "Lunar Spellbook",
+            "level": 7,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus action"
+                }
+            ],
+            "range": {
+                "type": "self"
+            },
+            "components": {
+                "s": true,
+                "m": "1 law rune, 2 cosmic runes, 3 astral runes, all of which the spell consumes"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "[image](https://s3.amazonaws.com/files.d20.io/images/192008208/v-CbeELGpc9ZqXUqd6eLWQ/max.png)",
+                "When cast, pick any 7th level or lower spell you can cast. Roll a 1d20+[your spell mod] vs 10+[spell level]. If you succeed, you can use this bonus action to cast the spell. Only works for spells that are 1 action or bonus action in casting time."
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Spellcaster",
+                        "source": "All"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Superglass make",
+            "source": "Lunar Spellbook",
+            "level": 7,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "s": true,
+                "m": "20 fire runes, 20 earth runes, 10 astral runes, all of which the spell consumes"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "[image](https://s3.amazonaws.com/files.d20.io/images/192013287/dDLab6uy0IsO_yGxfT6PIw/max.png)",
+                "Casting this spell creates either a dome that has an up to 5ft radius or a up to 10ft long, 10ft high wall of \"Superglass\" to appear where you choose within 120ft. The Superglass is nearly completely transparent, and harmless to the touch. The Superglass possess an AC of 19 and HP of 100 and is vulnerable to bludgeoning damage. You can move the Superglass as part of your movement, if it is a dome and you are inside it, or if it is a wall and you are within 10ft of it. The Superglass is immune to fire, lightning, and cold damage and stops any cones or otherwise of those types from passing it. You and allies you designate can freely move through and cast spells through the dome, however projectile weapons such as bows will hit it. The dome regains 1d6+[spellcastingmodifier] hit points at the start of each of your turns."
+            ],
+            "areaTags": [
+                "ST"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Spellcaster",
+                        "source": "All"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Magical Potion Share",
+            "source": "Lunar Spellbook",
+            "level": 8,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 10
+                }
+            },
+            "components": {
+                "s": true,
+                "m": "20 fire runes, 20 earth runes, 10 astral runes, all of which the spell consumes"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "[image](https://s3.amazonaws.com/files.d20.io/images/192008852/TXv25r9mS7fN3SPTy-BhjQ/max.png)",
+                "You crush your runes and turn your body into a conduit for sharing the effects of potions. The next time the target consumes a potion or similar item,  every friendly creature within 10ft will also receive the effect. The spell then ends."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Spellcaster",
+                        "source": "All"
+                    }
+                ]
+            }
+        }
+    ]
+}
