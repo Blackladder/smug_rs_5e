@@ -1,32 +1,50 @@
 {
-  "spell": [
-    {
-		"name": "Fire Bolt",
-		"source": "Standard Spellbook",
-		"level": 2,
-		"school": "V",
-		"time": [{ "number": 1, "unit": "action" }],
-		"range": {
-		  "type": "point",
-		  "distance": { "type": "feet", "amount": 60 }
-		},
-		"components": {
-		  "s": true,
-		  "m": "1 Chaos rune, 3 Air runes, 4 Fire runes, all of which the spell consumes"
-		},
-		"duration": [{ "type": "instant" }],
-		"entries": [
-		  "[image](https://oldschool.runescape.wiki/images/1/17/Fire_Bolt_icon_%28mobile%29.png)",
-		  "Attack Roll: [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
-		  "Damage roll: [[4d6 + @{spellcasting_ability}[MOD]]] (Crit: +[[4d6]])",
-		  "You crush your runes and conjure an orb of fire to hurl at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes fire damage equal to 4d6 + your spellcasting ability modifier."
-		],
-		"damageInflict": ["fire"],
-		"spellAttack": ["R"],
-		"areaTags": ["ST"],
-		"classes": {
-		  "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+	"spell": [
+		{
+			"name": "Lumbridge Home Teleport",
+			"source": "StandardSpellbook",
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Spellcaster",
+						"source": "All"
+					}
+				]
+			},
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"[icon](https://i.imgur.com/PsiYVfV.png)",
+				"May only be cast as a ritual.",
+				"You and up to 8 willing creatures teleport to Lumbridge Castle courtyard."
+			],
+			"areaTags": [
+				"MT"
+			]
 		}
-	  }
-  ]
+	]
 }
