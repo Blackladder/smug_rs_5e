@@ -11,7 +11,7 @@
           "distance": { "type": "feet", "amount": 10 }
         },
         "components": {
-          "s": true,
+          "s": true
         },
         "duration": [{ "type": "instant" }],
         "classes": {
