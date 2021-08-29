@@ -100,7 +100,7 @@
         "duration": [{ "type": "instant" }],
         "entries": [
           "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d2 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d2]])",
-          "[image](https://oldschool.runescape.wiki/images/4/40/Fire_Strike_icon_%28mobile%29.png)",
+          "[image](https://oldschool.runescape.wiki/images/4/4b/Fire_Strike.png)",
           "You crush your runes and conjure a small orb of fire to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes fire damage equal to 5d2 + your spellcasting ability modifier."
         ],
         "damageInflict": ["fire"],
@@ -127,7 +127,7 @@
         "duration": [{ "type": "instant" }],
         "entries": [
           "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d2 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d2]])",
-          "[image](https://oldschool.runescape.wiki/images/a/a9/Wind_Strike_icon_%28mobile%29.png)",
+          "[image](https://oldschool.runescape.wiki/images/2/2a/Wind_Strike.png)",
           "You crush your runes and conjure a small orb of air to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes thunder damage equal to 5d2 + your spellcasting ability modifier."
         ],
         "damageInflict": ["thunder"],
@@ -154,7 +154,7 @@
         "duration": [{ "type": "instant" }],
         "entries": [
           "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d2 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d2]])",
-          "[image](https://oldschool.runescape.wiki/images/a/ad/Water_Strike_icon_%28mobile%29.png)",
+          "[image](https://oldschool.runescape.wiki/images/2/2a/Water_Strike.png)",
           "You crush your runes and conjure a small orb of water to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes cold damage equal to 5d2 + your spellcasting ability modifier."
         ],
         "damageInflict": ["cold"],
@@ -366,7 +366,7 @@
         "duration": [{ "type": "instant" }],
         "entries": [
           "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[4d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[4d6]])",
-          "[image](https://oldschool.runescape.wiki/images/1/17/Fire_Bolt_icon_%28mobile%29.png)",
+          "[image](https://oldschool.runescape.wiki/images/e/e7/Fire_Bolt.png)",
           "You crush your runes and conjure an orb of fire to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes fire damage equal to 4d6 + your spellcasting ability modifier."
         ],
         "damageInflict": ["fire"],
@@ -393,7 +393,7 @@
         "duration": [{ "type": "instant" }],
         "entries": [
           "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[4d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[4d6]])",
-          "[image](https://oldschool.runescape.wiki/images/9/91/Earth_Bolt_icon_%28mobile%29.png)",
+          "[image](https://oldschool.runescape.wiki/images/f/f7/Earth_Bolt.png)",
           "You crush your runes and conjure an orb of earth to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes force damage equal to 4d6 + your spellcasting ability modifier."
         ],
         "damageInflict": ["force"],
@@ -420,7 +420,7 @@
         "duration": [{ "type": "instant" }],
         "entries": [
           "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[4d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[4d6]])",
-          "[image](https://oldschool.runescape.wiki/images/8/85/Water_Bolt_icon_%28mobile%29.png)",
+          "[image](https://oldschool.runescape.wiki/images/5/53/Water_Bolt.png)",
           "You crush your runes and conjure an orb of water to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes cold damage equal to 4d6 + your spellcasting ability modifier."
         ],
         "damageInflict": ["cold"],
@@ -447,7 +447,7 @@
         "duration": [{ "type": "instant" }],
         "entries": [
           "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[4d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[4d6]])",
-          "[image](https://oldschool.runescape.wiki/images/b/ba/Wind_Bolt_icon_%28mobile%29.png)",
+          "[image](https://oldschool.runescape.wiki/images/4/4e/Wind_Bolt.png)",
           "You crush your runes and conjure an orb of air to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes thunder damage equal to 4d6 + your spellcasting ability modifier."
         ],
         "damageInflict": ["thunder"],
@@ -812,7 +812,7 @@
         "duration": [{ "type": "instant" }],
         "entries": [
           "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d8]])",
-          "[image](https://oldschool.runescape.wiki/images/b/b5/Fire_Blast_icon_%28mobile%29.png)",
+          "[image](https://oldschool.runescape.wiki/images/b/b7/Fire_Blast.png)",
           "You crush your runes and conjure a large orb of fire to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes fire damage equal to 5d8 + your spellcasting ability modifier."
         ],
         "damageInflict": ["fire"],
@@ -839,7 +839,7 @@
         "duration": [{ "type": "instant" }],
         "entries": [
           "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d8]])",
-          "[image](https://oldschool.runescape.wiki/images/3/3c/Earth_Blast_icon_%28mobile%29.png)",
+          "[image](https://oldschool.runescape.wiki/images/6/6d/Earth_Blast.png)",
           "You crush your runes and conjure a large orb of earth to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes force damage equal to 5d8 + your spellcasting ability modifier."
         ],
         "damageInflict": ["force"],
@@ -866,7 +866,7 @@
         "duration": [{ "type": "instant" }],
         "entries": [
           "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d8]])",
-          "[image](https://oldschool.runescape.wiki/images/c/c2/Water_Blast_icon_%28mobile%29.png)",
+          "[image](https://oldschool.runescape.wiki/images/7/76/Water_Blast.png)",
           "You crush your runes and conjure a large orb of water to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes cold damage equal to 5d8 + your spellcasting ability modifier."
         ],
         "damageInflict": ["cold"],
@@ -893,7 +893,7 @@
         "duration": [{ "type": "instant" }],
         "entries": [
           "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d8]])",
-          "[image](https://oldschool.runescape.wiki/images/b/bf/Wind_Blast_icon_%28mobile%29.png)",
+          "[image](https://oldschool.runescape.wiki/images/1/15/Wind_Blast.png)",
           "You crush your runes and conjure a large orb of air to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes thunder damage equal to 5d8 + your spellcasting ability modifier."
         ],
         "damageInflict": ["thunder"],
@@ -1324,7 +1324,7 @@
         "duration": [{ "type": "instant" }],
         "entries": [
           "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[7d12 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d12]])",
-          "[image](https://oldschool.runescape.wiki/images/b/b3/Fire_Wave_icon_%28mobile%29.png)",
+          "[image](https://oldschool.runescape.wiki/images/8/8b/Fire_Wave.png)",
           "You crush your runes and conjure a huge orb of fire to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes fire damage equal to 7d12 + your spellcasting ability modifier."
         ],
         "damageInflict": ["fire"],
@@ -1351,7 +1351,7 @@
         "duration": [{ "type": "instant" }],
         "entries": [
           "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[7d12 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d12]])",
-          "[image](https://oldschool.runescape.wiki/images/3/32/Earth_Wave_icon_%28mobile%29.png)",
+          "[image](https://oldschool.runescape.wiki/images/4/4a/Earth_Wave.png)",
           "You crush your runes and conjure a huge orb of earth to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes force damage equal to 7d12 + your spellcasting ability modifier."
         ],
         "damageInflict": ["force"],
@@ -1378,7 +1378,7 @@
         "duration": [{ "type": "instant" }],
         "entries": [
           "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[7d12 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d12]])",
-          "[image](https://oldschool.runescape.wiki/images/2/26/Water_Wave_icon_%28mobile%29.png)",
+          "[image](https://oldschool.runescape.wiki/images/e/ed/Water_Wave.png)",
           "You crush your runes and conjure a huge orb of water to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes cold damage equal to 7d12 + your spellcasting ability modifier."
         ],
         "damageInflict": ["cold"],
@@ -1405,7 +1405,7 @@
         "duration": [{ "type": "instant" }],
         "entries": [
           "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[7d12 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d12]])",
-          "[image](https://oldschool.runescape.wiki/images/3/3c/Wind_Wave_icon_%28mobile%29.png)",
+          "[image](https://oldschool.runescape.wiki/images/d/d0/Wind_Wave.png)",
           "You crush your runes and conjure a huge orb of air to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes thunder damage equal to 7d12 + your spellcasting ability modifier."
         ],
         "damageInflict": ["thunder"],
@@ -1495,7 +1495,7 @@
         "duration": [{ "type": "instant" }],
         "entries": [
           "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
-          "[image](https://oldschool.runescape.wiki/images/d/dc/Fire_Surge_icon_%28mobile%29.png)",
+          "[image](https://oldschool.runescape.wiki/images/2/22/Fire_Surge.png)",
           "You crush your runes and conjure a massive orb of fire to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes fire damage equal to 12d10 + your spellcasting ability modifier."
         ],
         "damageInflict": ["fire"],
@@ -1522,7 +1522,7 @@
         "duration": [{ "type": "instant" }],
         "entries": [
           "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
-          "[image](https://oldschool.runescape.wiki/images/1/18/Earth_Surge_icon_%28mobile%29.png)",
+          "[image](https://oldschool.runescape.wiki/images/2/29/Earth_Surge.png)",
           "You crush your runes and conjure a massive orb of earth to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes force damage equal to 12d10 + your spellcasting ability modifier."
         ],
         "damageInflict": ["force"],
@@ -1549,7 +1549,7 @@
         "duration": [{ "type": "instant" }],
         "entries": [
           "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
-          "[image](https://oldschool.runescape.wiki/images/a/a5/Water_Surge_icon_%28mobile%29.png)",
+          "[image](https://oldschool.runescape.wiki/images/b/b2/Water_Surge.png)",
           "You crush your runes and conjure a massive orb of water to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes cold damage equal to 12d10 + your spellcasting ability modifier."
         ],
         "damageInflict": ["cold"],
@@ -1576,7 +1576,7 @@
         "duration": [{ "type": "instant" }],
         "entries": [
           "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
-          "[image](https://oldschool.runescape.wiki/images/c/c5/Wind_Surge_icon_%28mobile%29.png)",
+          "[image](https://oldschool.runescape.wiki/images/6/6d/Wind_Surge.png)",
           "You crush your runes and conjure a massive orb of air to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes thunder damage equal to 12d10 + your spellcasting ability modifier."
         ],
         "damageInflict": ["thunder"],
