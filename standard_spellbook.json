@@ -1,1590 +1,1590 @@
 {
-    "spell": [
-      {
-        "name": "Lumbridge Home Teleport",
-        "source": "StandardSpellbook",
-        "level": 0,
-        "school": "C",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "radius",
-          "distance": { "type": "feet", "amount": 10 }
-        },
-        "components": {
-          "s": true
-        },
-        "duration": [{ "type": "instant" }],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "meta": { "ritual": true },
-        "entries": [
-          "[icon](https://i.imgur.com/PsiYVfV.png)",
-          "May only be cast as a ritual.",
-          "You and up to 8 willing creatures teleport to Lumbridge Castle courtyard."
-        ],
-        "areaTags": ["MT"]
+  "spell": [
+    {
+      "name": "Lumbridge Home Teleport",
+      "source": "StandardSpellbook",
+      "level": 0,
+      "school": "C",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "radius",
+        "distance": { "type": "feet", "amount": 10 }
       },
-      {
-        "name": "Bind",
-        "source": "StandardSpellbook",
-        "level": 0,
-        "school": "E",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "3 Earth runes, 3 Water runes, and 2 Nature runes, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[1d6]] (Crit: +[[1d6]])",
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/177603834/1JSBNljLrK7iAQhENBEKXw/med.png)",
-          "You crush your runes and cast a low level binding curse spell that stops a creature from moving. Make a ranged spell attack against a creature within range. On hit, it takes 1d6 force damage and are bound by spectral roots. In addition, until the end of its next turn, the creature's speed is reduced to 0."
-        ],
-        "damageInflict": ["force"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"]
+      "components": {
+        "s": true
       },
-      {
-        "name": "Confuse",
-        "source": "StandardSpellbook",
-        "level": 0,
-        "school": "E",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "2 Earth runes, 3 Water runes, and 1 Body rune, all of which the spell consumes"
-        },
-        "duration": [
-          {
-            "type": "timed",
-            "duration": { "type": "minute", "amount": 1 },
-            "concentration": true
-          }
-        ],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/177603949/nnGT0awoNk6cTTXDPKyfzA/max.png)",
-          "You crush your runes and cast a basic level curse that muddles a creature's mind. Select a creature within range. It must succeed on an Intelligence saving throw or be confused for the duration. An affected creature takes a -2 penalty for attack rolls, ability checks, and saving throws. A creature affected by this spell makes another Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
-        ],
-        "damageInflict": ["force"],
-        "areaTags": ["ST"]
+      "duration": [{ "type": "instant" }],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
       },
-      {
-        "name": "Fire Strike",
-        "source": "Standard Spellbook",
-        "level": 0,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "2 Air runes, 3 Fire runes, and 1 Mind rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d2 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d2]])",
-          "[image](https://oldschool.runescape.wiki/images/4/4b/Fire_Strike.png)",
-          "You crush your runes and conjure a small orb of fire to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes fire damage equal to 5d2 + your spellcasting ability modifier."
-        ],
-        "damageInflict": ["fire"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      "meta": { "ritual": true },
+      "entries": [
+        "[icon](https://i.imgur.com/PsiYVfV.png)",
+        "May only be cast as a ritual.",
+        "You and up to 8 willing creatures teleport to Lumbridge Castle courtyard."
+      ],
+      "areaTags": ["MT"]
+    },
+    {
+      "name": "Bind",
+      "source": "StandardSpellbook",
+      "level": 0,
+      "school": "E",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "3 Earth runes, 3 Water runes, and 2 Nature runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[1d6]] (Crit: +[[1d6]])",
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/177603834/1JSBNljLrK7iAQhENBEKXw/med.png)",
+        "You crush your runes and cast a low level binding curse spell that stops a creature from moving. Make a ranged spell attack against a creature within range. On hit, it takes 1d6 force damage and are bound by spectral roots. In addition, until the end of its next turn, the creature's speed is reduced to 0."
+      ],
+      "damageInflict": ["force"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "Confuse",
+      "source": "StandardSpellbook",
+      "level": 0,
+      "school": "E",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Earth runes, 3 Water runes, and 1 Body rune, all of which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": { "type": "minute", "amount": 1 },
+          "concentration": true
         }
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
       },
-      {
-        "name": "Wind Strike",
-        "source": "Standard Spellbook",
-        "level": 0,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "1 Air rune, and 1 Mind rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d2 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d2]])",
-          "[image](https://oldschool.runescape.wiki/images/2/2a/Wind_Strike.png)",
-          "You crush your runes and conjure a small orb of air to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes thunder damage equal to 5d2 + your spellcasting ability modifier."
-        ],
-        "damageInflict": ["thunder"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/177603949/nnGT0awoNk6cTTXDPKyfzA/max.png)",
+        "You crush your runes and cast a basic level curse that muddles a creature's mind. Select a creature within range. It must succeed on an Intelligence saving throw or be confused for the duration. An affected creature takes a -2 penalty for attack rolls, ability checks, and saving throws. A creature affected by this spell makes another Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["force"],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "Fire Strike",
+      "source": "Standard Spellbook",
+      "level": 0,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
       },
-      {
-        "name": "Water Strike",
-        "source": "Standard Spellbook",
-        "level": 0,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "1 Air rune, 1 Water rune, and 1 Mind rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d2 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d2]])",
-          "[image](https://oldschool.runescape.wiki/images/2/2a/Water_Strike.png)",
-          "You crush your runes and conjure a small orb of water to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes cold damage equal to 5d2 + your spellcasting ability modifier."
-        ],
-        "damageInflict": ["cold"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
+      "components": {
+        "s": true,
+        "m": "2 Air runes, 3 Fire runes, and 1 Mind rune, all of which the spell consumes"
       },
-      {
-        "name": "Earth Strike",
-        "source": "Standard Spellbook",
-        "level": 0,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "1 Air rune, 2 Earth Runes, and 1 Mind rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d2 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d2]])",
-          "[image](https://i.imgur.com/9mBdnht.png)",
-          "You crush your runes and conjure a small orb of earth to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes force damage equal to 5d2 + your spellcasting ability modifier."
-        ],
-        "damageInflict": ["force"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-      {
-        "name": "Varrock Teleport",
-        "source": "StandardSpellbook",
-        "level": 1,
-        "school": "C",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "radius",
-          "distance": { "type": "feet", "amount": 10 }
-        },
-        "components": {
-          "s": true,
-          "m": "3 Air runes, 1 Fire rune, and 1 Law rune per creature, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/177670500/ctqfKTChPPPMh9hsZ7O57g/max.png)",
-          "You crush your runes and you and up to 8 willing creatures teleport to Varrock town square."
-        ],
-        "areaTags": ["MT"]
-      },
-      {
-        "name": "Weaken",
-        "source": "StandardSpellbook",
-        "level": 1,
-        "school": "E",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "2 Earth runes, 3 Water rune, and 1 Body rune, all of which the spell consumes"
-        },
-        "duration": [
-          {
-            "type": "timed",
-            "duration": { "type": "minute", "amount": 1 },
-            "concentration": true
-          }
-        ],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/177605915/tlOvp-qWFAwUnHYdXj6wFw/max.png)",
-          "You crush your runes and cast a low level curse spell that physically weakens a creature. Select a creature within range. It must succeed on an Intelligence saving throw or be weakened for the duration. An affected creature has disadvantage on melee attack rolls. A creature affected by this spell makes another Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
-        ],
-        "areaTags": ["ST"]
-      },
-      {
-        "name": "Curse",
-        "source": "StandardSpellbook",
-        "level": 1,
-        "school": "E",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "3 Earth runes, 2 Water runes, and 1 Body rune, all of which the spell consumes"
-        },
-        "duration": [
-          {
-            "type": "timed",
-            "duration": { "type": "minute", "amount": 1 },
-            "concentration": true
-          }
-        ],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/177603876/Bci8QOCqYjK5A1PNgqECOw/med.png)",
-          "You crush your runes and cast a low level curse meant to lessen a creature's defenses. Select a creature within range. It must succeed on an Intelligence saving throw or be cursed for the duration. An affected creature takes a -2 penalty to its AC. A creature affected by this spell makes another Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
-        ],
-        "areaTags": ["ST"]
-      },
-      {
-        "name": "Enchant Sapphire Crossbow Bolts",
-        "source": "StandardSpellbook",
-        "level": 1,
-        "school": "T",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": { "type": "touch" },
-        "components": {
-          "s": true,
-          "m": "1 Water rune, 1 Cosmic rune, and 1 Mind rune, all of which the spell consumes"
-        },
-        "duration": [
-          {
-            "type": "instant"
-          }
-        ],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/177604302/e1Em9iq7DtHt2ceNO4ujNw/med.png)",
-          "You crush your runes and enchant up to 10 mithril bolts with sapphire tips with magical energy, transforming them into \"Sapphire Bolt (e)\" ammunition. While enchanted in this way, a target hit by this ammunition has disadvantage on the next saving throw it makes against a spell or other magical effect."
-        ],
-        "areaTags": ["ST"]
-      },
-      {
-        "name": "Enchant Sapphire Jewelry",
-        "source": "StandardSpellbook",
-        "level": 1,
-        "school": "T",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": { "type": "touch" },
-        "components": {
-          "s": true,
-          "m": "1 Water rune, and 1 Cosmic rune, all of which the spell consumes"
-        },
-        "duration": [
-          {
-            "type": "instant"
-          }
-        ],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/177602538/q-Mhwy8rQo5-PbkZR380xg/max.png)",
-          "You crush your runes and enchant one piece of sapphire jewelry with magical power. A sapphire ring becomes a Ring of Recoil, a sapphire necklace becomes a Games Necklace, a sapphire bracelet becomes a Bracelet of Clay, and a sapphire amulet becomes an Amulet of Magic."
-        ],
-        "areaTags": ["ST"]
-      },
-      {
-        "name": "Lumbridge Teleport",
-        "source": "StandardSpellbook",
-        "level": 2,
-        "school": "C",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "radius",
-          "distance": { "type": "feet", "amount": 10 }
-        },
-        "components": {
-          "s": true,
-          "m": "3 Air runes, 1 Earth rune, and 1 Law rune per creature, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://i.imgur.com/V0v5LOw.png)",
-          "You crush your runes and you and up to 8 willing creatures teleport to Lumbridge Castle courtyard."
-        ],
-        "areaTags": ["MT"]
-      },
-      {
-        "name": "Fire Bolt",
-        "source": "Standard Spellbook",
-        "level": 2,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "3 Air runes, 4 Fire runes, and 1 Chaos rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[4d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[4d6]])",
-          "[image](https://oldschool.runescape.wiki/images/e/e7/Fire_Bolt.png)",
-          "You crush your runes and conjure an orb of fire to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes fire damage equal to 4d6 + your spellcasting ability modifier."
-        ],
-        "damageInflict": ["fire"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-      {
-        "name": "Earth Bolt",
-        "source": "Standard Spellbook",
-        "level": 2,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "2 Air runes, 3 Earth runes, and 1 Chaos rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[4d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[4d6]])",
-          "[image](https://oldschool.runescape.wiki/images/f/f7/Earth_Bolt.png)",
-          "You crush your runes and conjure an orb of earth to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes force damage equal to 4d6 + your spellcasting ability modifier."
-        ],
-        "damageInflict": ["force"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-      {
-        "name": "Water Bolt",
-        "source": "Standard Spellbook",
-        "level": 2,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "2 Air runes, 2 Water runes, and 1 Chaos rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[4d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[4d6]])",
-          "[image](https://oldschool.runescape.wiki/images/5/53/Water_Bolt.png)",
-          "You crush your runes and conjure an orb of water to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes cold damage equal to 4d6 + your spellcasting ability modifier."
-        ],
-        "damageInflict": ["cold"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-      {
-        "name": "Wind Bolt",
-        "source": "Standard Spellbook",
-        "level": 2,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "3 Air runes, and 1 Chaos rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[4d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[4d6]])",
-          "[image](https://oldschool.runescape.wiki/images/4/4e/Wind_Bolt.png)",
-          "You crush your runes and conjure an orb of air to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes thunder damage equal to 4d6 + your spellcasting ability modifier."
-        ],
-        "damageInflict": ["thunder"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-  
-      {
-        "name": "Bones to Bananas",
-        "source": "StandardSpellbook",
-        "level": 2,
-        "school": "T",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "radius",
-          "distance": { "type": "feet", "amount": 20 }
-        },
-        "components": {
-          "s": true,
-          "m": "2 Earth runes, 2 Water runes, and 1 Nature rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "meta": { "ritual": true },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/177610980/InDUjgQAqEgmDiGY6JYhkg/med.png)",
-          "May only be cast as a ritual.",
-          "You crush your runes and cast a spell that creates a ripe, tasty banana for every 1 pound of bones within range, up to a maximum of 50. The created bananas appear at the caster's feet. You may eat a banana as a bonus action to heal 2 hit points. This spell does not effect the bones of living or undead creatures or constructs."
-        ],
-        "areaTags": ["S"]
-      },
-      {
-        "name": "Low Alchemy",
-        "source": "StandardSpellbook",
-        "level": 2,
-        "school": "T",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "radius",
-          "distance": { "type": "feet", "amount": 20 }
-        },
-        "components": {
-          "s": true,
-          "m": "3 Fire runes, and 1 Nature rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "meta": { "ritual": true },
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/177605622/AiYZkGb8eDNFrbnS8RcDyw/med.png)",
-          "May only be cast as a ritual.",
-          "You crush your runes and transform one item into a modest amount of gold, relative to the item's value. Ask the DM how much gold a specific item is transformed into when the spell is cast."
-        ],
-        "areaTags": ["ST"]
-      },
-      {
-        "name": "Snare",
-        "source": "StandardSpellbook",
-        "level": 2,
-        "school": "E",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "4 Earth runes, 3 Water runes, and 3 Nature runes, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[1d12]] (Crit: +[[1d12]])",
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/181982623/xNLrlsyqCwZ1_KNohAmO4A/med.png)",
-          "You crush your runes and cast a low level binding curse spell that stops movement and restrains a creature. Make a ranged spell attack against a creature within range. On hit, it takes 1d12 force damage and are bound by spectral roots. In addition, until the end of its next turn, the creature's speed is reduced to 0 and it is restrained."
-        ],
-        "entriesHigherLevel": [
-          {
-            "type": "entries",
-            "name": "At Higher Levels",
-            "entries": [
-              "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd, spending additional runes equal to those listed in Components for each target."
-            ]
-          }
-        ],
-        "damageInflict": ["force"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"]
-      },
-      {
-        "name": "Enchant Emerald Crossbow Bolts",
-        "source": "StandardSpellbook",
-        "level": 2,
-        "school": "T",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": { "type": "touch" },
-        "components": {
-          "s": true,
-          "m": "3 Air runes, 1 Cosmic rune, and 1 Nature rune, all of which the spell consumes"
-        },
-        "duration": [
-          {
-            "type": "instant"
-          }
-        ],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/177609239/YVYO8Bf4as4He4pgb-RxQA/med.png)",
-          "You crush your runes and enchant up to 10 mithril bolts with emerald tips with magical energy, transforming them into \"Emerald Bolt (e)\" ammunition. While enchanted in this way, when you hit a target with this ammunition, roll a d2. On a 2, the target is magically poisoned, taking 1d6 poison damage at the start of its turn for next 5 turns. This effect ignores resistance and immunity to poison damage or condition."
-        ],
-        "areaTags": ["ST"]
-      },
-      {
-        "name": "Enchant Emerald Jewelry",
-        "source": "StandardSpellbook",
-        "level": 2,
-        "school": "T",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": { "type": "touch" },
-        "components": {
-          "s": true,
-          "m": "3 Air runes, and 1 Cosmic rune, all of which the spell consumes"
-        },
-        "duration": [
-          {
-            "type": "instant"
-          }
-        ],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/177608916/AwRJ3oYoc524cwCHepTwnw/med.png)",
-          "You crush your runes and enchant one piece of emerald jewelry with magical power. An emerald ring becomes a Ring of Dueling, an emerald necklace becomes a Binding Necklace, an emerald bracelet becomes a Castle Wars Bracelet, and an emerald amulet becomes an Amulet of Defense."
-        ],
-        "areaTags": ["ST"]
-      },
-      {
-        "name": "Falador Teleport",
-        "source": "StandardSpellbook",
-        "level": 3,
-        "school": "C",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "radius",
-          "distance": { "type": "feet", "amount": 10 }
-        },
-        "components": {
-          "s": true,
-          "m": "3 Air runes, 1 Water rune, and 1 Law rune per creature, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/177670166/E5nHMCsuUpcfCZ711muu3Q/med.png)",
-          "You crush your runes and you and up to 8 willing creatures teleport to Falador town square."
-        ],
-        "areaTags": ["MT"]
-      },
-      {
-        "name": "Crumble Undead",
-        "source": "Standard Spellbook",
-        "level": 3,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "2 Air runes, 2 Earth runes, and 1 Chaos rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[6d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[6d6]]) | Undead [[6d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[6d8]])",
-          "[image](https://s3.amazonaws.com/files.d20.io/images/177659144/zGkFDdrgbofNEDTUmHSZiA/med.png)",
-          "You crush your runes and conjure a surge of radiant energy to strike a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes radiant damage equal to 6d6 + your spellcasting ability modifier. If the creature is undead, it instead takes radiant damage equal to 6d8 + your spellcasting ability modifier."
-        ],
-        "damageInflict": ["radiant"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-      {
-        "name": "Vulnerability",
-        "source": "StandardSpellbook",
-        "level": 3,
-        "school": "E",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "5 Earth runes, 5 Water runes, and 1 Soul rune, all of which the spell consumes"
-        },
-        "duration": [
-          {
-            "type": "timed",
-            "duration": { "type": "minute", "amount": 1 },
-            "concentration": true
-          }
-        ],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/181982902/FvPM70hiJZcN4QCpB3Mf5g/med.png)",
-          "You crush your runes and cast a medium level curse meant to lessen a creature's defenses. Select a creature within range. It must succeed on an Intelligence saving throw or be weakened for the duration. An affected creature takes a -2 penalty it its AC and if it has any resistances, it loses one of the caster's choice. A creature affected by this spell makes another Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
-        ],
-        "entriesHigherLevel": [
-          {
-            "type": "entries",
-            "name": "At Higher Levels",
-            "entries": [
-              "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd, spending additional runes equal to those listed in Components for each target."
-            ]
-          }
-        ],
-        "areaTags": ["ST"]
-      },
-      {
-        "name": "Telekinetic Grab",
-        "source": "StandardSpellbook",
-        "level": 3,
-        "school": "T",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 120 }
-        },
-        "components": {
-          "s": true,
-          "m": "1 Air rune, and 1 Law rune, all of which the spell consumes"
-        },
-        "duration": [
-          {
-            "type": "timed",
-            "duration": { "type": "minute", "amount": 10 },
-            "concentration": true
-          }
-        ],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/177655380/87rp6FCelCJ5mKtyyjLdMg/med.png)",
-          "You crush your runes and focus on a single object that weighs up to 600lbs within range and raises it into the air. When you cast the spell, and as an action on subsequent turns, you may exert your will on the object.",
-          "If the object isn't being worn or carried, you automatically move it up to 30 feet in any direction, but not beyond the range of this spell.",
-          "If the object is worn or carried by a creature, you must make an ability check with your spellcasting ability contested by that creature's Strength check. If you succeed, you pull the object away from that creature and can move it up to 30 feet in any direction but not beyond the range of this spell."
-        ],
-        "areaTags": ["ST"]
-      },
-      {
-        "name": "Magic Dart",
-        "source": "Standard Spellbook",
-        "level": 3,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "1 Death rune, and 4 Mind runes, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[8d4]] (Crit: +[[8d4]]) | Monstrosity [[16d2]] (Crit: +[[16d2]])",
-          "[image](https://s3.amazonaws.com/files.d20.io/images/179927881/xluF_vegQungYD9hVzw1Ng/max.png)",
-          "You must be wielding a Slayer Staff or Slayer Staff (e) in order to cast this spell.",
-          "You crush your runes and conjure a dart of slayer magic to throw at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes 8d4 necrotic damage. If the creature is a monstrosity, the creature takes 16d2 necrotic damage instead. The necrotic damage of this spell ignores resistance and immunity."
-        ],
-        "damageInflict": ["necrotic"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-      {
-        "name": "Enchant Ruby Jewelry",
-        "source": "StandardSpellbook",
-        "level": 3,
-        "school": "T",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": { "type": "touch" },
-        "components": {
-          "s": true,
-          "m": "5 Fire runes, and 1 Cosmic rune, all of which the spell consumes"
-        },
-        "duration": [
-          {
-            "type": "instant"
-          }
-        ],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/181985285/jYp2V1Kw3kANMRl6Cp028A/med.png)",
-          "You crush your runes and enchant one piece of ruby jewelry with magical power. A ruby ring becomes a Ring of Forging, a ruby necklace becomes a Digsite Pendant, a ruby bracelet becomes an Inoculation Bracelet, and a ruby amulet becomes an Amulet of Strength."
-        ],
-        "areaTags": ["ST"]
-      },
-      {
-        "name": "Camelot Teleport",
-        "source": "StandardSpellbook",
-        "level": 4,
-        "school": "C",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "radius",
-          "distance": { "type": "feet", "amount": 10 }
-        },
-        "components": {
-          "s": true,
-          "m": "5 Air runes, and 1 Law rune per creature, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://i.imgur.com/rHRFwZA.png)",
-          "You crush your runes and you and up to 8 willing creatures teleport to outside the walls of Camelot Castle."
-        ],
-        "areaTags": ["MT"]
-      },
-      {
-        "name": "Fire Blast",
-        "source": "Standard Spellbook",
-        "level": 4,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "4 Air runes, 5 Fire runes, and 1 Death rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d8]])",
-          "[image](https://oldschool.runescape.wiki/images/b/b7/Fire_Blast.png)",
-          "You crush your runes and conjure a large orb of fire to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes fire damage equal to 5d8 + your spellcasting ability modifier."
-        ],
-        "damageInflict": ["fire"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-      {
-        "name": "Earth Blast",
-        "source": "Standard Spellbook",
-        "level": 4,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "3 Air runes, 4 Earth runes, and 1 Death rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d8]])",
-          "[image](https://oldschool.runescape.wiki/images/6/6d/Earth_Blast.png)",
-          "You crush your runes and conjure a large orb of earth to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes force damage equal to 5d8 + your spellcasting ability modifier."
-        ],
-        "damageInflict": ["force"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-      {
-        "name": "Water Blast",
-        "source": "Standard Spellbook",
-        "level": 4,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "3 Air runes, 3 Water runes, and 1 Death rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d8]])",
-          "[image](https://oldschool.runescape.wiki/images/7/76/Water_Blast.png)",
-          "You crush your runes and conjure a large orb of water to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes cold damage equal to 5d8 + your spellcasting ability modifier."
-        ],
-        "damageInflict": ["cold"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-      {
-        "name": "Wind Blast",
-        "source": "Standard Spellbook",
-        "level": 4,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "3 Air runes, and 1 Death rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d8]])",
-          "[image](https://oldschool.runescape.wiki/images/1/15/Wind_Blast.png)",
-          "You crush your runes and conjure a large orb of air to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes thunder damage equal to 5d8 + your spellcasting ability modifier."
-        ],
-        "damageInflict": ["thunder"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-      {
-        "name": "Superheat Item",
-        "source": "Standard Spellbook",
-        "level": 4,
-        "school": "T",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 5 }
-        },
-        "components": {
-          "s": true,
-          "m": "4 Fire runes, and 1 Nature rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "[image](https://s3.amazonaws.com/files.d20.io/images/177669414/L2Jf8gSPzyWTby5YYWXHXA/max.png)",
-          "You crush your runes and heat up an object for use in crafting. Select an object within range that isn't being worn or carried. The object surges with heat to the point of combustion or melting. The object can be no larger than a 5 foot cube."
-        ],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-      {
-        "name": "Entangle",
-        "source": "StandardSpellbook",
-        "level": 4,
-        "school": "E",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "5 Earth runes, 5 Water runes, and 4 Nature runes, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[2d12]] (Crit: +[[2d12]])",
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/181984086/rW9fLPVU37_F3j4-Ds-zyA/max.png)",
-          "You crush your runes and cast a low level binding curse spell that stops movement and restrains a creature. Make a ranged spell attack against a creature within range. On hit, it takes 2d12 force damage and are bound by spectral roots. In addition, until the end of its next turn, the creature's speed is reduced to 0, it is restrained, and it automatically fails Strength and Dexterity saving throws and ability checks."
-        ],
-        "entriesHigherLevel": [
-          {
-            "type": "entries",
-            "name": "At Higher Levels",
-            "entries": [
-              "When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th, spending additional runes equal to those listed in Components for each target."
-            ]
-          }
-        ],
-        "damageInflict": ["force"],
-        "areaTags": ["ST"]
-      },
-      {
-        "name": "Enfeeble",
-        "source": "StandardSpellbook",
-        "level": 4,
-        "school": "E",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "8 Earth runes, 8 Water runes, and 1 Soul rune, all of which the spell consumes"
-        },
-        "duration": [
-          {
-            "type": "timed",
-            "duration": { "type": "minute", "amount": 1 },
-            "concentration": true
-          }
-        ],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/181983540/zdwMejFtXBR4h0txNUKK5w/max.png)",
-          "You crush your runes and cast a high level curse spell that physically weakens a creature. Select a creature within range. It must succeed on an Intelligence saving throw or be enfeebled for the duration. An affected creature has disadvantage on melee attack rolls, Strength (Athletics) checks, and Dexterity (Acrobatics) checks. It cannot concentrate on spells or other effects that require concentration. If the creature has a multiattack action, it loses one of the actions. A creature affected by this spell makes another Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
-        ],
-        "entriesHigherLevel": [
-          {
-            "type": "entries",
-            "name": "At Higher Levels",
-            "entries": [
-              "When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th, spending additional runes equal to those listed in Components for each target."
-            ]
-          }
-        ],
-        "areaTags": ["ST"]
-      },
-      {
-        "name": "Enchant Diamond Jewelry",
-        "source": "StandardSpellbook",
-        "level": 4,
-        "school": "T",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": { "type": "touch" },
-        "components": {
-          "s": true,
-          "m": "10 Earth runes, and 1 Cosmic rune, all of which the spell consumes"
-        },
-        "duration": [
-          {
-            "type": "instant"
-          }
-        ],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/181985318/7bGuuK8X3V3rdwc10pOkdA/med.png)",
-          "You crush your runes and enchant one piece of diamond jewelry with magical power. A diamond ring becomes a Ring of Life, a diamond necklace becomes a Phoenix Necklace, a diamond bracelet becomes an Abyssal Bracelet, and a diamond amulet becomes an Amulet of Power."
-        ],
-        "areaTags": ["ST"]
-      },
-      {
-        "name": "Ardougne Teleport",
-        "source": "StandardSpellbook",
-        "level": 5,
-        "school": "C",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "radius",
-          "distance": { "type": "feet", "amount": 10 }
-        },
-        "components": {
-          "s": true,
-          "m": "2 Air runes, and 1 Law rune per creature, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://i.imgur.com/pCO8Fe0.png)",
-          "You crush your runes and you and up to 8 willing creatures teleport to East Ardougne town square."
-        ],
-        "areaTags": ["MT"]
-      },
-      {
-        "name": "Charge",
-        "source": "StandardSpellbook",
-        "level": 5,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "bonus action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "3 Air runes, 3 Fire runes, and 3 Blood runes, all of which the spell consumes"
-        },
-        "duration": [
-          {
-            "type": "timed",
-            "duration": { "type": "minute", "amount": 1 },
-            "concentration": true
-          }
-        ],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/181984702/mJYzGcxFBsV5our7hGtj7w/med.png)",
-          "You crush your runes and bolster a creature's magical power. Choose a willing creature within range. Until the spell ends, that creature has advantage on spell attack rolls, and their spells damage rolls deal an additional 2d10 damage. This damage is radiant if the creature's alignment is good, force if the creature's alignment is neutral, and necrotic if the creature's alignment is evil."
-        ],
-        "areaTags": ["ST"]
-      },
-      {
-        "name": "Bones to Peaches",
-        "source": "StandardSpellbook",
-        "level": 5,
-        "school": "T",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "radius",
-          "distance": { "type": "feet", "amount": 20 }
-        },
-        "components": {
-          "s": true,
-          "m": "4 Earth runes, 4 Water runes, and 2 Nature runes, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "meta": { "ritual": true },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/181985869/z1luIxWOKhooJfsGWLCOew/med.png)",
-          "May only be cast as a ritual.",
-          "You crush your runes and cast a spell that creates a plump, tasty peach for every 1 pound of bones within range, up to a maximum of 50. The created peaches appear at the caster's feet. You may eat a peach as a bonus action to heal 8 hit points. This spell does not effect the bones of living or undead creatures or constructs."
-        ],
-        "areaTags": ["S"]
-      },
-      {
-        "name": "Enchant Dragonstone Jewelry",
-        "source": "StandardSpellbook",
-        "level": 5,
-        "school": "T",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": { "type": "touch" },
-        "components": {
-          "s": true,
-          "m": "15 Earth runes, 15 Water runes, and 1 Cosmic rune, all of which the spell consumes"
-        },
-        "duration": [
-          {
-            "type": "instant"
-          }
-        ],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/181985384/03JbI9T4b263omTnpG2prQ/max.png)",
-          "You crush your runes and enchant one piece of dragonstone jewelry with magical power. A dragonstone ring becomes a Ring of Wealth, a dragonstone necklace becomes a Skills Necklace, a dragonstone bracelet becomes a Combat Bracelet, and a dragonstone amulet becomes an Amulet of Glory."
-        ],
-        "areaTags": ["ST"]
-      },
-      {
-        "name": "High Alchemy",
-        "source": "StandardSpellbook",
-        "level": 5,
-        "school": "T",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "radius",
-          "distance": { "type": "feet", "amount": 20 }
-        },
-        "components": {
-          "s": true,
-          "m": "5 Fire runes, and 1 Nature rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "meta": { "ritual": true },
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/181985735/PQyHpL7MgrF-3Nn9tDry2w/med.png)",
-          "May only be cast as a ritual.",
-          "You crush your runes and transform one item into a large amount of gold, relative to the item's value. Ask the DM how much gold a specific item is transformed into when the spell is cast."
-        ],
-        "areaTags": ["ST"]
-      },
-      {
-        "name": "Flames of Zamorak",
-        "source": "Standard Spellbook",
-        "level": 6,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "1 Air rune, 4 Fire runes, and 2 Blood runes, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Damage Roll:** [[6d6]] fire, [[6d6]] necrotic",
-          "[image](https://s3.amazonaws.com/files.d20.io/images/196506489/vLepDMxrPRSyoNbCpqk3DQ/med.png)",
-          "You must be wielding a Zamorak Staff, Staff of the Dead, or Toxic Staff of the Dead in order to cast this spell.",
-          "You crush your runes and call down the power of Zamorak to conjure unholy flames to scorch and burn creatures. You create a continuous line of unholy fire, which must start within range. The fire is up to 40 feet long, 40 feet high, 1 foot thick, and can twist and turn as many times as the caster wishes. All creatures within the line must make a Dexterity saving throw, taking 6d6 fire damage and 6d6 necrotic damage on a fail, and half as much on a success.",
-          "If a creatures rolls a natural 1 on this initial saving throw, they must make a second Dexterity saving throw, taking 6d6 fire damage and 6d6 necrotic damage on a fail, and half as much on a success."
-        ],
-        "damageInflict": ["fire", "necrotic"],
-        "areaTags": ["L"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-      {
-        "name": "Saradomin Strike",
-        "source": "Standard Spellbook",
-        "level": 6,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "4 Air runes, 2 Fire runes, and 2 Blood runes, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[6d6]] lightning, [[6d6]] radiant (Crit: +[[6d6]] lightning, [[6d6]] radiant) | Secondary [[4d6]] lightning, [[4d6]] radiant (Crit: +[[4d6]] lightning, [[4d6]] radiant)",
-          "[image](https://s3.amazonaws.com/files.d20.io/images/196501294/H08gq3R4w0B1AcPfqAB2CA/max.png)",
-          "You must be wielding a Saradomin Staff or Staff of Light in order to cast this spell.",
-          "You crush your runes and call down the power of Saradomin to strike creatures with a powerful bolt of holy lightning. Make a ranged spell attack against a creature. On a hit, a pure white bolt of electricity descend from the sky, dealing 6d6 lightning damage and 6d6 radiant damage.",
-          "The electricity crackles outward towards all creatures within 15 feet of the original target. If the original attack roll would hit these additional creatures, they take 4d6 lighting damage and 4d6 radiant damage. On a critical hit, the additional creatures receive the same damage the initial target takes."
-        ],
-        "damageInflict": ["lightning", "radiant"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST", "S"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-      {
-        "name": "Claws of Guthix",
-        "source": "Standard Spellbook",
-        "level": 6,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "4 Air runes, 1 Fire rune, and 2 Blood runes, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[6d6]] slashing, [[6d6]] force (Crit: +[[6d6]] slashing, [[6d6]] force)",
-          "[image](https://s3.amazonaws.com/files.d20.io/images/196509476/bn52h2F6LTHp0EFOUc3XdQ/max.png)",
-          "You must be wielding a Guthix Staff, Staff of Balance, or Void Knight Mace in order to cast this spell.",
-          "You crush your runes and call down the power of Guthix to summon spectral claws to eviscerate and bind a creature. Make a ranged spell attack against the creature. On a hit, massive purple claws rise from the ground and attack the creature, dealing 6d6 slashing damage and 6d6 force damage.",
-          "Hit or miss, the claws immediately attempt to bind the creature. The creature must succeed on a Wisdom saving throw or become paralyzed for one minute. If your attack hit the creature, it makes this initial saving throw at disadvantage. A creature affected by this spell makes another Wisdom saving throw at the end of each of its turns. On a successful save, the effect ends for it."
-        ],
-        "damageInflict": ["slashing", "force"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-      {
-        "name": "Stun",
-        "source": "StandardSpellbook",
-        "level": 6,
-        "school": "E",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "12 Earth runes, 12 Water runes, and 1 Soul rune, all of which the spell consumes"
-        },
-        "duration": [
-          {
-            "type": "timed",
-            "duration": { "type": "minute", "amount": 1 },
-            "concentration": true
-          }
-        ],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/181984110/3qO_bmzgGbKp0ibaDo42Tw/max.png)",
-          "You crush your runes and cast a master level curse spell meant to disable an opponent. Select a creature within range. It must succeed on an Intelligence saving throw or be disabled for the duration. An affected creature is stunned and takes a -5 penalty it its AC. A creature affected by this spell makes another Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
-        ],
-        "entriesHigherLevel": [
-          {
-            "type": "entries",
-            "name": "At Higher Levels",
-            "entries": [
-              "When you cast this spell using a spell slot of 7th level or higher, you can target one additional creature for each slot level above 6th, spending additional runes equal to those listed in Components for each target."
-            ]
-          }
-        ],
-        "areaTags": ["ST"]
-      },
-      {
-        "name": "Enchant Onyx Jewelry",
-        "source": "StandardSpellbook",
-        "level": 6,
-        "school": "T",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": { "type": "touch" },
-        "components": {
-          "s": true,
-          "m": "20 Earth runes, 20 Fire runes, and 1 Cosmic rune, all of which the spell consumes"
-        },
-        "duration": [
-          {
-            "type": "instant"
-          }
-        ],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/181985536/_UMb-o5yFauWt_V4AwfBNA/max.png)",
-          "You crush your runes and enchant one piece of onyx jewelry with magical power. An onyx ring becomes a Ring of Stone, an onyx necklace becomes a Berserker Necklace, an onyx bracelet becomes a Regen Bracelet, and an onyx amulet becomes an Amulet of Fury."
-        ],
-        "areaTags": ["ST"]
-      },
-      {
-        "name": "Fire Wave",
-        "source": "Standard Spellbook",
-        "level": 7,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "5 Air runes, 7 Fire runes, and 1 Blood rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[7d12 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d12]])",
-          "[image](https://oldschool.runescape.wiki/images/8/8b/Fire_Wave.png)",
-          "You crush your runes and conjure a huge orb of fire to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes fire damage equal to 7d12 + your spellcasting ability modifier."
-        ],
-        "damageInflict": ["fire"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-      {
-        "name": "Earth Wave",
-        "source": "Standard Spellbook",
-        "level": 7,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "5 Air runes, 7 Earth runes, and 1 Blood rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[7d12 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d12]])",
-          "[image](https://oldschool.runescape.wiki/images/4/4a/Earth_Wave.png)",
-          "You crush your runes and conjure a huge orb of earth to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes force damage equal to 7d12 + your spellcasting ability modifier."
-        ],
-        "damageInflict": ["force"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-      {
-        "name": "Water Wave",
-        "source": "Standard Spellbook",
-        "level": 7,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "5 Air runes, 7 Water runes, and 1 Blood rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[7d12 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d12]])",
-          "[image](https://oldschool.runescape.wiki/images/e/ed/Water_Wave.png)",
-          "You crush your runes and conjure a huge orb of water to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes cold damage equal to 7d12 + your spellcasting ability modifier."
-        ],
-        "damageInflict": ["cold"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-      {
-        "name": "Wind Wave",
-        "source": "Standard Spellbook",
-        "level": 7,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "5 Air runes, and 1 Blood rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[7d12 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d12]])",
-          "[image](https://oldschool.runescape.wiki/images/d/d0/Wind_Wave.png)",
-          "You crush your runes and conjure a huge orb of air to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes thunder damage equal to 7d12 + your spellcasting ability modifier."
-        ],
-        "damageInflict": ["thunder"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-      {
-        "name": "Teleport Block",
-        "source": "Standard Spellbook",
-        "level": 7,
-        "school": "A",
-        "time": [
-          {
-            "number": 1,
-            "unit": "reaction",
-            "condition": "which you take when you see a creature attempting to teleport"
-          }
-        ],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 120 }
-        },
-        "components": {
-          "s": true,
-          "m": "1 Chaos rune, 1 Death rune, and 1 Law rune, all of which the spell consumes"
-        },
-        "duration": [
-          {
-            "type": "timed",
-            "duration": { "type": "hour", "amount": 1 }
-          }
-        ],
-        "entries": [
-          "[image](https://s3.amazonaws.com/files.d20.io/images/181984522/xe9QXmAOLw-GtMKdcBrwWQ/med.png)",
-          "You crush your runes and cast a master level curse spell meant to prevent a creature from escaping. The creature makes an Intelligence saving throw. On a fail, it loses the ability to teleport by any means for the duration.",
-          "This spell cannot be counterspelled and only the wish spell can remove this effect."
-        ],
-        "damageInflict": ["thunder"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-      {
-        "name": "Enchant Zenyte Jewelry",
-        "source": "StandardSpellbook",
-        "level": 7,
-        "school": "T",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": { "type": "touch" },
-        "components": {
-          "s": true,
-          "m": "20 Blood runes, 1 Cosmic rune, and 20 Soul runes, all of which the spell consumes"
-        },
-        "duration": [
-          {
-            "type": "instant"
-          }
-        ],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        },
-        "entries": [
-          "[icon](https://s3.amazonaws.com/files.d20.io/images/181985597/sD9WLxaamneis4ZjF0eB_Q/med.png)",
-          "You crush your runes and enchant one piece of zenyte jewelry with magical power. A zenyte ring becomes a Ring of Suffering, a zenyte necklace becomes a Necklace of Anguish, a zenyte bracelet becomes a Tormented Bracelet, and a zenyte amulet becomes an Amulet of Torture."
-        ],
-        "areaTags": ["ST"]
-      },
-      {
-        "name": "Fire Surge",
-        "source": "Standard Spellbook",
-        "level": 8,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "7 Air runes, 10 Fire runes, and 1 Wrath rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
-          "[image](https://oldschool.runescape.wiki/images/2/22/Fire_Surge.png)",
-          "You crush your runes and conjure a massive orb of fire to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes fire damage equal to 12d10 + your spellcasting ability modifier."
-        ],
-        "damageInflict": ["fire"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-      {
-        "name": "Earth Surge",
-        "source": "Standard Spellbook",
-        "level": 8,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "7 Air runes, 10 Earth runes, and 1 Wrath rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
-          "[image](https://oldschool.runescape.wiki/images/2/29/Earth_Surge.png)",
-          "You crush your runes and conjure a massive orb of earth to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes force damage equal to 12d10 + your spellcasting ability modifier."
-        ],
-        "damageInflict": ["force"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-      {
-        "name": "Water Surge",
-        "source": "Standard Spellbook",
-        "level": 8,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "7 Air runes, 10 Water runes, and 1 Wrath rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
-          "[image](https://oldschool.runescape.wiki/images/b/b2/Water_Surge.png)",
-          "You crush your runes and conjure a massive orb of water to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes cold damage equal to 12d10 + your spellcasting ability modifier."
-        ],
-        "damageInflict": ["cold"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
-      },
-      {
-        "name": "Wind Surge",
-        "source": "Standard Spellbook",
-        "level": 8,
-        "school": "V",
-        "time": [{ "number": 1, "unit": "action" }],
-        "range": {
-          "type": "point",
-          "distance": { "type": "feet", "amount": 60 }
-        },
-        "components": {
-          "s": true,
-          "m": "7 Air runes, and 1 Wrath rune, all of which the spell consumes"
-        },
-        "duration": [{ "type": "instant" }],
-        "entries": [
-          "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
-          "[image](https://oldschool.runescape.wiki/images/6/6d/Wind_Surge.png)",
-          "You crush your runes and conjure a massive orb of air to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes thunder damage equal to 12d10 + your spellcasting ability modifier."
-        ],
-        "damageInflict": ["thunder"],
-        "spellAttack": ["R"],
-        "areaTags": ["ST"],
-        "classes": {
-          "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-        }
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d2 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d2]])",
+        "[image](https://oldschool.runescape.wiki/images/4/40/Fire_Strike_icon_%28mobile%29.png)",
+        "You crush your runes and conjure a small orb of fire to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes fire damage equal to 5d2 + your spellcasting ability modifier."
+      ],
+      "damageInflict": ["fire"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
       }
-    ]
-  }
+    },
+    {
+      "name": "Wind Strike",
+      "source": "Standard Spellbook",
+      "level": 0,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "1 Air rune, and 1 Mind rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d2 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d2]])",
+        "[image](https://oldschool.runescape.wiki/images/a/a9/Wind_Strike_icon_%28mobile%29.png)",
+        "You crush your runes and conjure a small orb of air to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes thunder damage equal to 5d2 + your spellcasting ability modifier."
+      ],
+      "damageInflict": ["thunder"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Water Strike",
+      "source": "Standard Spellbook",
+      "level": 0,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "1 Air rune, 1 Water rune, and 1 Mind rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d2 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d2]])",
+        "[image](https://oldschool.runescape.wiki/images/a/ad/Water_Strike_icon_%28mobile%29.png)",
+        "You crush your runes and conjure a small orb of water to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes cold damage equal to 5d2 + your spellcasting ability modifier."
+      ],
+      "damageInflict": ["cold"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Earth Strike",
+      "source": "Standard Spellbook",
+      "level": 0,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "1 Air rune, 2 Earth Runes, and 1 Mind rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d2 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d2]])",
+        "[image](https://i.imgur.com/9mBdnht.png)",
+        "You crush your runes and conjure a small orb of earth to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes force damage equal to 5d2 + your spellcasting ability modifier."
+      ],
+      "damageInflict": ["force"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Varrock Teleport",
+      "source": "StandardSpellbook",
+      "level": 1,
+      "school": "C",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "radius",
+        "distance": { "type": "feet", "amount": 10 }
+      },
+      "components": {
+        "s": true,
+        "m": "3 Air runes, 1 Fire rune, and 1 Law rune per creature, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/177670500/ctqfKTChPPPMh9hsZ7O57g/max.png)",
+        "You crush your runes and you and up to 8 willing creatures teleport to Varrock town square."
+      ],
+      "areaTags": ["MT"]
+    },
+    {
+      "name": "Weaken",
+      "source": "StandardSpellbook",
+      "level": 1,
+      "school": "E",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Earth runes, 3 Water rune, and 1 Body rune, all of which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": { "type": "minute", "amount": 1 },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/177605915/tlOvp-qWFAwUnHYdXj6wFw/max.png)",
+        "You crush your runes and cast a low level curse spell that physically weakens a creature. Select a creature within range. It must succeed on an Intelligence saving throw or be weakened for the duration. An affected creature has disadvantage on melee attack rolls. A creature affected by this spell makes another Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "Curse",
+      "source": "StandardSpellbook",
+      "level": 1,
+      "school": "E",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "3 Earth runes, 2 Water runes, and 1 Body rune, all of which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": { "type": "minute", "amount": 1 },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/177603876/Bci8QOCqYjK5A1PNgqECOw/med.png)",
+        "You crush your runes and cast a low level curse meant to lessen a creature's defenses. Select a creature within range. It must succeed on an Intelligence saving throw or be cursed for the duration. An affected creature takes a -2 penalty to its AC. A creature affected by this spell makes another Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "Enchant Sapphire Crossbow Bolts",
+      "source": "StandardSpellbook",
+      "level": 1,
+      "school": "T",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": { "type": "touch" },
+      "components": {
+        "s": true,
+        "m": "1 Water rune, 1 Cosmic rune, and 1 Mind rune, all of which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/177604302/e1Em9iq7DtHt2ceNO4ujNw/med.png)",
+        "You crush your runes and enchant up to 10 mithril bolts with sapphire tips with magical energy, transforming them into \"Sapphire Bolt (e)\" ammunition. While enchanted in this way, a target hit by this ammunition has disadvantage on the next saving throw it makes against a spell or other magical effect."
+      ],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "Enchant Sapphire Jewelry",
+      "source": "StandardSpellbook",
+      "level": 1,
+      "school": "T",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": { "type": "touch" },
+      "components": {
+        "s": true,
+        "m": "1 Water rune, and 1 Cosmic rune, all of which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/177602538/q-Mhwy8rQo5-PbkZR380xg/max.png)",
+        "You crush your runes and enchant one piece of sapphire jewelry with magical power. A sapphire ring becomes a Ring of Recoil, a sapphire necklace becomes a Games Necklace, a sapphire bracelet becomes a Bracelet of Clay, and a sapphire amulet becomes an Amulet of Magic."
+      ],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "Lumbridge Teleport",
+      "source": "StandardSpellbook",
+      "level": 2,
+      "school": "C",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "radius",
+        "distance": { "type": "feet", "amount": 10 }
+      },
+      "components": {
+        "s": true,
+        "m": "3 Air runes, 1 Earth rune, and 1 Law rune per creature, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://i.imgur.com/V0v5LOw.png)",
+        "You crush your runes and you and up to 8 willing creatures teleport to Lumbridge Castle courtyard."
+      ],
+      "areaTags": ["MT"]
+    },
+    {
+      "name": "Fire Bolt",
+      "source": "Standard Spellbook",
+      "level": 2,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "3 Air runes, 4 Fire runes, and 1 Chaos rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[4d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[4d6]])",
+        "[image](https://oldschool.runescape.wiki/images/1/17/Fire_Bolt_icon_%28mobile%29.png)",
+        "You crush your runes and conjure an orb of fire to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes fire damage equal to 4d6 + your spellcasting ability modifier."
+      ],
+      "damageInflict": ["fire"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Earth Bolt",
+      "source": "Standard Spellbook",
+      "level": 2,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Air runes, 3 Earth runes, and 1 Chaos rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[4d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[4d6]])",
+        "[image](https://oldschool.runescape.wiki/images/9/91/Earth_Bolt_icon_%28mobile%29.png)",
+        "You crush your runes and conjure an orb of earth to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes force damage equal to 4d6 + your spellcasting ability modifier."
+      ],
+      "damageInflict": ["force"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Water Bolt",
+      "source": "Standard Spellbook",
+      "level": 2,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Air runes, 2 Water runes, and 1 Chaos rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[4d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[4d6]])",
+        "[image](https://oldschool.runescape.wiki/images/8/85/Water_Bolt_icon_%28mobile%29.png)",
+        "You crush your runes and conjure an orb of water to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes cold damage equal to 4d6 + your spellcasting ability modifier."
+      ],
+      "damageInflict": ["cold"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Wind Bolt",
+      "source": "Standard Spellbook",
+      "level": 2,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "3 Air runes, and 1 Chaos rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[4d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[4d6]])",
+        "[image](https://oldschool.runescape.wiki/images/b/ba/Wind_Bolt_icon_%28mobile%29.png)",
+        "You crush your runes and conjure an orb of air to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes thunder damage equal to 4d6 + your spellcasting ability modifier."
+      ],
+      "damageInflict": ["thunder"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+
+    {
+      "name": "Bones to Bananas",
+      "source": "StandardSpellbook",
+      "level": 2,
+      "school": "T",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "radius",
+        "distance": { "type": "feet", "amount": 20 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Earth runes, 2 Water runes, and 1 Nature rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "meta": { "ritual": true },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/177610980/InDUjgQAqEgmDiGY6JYhkg/med.png)",
+        "May only be cast as a ritual.",
+        "You crush your runes and cast a spell that creates a ripe, tasty banana for every 1 pound of bones within range, up to a maximum of 50. The created bananas appear at the caster's feet. You may eat a banana as a bonus action to heal 2 hit points. This spell does not effect the bones of living or undead creatures or constructs."
+      ],
+      "areaTags": ["S"]
+    },
+    {
+      "name": "Low Alchemy",
+      "source": "StandardSpellbook",
+      "level": 2,
+      "school": "T",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "radius",
+        "distance": { "type": "feet", "amount": 20 }
+      },
+      "components": {
+        "s": true,
+        "m": "3 Fire runes, and 1 Nature rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "meta": { "ritual": true },
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/177605622/AiYZkGb8eDNFrbnS8RcDyw/med.png)",
+        "May only be cast as a ritual.",
+        "You crush your runes and transform one item into a modest amount of gold, relative to the item's value. Ask the DM how much gold a specific item is transformed into when the spell is cast."
+      ],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "Snare",
+      "source": "StandardSpellbook",
+      "level": 2,
+      "school": "E",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "4 Earth runes, 3 Water runes, and 3 Nature runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[1d12]] (Crit: +[[1d12]])",
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/181982623/xNLrlsyqCwZ1_KNohAmO4A/med.png)",
+        "You crush your runes and cast a low level binding curse spell that stops movement and restrains a creature. Make a ranged spell attack against a creature within range. On hit, it takes 1d12 force damage and are bound by spectral roots. In addition, until the end of its next turn, the creature's speed is reduced to 0 and it is restrained."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd, spending additional runes equal to those listed in Components for each target."
+          ]
+        }
+      ],
+      "damageInflict": ["force"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "Enchant Emerald Crossbow Bolts",
+      "source": "StandardSpellbook",
+      "level": 2,
+      "school": "T",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": { "type": "touch" },
+      "components": {
+        "s": true,
+        "m": "3 Air runes, 1 Cosmic rune, and 1 Nature rune, all of which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/177609239/YVYO8Bf4as4He4pgb-RxQA/med.png)",
+        "You crush your runes and enchant up to 10 mithril bolts with emerald tips with magical energy, transforming them into \"Emerald Bolt (e)\" ammunition. While enchanted in this way, when you hit a target with this ammunition, roll a d2. On a 2, the target is magically poisoned, taking 1d6 poison damage at the start of its turn for next 5 turns. This effect ignores resistance and immunity to poison damage or condition."
+      ],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "Enchant Emerald Jewelry",
+      "source": "StandardSpellbook",
+      "level": 2,
+      "school": "T",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": { "type": "touch" },
+      "components": {
+        "s": true,
+        "m": "3 Air runes, and 1 Cosmic rune, all of which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/177608916/AwRJ3oYoc524cwCHepTwnw/med.png)",
+        "You crush your runes and enchant one piece of emerald jewelry with magical power. An emerald ring becomes a Ring of Dueling, an emerald necklace becomes a Binding Necklace, an emerald bracelet becomes a Castle Wars Bracelet, and an emerald amulet becomes an Amulet of Defense."
+      ],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "Falador Teleport",
+      "source": "StandardSpellbook",
+      "level": 3,
+      "school": "C",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "radius",
+        "distance": { "type": "feet", "amount": 10 }
+      },
+      "components": {
+        "s": true,
+        "m": "3 Air runes, 1 Water rune, and 1 Law rune per creature, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/177670166/E5nHMCsuUpcfCZ711muu3Q/med.png)",
+        "You crush your runes and you and up to 8 willing creatures teleport to Falador town square."
+      ],
+      "areaTags": ["MT"]
+    },
+    {
+      "name": "Crumble Undead",
+      "source": "Standard Spellbook",
+      "level": 3,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Air runes, 2 Earth runes, and 1 Chaos rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[6d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[6d6]]) | Undead [[6d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[6d8]])",
+        "[image](https://s3.amazonaws.com/files.d20.io/images/177659144/zGkFDdrgbofNEDTUmHSZiA/med.png)",
+        "You crush your runes and conjure a surge of radiant energy to strike a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes radiant damage equal to 6d6 + your spellcasting ability modifier. If the creature is undead, it instead takes radiant damage equal to 6d8 + your spellcasting ability modifier."
+      ],
+      "damageInflict": ["radiant"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Vulnerability",
+      "source": "StandardSpellbook",
+      "level": 3,
+      "school": "E",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "5 Earth runes, 5 Water runes, and 1 Soul rune, all of which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": { "type": "minute", "amount": 1 },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/181982902/FvPM70hiJZcN4QCpB3Mf5g/med.png)",
+        "You crush your runes and cast a medium level curse meant to lessen a creature's defenses. Select a creature within range. It must succeed on an Intelligence saving throw or be weakened for the duration. An affected creature takes a -2 penalty it its AC and if it has any resistances, it loses one of the caster's choice. A creature affected by this spell makes another Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd, spending additional runes equal to those listed in Components for each target."
+          ]
+        }
+      ],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "Telekinetic Grab",
+      "source": "StandardSpellbook",
+      "level": 3,
+      "school": "T",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "1 Air rune, and 1 Law rune, all of which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": { "type": "minute", "amount": 10 },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/177655380/87rp6FCelCJ5mKtyyjLdMg/med.png)",
+        "You crush your runes and focus on a single object that weighs up to 600lbs within range and raises it into the air. When you cast the spell, and as an action on subsequent turns, you may exert your will on the object.",
+        "If the object isn't being worn or carried, you automatically move it up to 30 feet in any direction, but not beyond the range of this spell.",
+        "If the object is worn or carried by a creature, you must make an ability check with your spellcasting ability contested by that creature's Strength check. If you succeed, you pull the object away from that creature and can move it up to 30 feet in any direction but not beyond the range of this spell."
+      ],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "Magic Dart",
+      "source": "Standard Spellbook",
+      "level": 3,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "1 Death rune, and 4 Mind runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[8d4]] (Crit: +[[8d4]]) | Monstrosity [[16d2]] (Crit: +[[16d2]])",
+        "[image](https://s3.amazonaws.com/files.d20.io/images/179927881/xluF_vegQungYD9hVzw1Ng/max.png)",
+        "You must be wielding a Slayer Staff or Slayer Staff (e) in order to cast this spell.",
+        "You crush your runes and conjure a dart of slayer magic to throw at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes 8d4 necrotic damage. If the creature is a monstrosity, the creature takes 16d2 necrotic damage instead. The necrotic damage of this spell ignores resistance and immunity."
+      ],
+      "damageInflict": ["necrotic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Enchant Ruby Jewelry",
+      "source": "StandardSpellbook",
+      "level": 3,
+      "school": "T",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": { "type": "touch" },
+      "components": {
+        "s": true,
+        "m": "5 Fire runes, and 1 Cosmic rune, all of which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/181985285/jYp2V1Kw3kANMRl6Cp028A/med.png)",
+        "You crush your runes and enchant one piece of ruby jewelry with magical power. A ruby ring becomes a Ring of Forging, a ruby necklace becomes a Digsite Pendant, a ruby bracelet becomes an Inoculation Bracelet, and a ruby amulet becomes an Amulet of Strength."
+      ],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "Camelot Teleport",
+      "source": "StandardSpellbook",
+      "level": 4,
+      "school": "C",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "radius",
+        "distance": { "type": "feet", "amount": 10 }
+      },
+      "components": {
+        "s": true,
+        "m": "5 Air runes, and 1 Law rune per creature, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://i.imgur.com/rHRFwZA.png)",
+        "You crush your runes and you and up to 8 willing creatures teleport to outside the walls of Camelot Castle."
+      ],
+      "areaTags": ["MT"]
+    },
+    {
+      "name": "Fire Blast",
+      "source": "Standard Spellbook",
+      "level": 4,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "4 Air runes, 5 Fire runes, and 1 Death rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d8]])",
+        "[image](https://oldschool.runescape.wiki/images/b/b5/Fire_Blast_icon_%28mobile%29.png)",
+        "You crush your runes and conjure a large orb of fire to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes fire damage equal to 5d8 + your spellcasting ability modifier."
+      ],
+      "damageInflict": ["fire"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Earth Blast",
+      "source": "Standard Spellbook",
+      "level": 4,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "3 Air runes, 4 Earth runes, and 1 Death rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d8]])",
+        "[image](https://oldschool.runescape.wiki/images/3/3c/Earth_Blast_icon_%28mobile%29.png)",
+        "You crush your runes and conjure a large orb of earth to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes force damage equal to 5d8 + your spellcasting ability modifier."
+      ],
+      "damageInflict": ["force"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Water Blast",
+      "source": "Standard Spellbook",
+      "level": 4,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "3 Air runes, 3 Water runes, and 1 Death rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d8]])",
+        "[image](https://oldschool.runescape.wiki/images/c/c2/Water_Blast_icon_%28mobile%29.png)",
+        "You crush your runes and conjure a large orb of water to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes cold damage equal to 5d8 + your spellcasting ability modifier."
+      ],
+      "damageInflict": ["cold"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Wind Blast",
+      "source": "Standard Spellbook",
+      "level": 4,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "3 Air runes, and 1 Death rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[5d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[5d8]])",
+        "[image](https://oldschool.runescape.wiki/images/b/bf/Wind_Blast_icon_%28mobile%29.png)",
+        "You crush your runes and conjure a large orb of air to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes thunder damage equal to 5d8 + your spellcasting ability modifier."
+      ],
+      "damageInflict": ["thunder"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Superheat Item",
+      "source": "Standard Spellbook",
+      "level": 4,
+      "school": "T",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 5 }
+      },
+      "components": {
+        "s": true,
+        "m": "4 Fire runes, and 1 Nature rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/177669414/L2Jf8gSPzyWTby5YYWXHXA/max.png)",
+        "You crush your runes and heat up an object for use in crafting. Select an object within range that isn't being worn or carried. The object surges with heat to the point of combustion or melting. The object can be no larger than a 5 foot cube."
+      ],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Entangle",
+      "source": "StandardSpellbook",
+      "level": 4,
+      "school": "E",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "5 Earth runes, 5 Water runes, and 4 Nature runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[2d12]] (Crit: +[[2d12]])",
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/181984086/rW9fLPVU37_F3j4-Ds-zyA/max.png)",
+        "You crush your runes and cast a low level binding curse spell that stops movement and restrains a creature. Make a ranged spell attack against a creature within range. On hit, it takes 2d12 force damage and are bound by spectral roots. In addition, until the end of its next turn, the creature's speed is reduced to 0, it is restrained, and it automatically fails Strength and Dexterity saving throws and ability checks."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th, spending additional runes equal to those listed in Components for each target."
+          ]
+        }
+      ],
+      "damageInflict": ["force"],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "Enfeeble",
+      "source": "StandardSpellbook",
+      "level": 4,
+      "school": "E",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "8 Earth runes, 8 Water runes, and 1 Soul rune, all of which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": { "type": "minute", "amount": 1 },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/181983540/zdwMejFtXBR4h0txNUKK5w/max.png)",
+        "You crush your runes and cast a high level curse spell that physically weakens a creature. Select a creature within range. It must succeed on an Intelligence saving throw or be enfeebled for the duration. An affected creature has disadvantage on melee attack rolls, Strength (Athletics) checks, and Dexterity (Acrobatics) checks. It cannot concentrate on spells or other effects that require concentration. If the creature has a multiattack action, it loses one of the actions. A creature affected by this spell makes another Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th, spending additional runes equal to those listed in Components for each target."
+          ]
+        }
+      ],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "Enchant Diamond Jewelry",
+      "source": "StandardSpellbook",
+      "level": 4,
+      "school": "T",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": { "type": "touch" },
+      "components": {
+        "s": true,
+        "m": "10 Earth runes, and 1 Cosmic rune, all of which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/181985318/7bGuuK8X3V3rdwc10pOkdA/med.png)",
+        "You crush your runes and enchant one piece of diamond jewelry with magical power. A diamond ring becomes a Ring of Life, a diamond necklace becomes a Phoenix Necklace, a diamond bracelet becomes an Abyssal Bracelet, and a diamond amulet becomes an Amulet of Power."
+      ],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "Ardougne Teleport",
+      "source": "StandardSpellbook",
+      "level": 5,
+      "school": "C",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "radius",
+        "distance": { "type": "feet", "amount": 10 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Air runes, and 1 Law rune per creature, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://i.imgur.com/pCO8Fe0.png)",
+        "You crush your runes and you and up to 8 willing creatures teleport to East Ardougne town square."
+      ],
+      "areaTags": ["MT"]
+    },
+    {
+      "name": "Charge",
+      "source": "StandardSpellbook",
+      "level": 5,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "bonus action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "3 Air runes, 3 Fire runes, and 3 Blood runes, all of which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": { "type": "minute", "amount": 1 },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/181984702/mJYzGcxFBsV5our7hGtj7w/med.png)",
+        "You crush your runes and bolster a creature's magical power. Choose a willing creature within range. Until the spell ends, that creature has advantage on spell attack rolls, and once per turn, after a creature takes damage from a spell you cast, it takes an additional 2d8 (or 4d8 if the spell was a critical hit) damage. This damage is radiant if the creature's alignment is good, force if the creature's alignment is neutral, and necrotic if the creature's alignment is evil."
+      ],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "Bones to Peaches",
+      "source": "StandardSpellbook",
+      "level": 5,
+      "school": "T",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "radius",
+        "distance": { "type": "feet", "amount": 20 }
+      },
+      "components": {
+        "s": true,
+        "m": "4 Earth runes, 4 Water runes, and 2 Nature runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "meta": { "ritual": true },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/181985869/z1luIxWOKhooJfsGWLCOew/med.png)",
+        "May only be cast as a ritual.",
+        "You crush your runes and cast a spell that creates a plump, tasty peach for every 1 pound of bones within range, up to a maximum of 50. The created peaches appear at the caster's feet. You may eat a peach as a bonus action to heal 8 hit points. This spell does not effect the bones of living or undead creatures or constructs."
+      ],
+      "areaTags": ["S"]
+    },
+    {
+      "name": "Enchant Dragonstone Jewelry",
+      "source": "StandardSpellbook",
+      "level": 5,
+      "school": "T",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": { "type": "touch" },
+      "components": {
+        "s": true,
+        "m": "15 Earth runes, 15 Water runes, and 1 Cosmic rune, all of which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/181985384/03JbI9T4b263omTnpG2prQ/max.png)",
+        "You crush your runes and enchant one piece of dragonstone jewelry with magical power. A dragonstone ring becomes a Ring of Wealth, a dragonstone necklace becomes a Skills Necklace, a dragonstone bracelet becomes a Combat Bracelet, and a dragonstone amulet becomes an Amulet of Glory."
+      ],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "High Alchemy",
+      "source": "StandardSpellbook",
+      "level": 5,
+      "school": "T",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "radius",
+        "distance": { "type": "feet", "amount": 20 }
+      },
+      "components": {
+        "s": true,
+        "m": "5 Fire runes, and 1 Nature rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "meta": { "ritual": true },
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/181985735/PQyHpL7MgrF-3Nn9tDry2w/med.png)",
+        "May only be cast as a ritual.",
+        "You crush your runes and transform one item into a large amount of gold, relative to the item's value. Ask the DM how much gold a specific item is transformed into when the spell is cast."
+      ],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "Flames of Zamorak",
+      "source": "Standard Spellbook",
+      "level": 6,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "1 Air rune, 4 Fire runes, and 2 Blood runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Damage Roll:** [[6d6]] fire, [[6d6]] necrotic",
+        "[image](https://s3.amazonaws.com/files.d20.io/images/196506489/vLepDMxrPRSyoNbCpqk3DQ/med.png)",
+        "You must be wielding a Zamorak Staff, Staff of the Dead, or Toxic Staff of the Dead in order to cast this spell.",
+        "You crush your runes and call down the power of Zamorak to conjure unholy flames to scorch and burn creatures. You create a continuous line of unholy fire, which must start within range. The fire is up to 40 feet long, 40 feet high, 1 foot thick, and can twist and turn as many times as the caster wishes. All creatures within the line must make a Dexterity saving throw, taking 6d6 fire damage and 6d6 necrotic damage on a fail, and half as much on a success.",
+        "If a creatures rolls a natural 1 on this initial saving throw, they must make a second Dexterity saving throw, taking 6d6 fire damage and 6d6 necrotic damage on a fail, and half as much on a success."
+      ],
+      "damageInflict": ["fire", "necrotic"],
+      "areaTags": ["L"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Saradomin Strike",
+      "source": "Standard Spellbook",
+      "level": 6,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "4 Air runes, 2 Fire runes, and 2 Blood runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[6d6]] lightning, [[6d6]] radiant (Crit: +[[6d6]] lightning, [[6d6]] radiant) | Secondary [[4d6]] lightning, [[4d6]] radiant",
+        "[image](https://s3.amazonaws.com/files.d20.io/images/196501294/H08gq3R4w0B1AcPfqAB2CA/max.png)",
+        "You must be wielding a Saradomin Staff or Staff of Light in order to cast this spell.",
+        "You crush your runes and call down the power of Saradomin to strike creatures with a powerful bolt of holy lightning. Make a ranged spell attack against a creature. On a hit, a pure white bolt of electricity descend from the sky, dealing 6d6 lightning damage and 6d6 radiant damage.",
+        "The electricity crackles outward towards all creatures within 15 feet of the original target. If the original attack roll would hit these additional creatures, they take 4d6 lighting damage and 4d6 radiant damage. On a critical hit, the additional creatures receive the same damage the initial target takes."
+      ],
+      "damageInflict": ["lightning", "radiant"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST", "S"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Claws of Guthix",
+      "source": "Standard Spellbook",
+      "level": 6,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "4 Air runes, 1 Fire rune, and 2 Blood runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[6d6]] slashing, [[6d6]] force (Crit: +[[6d6]] slashing, [[6d6]] force)",
+        "[image](https://s3.amazonaws.com/files.d20.io/images/196509476/bn52h2F6LTHp0EFOUc3XdQ/max.png)",
+        "You must be wielding a Guthix Staff, Staff of Balance, or Void Knight Mace in order to cast this spell.",
+        "You crush your runes and call down the power of Guthix to summon spectral claws to eviscerate and bind a creature. Make a ranged spell attack against the creature. On a hit, massive purple claws rise from the ground and attack the creature, dealing 6d6 slashing damage and 6d6 force damage.",
+        "Hit or miss, the claws immediately attempt to bind the creature. The creature must succeed on a Wisdom saving throw or become paralyzed for one minute. If your attack hit the creature, it makes this initial saving throw at disadvantage. A creature affected by this spell makes another Wisdom saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["slashing", "force"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Stun",
+      "source": "StandardSpellbook",
+      "level": 6,
+      "school": "E",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "12 Earth runes, 12 Water runes, and 1 Soul rune, all of which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": { "type": "minute", "amount": 1 },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/181984110/3qO_bmzgGbKp0ibaDo42Tw/max.png)",
+        "You crush your runes and cast a master level curse spell meant to disable an opponent. Select a creature within range. It must succeed on an Intelligence saving throw or be disabled for the duration. An affected creature is stunned and takes a -5 penalty it its AC. A creature affected by this spell makes another Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "entriesHigherLevel": [
+        {
+          "type": "entries",
+          "name": "At Higher Levels",
+          "entries": [
+            "When you cast this spell using a spell slot of 7th level or higher, you can target one additional creature for each slot level above 6th, spending additional runes equal to those listed in Components for each target."
+          ]
+        }
+      ],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "Enchant Onyx Jewelry",
+      "source": "StandardSpellbook",
+      "level": 6,
+      "school": "T",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": { "type": "touch" },
+      "components": {
+        "s": true,
+        "m": "20 Earth runes, 20 Fire runes, and 1 Cosmic rune, all of which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/181985536/_UMb-o5yFauWt_V4AwfBNA/max.png)",
+        "You crush your runes and enchant one piece of onyx jewelry with magical power. An onyx ring becomes a Ring of Stone, an onyx necklace becomes a Berserker Necklace, an onyx bracelet becomes a Regen Bracelet, and an onyx amulet becomes an Amulet of Fury."
+      ],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "Fire Wave",
+      "source": "Standard Spellbook",
+      "level": 7,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "5 Air runes, 7 Fire runes, and 1 Blood rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[7d12 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d12]])",
+        "[image](https://oldschool.runescape.wiki/images/b/b3/Fire_Wave_icon_%28mobile%29.png)",
+        "You crush your runes and conjure a huge orb of fire to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes fire damage equal to 7d12 + your spellcasting ability modifier."
+      ],
+      "damageInflict": ["fire"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Earth Wave",
+      "source": "Standard Spellbook",
+      "level": 7,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "5 Air runes, 7 Earth runes, and 1 Blood rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[7d12 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d12]])",
+        "[image](https://oldschool.runescape.wiki/images/3/32/Earth_Wave_icon_%28mobile%29.png)",
+        "You crush your runes and conjure a huge orb of earth to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes force damage equal to 7d12 + your spellcasting ability modifier."
+      ],
+      "damageInflict": ["force"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Water Wave",
+      "source": "Standard Spellbook",
+      "level": 7,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "5 Air runes, 7 Water runes, and 1 Blood rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[7d12 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d12]])",
+        "[image](https://oldschool.runescape.wiki/images/2/26/Water_Wave_icon_%28mobile%29.png)",
+        "You crush your runes and conjure a huge orb of water to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes cold damage equal to 7d12 + your spellcasting ability modifier."
+      ],
+      "damageInflict": ["cold"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Wind Wave",
+      "source": "Standard Spellbook",
+      "level": 7,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "5 Air runes, and 1 Blood rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[7d12 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d12]])",
+        "[image](https://oldschool.runescape.wiki/images/3/3c/Wind_Wave_icon_%28mobile%29.png)",
+        "You crush your runes and conjure a huge orb of air to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes thunder damage equal to 7d12 + your spellcasting ability modifier."
+      ],
+      "damageInflict": ["thunder"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Teleport Block",
+      "source": "Standard Spellbook",
+      "level": 7,
+      "school": "A",
+      "time": [
+        {
+          "number": 1,
+          "unit": "reaction",
+          "condition": "which you take when you see a creature attempting to teleport"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "1 Chaos rune, 1 Death rune, and 1 Law rune, all of which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": { "type": "hour", "amount": 1 }
+        }
+      ],
+      "entries": [
+        "[image](https://s3.amazonaws.com/files.d20.io/images/181984522/xe9QXmAOLw-GtMKdcBrwWQ/med.png)",
+        "You crush your runes and cast a master level curse spell meant to prevent a creature from escaping. The creature makes an Intelligence saving throw. On a fail, it loses the ability to teleport by any means for the duration.",
+        "This spell cannot be counterspelled and only the wish spell can remove this effect."
+      ],
+      "damageInflict": ["thunder"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Enchant Zenyte Jewelry",
+      "source": "StandardSpellbook",
+      "level": 7,
+      "school": "T",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": { "type": "touch" },
+      "components": {
+        "s": true,
+        "m": "20 Blood runes, 1 Cosmic rune, and 20 Soul runes, all of which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/181985597/sD9WLxaamneis4ZjF0eB_Q/med.png)",
+        "You crush your runes and enchant one piece of zenyte jewelry with magical power. A zenyte ring becomes a Ring of Suffering, a zenyte necklace becomes a Necklace of Anguish, a zenyte bracelet becomes a Tormented Bracelet, and a zenyte amulet becomes an Amulet of Torture."
+      ],
+      "areaTags": ["ST"]
+    },
+    {
+      "name": "Fire Surge",
+      "source": "Standard Spellbook",
+      "level": 8,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "7 Air runes, 10 Fire runes, and 1 Wrath rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
+        "[image](https://oldschool.runescape.wiki/images/d/dc/Fire_Surge_icon_%28mobile%29.png)",
+        "You crush your runes and conjure a massive orb of fire to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes fire damage equal to 12d10 + your spellcasting ability modifier."
+      ],
+      "damageInflict": ["fire"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Earth Surge",
+      "source": "Standard Spellbook",
+      "level": 8,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "7 Air runes, 10 Earth runes, and 1 Wrath rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
+        "[image](https://oldschool.runescape.wiki/images/1/18/Earth_Surge_icon_%28mobile%29.png)",
+        "You crush your runes and conjure a massive orb of earth to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes force damage equal to 12d10 + your spellcasting ability modifier."
+      ],
+      "damageInflict": ["force"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Water Surge",
+      "source": "Standard Spellbook",
+      "level": 8,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "7 Air runes, 10 Water runes, and 1 Wrath rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
+        "[image](https://oldschool.runescape.wiki/images/a/a5/Water_Surge_icon_%28mobile%29.png)",
+        "You crush your runes and conjure a massive orb of water to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes cold damage equal to 12d10 + your spellcasting ability modifier."
+      ],
+      "damageInflict": ["cold"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Wind Surge",
+      "source": "Standard Spellbook",
+      "level": 8,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "7 Air runes, and 1 Wrath rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage Roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
+        "[image](https://oldschool.runescape.wiki/images/c/c5/Wind_Surge_icon_%28mobile%29.png)",
+        "You crush your runes and conjure a massive orb of air to hurl at a creature within range. Make a ranged spell attack against the creature. On a hit, the creature takes thunder damage equal to 12d10 + your spellcasting ability modifier."
+      ],
+      "damageInflict": ["thunder"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    }
+  ]
+}
