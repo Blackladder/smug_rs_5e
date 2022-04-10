@@ -43,8 +43,11 @@
       "entries": [
         "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[6d4 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[6d4]])",
         "[image](https://i.imgur.com/tragsCh.png)",
-        "You crush the following runes: • 1 Water runes\n• 1 Mind runes\n• 1 Chaos rune\n",
-        "You buffet a creature within range with an assault of icy wind. Make a ranged spell attack against the target. On a hit, a target takes cold damage equal to 6d4 + your spellcasting ability modifier, its speed is reduced to 0 until the end of your next turn, and makes a Strength saving throw or be frozen in ice until the end of its next turn, or until it or another creature within reach of it uses an action to break away the ice.\n\nA frozen target's speed is reduced to 0 and it can't use reactions."
+        "You crush the following runes:",
+        "• 1 Water runes",
+        "• 1 Mind runes",
+        "• 1 Chaos rune",
+        "You buffet a creature within range with an assault of icy wind. Make a ranged spell attack against the target. On a hit, a target takes cold damage equal to 6d4 + your spellcasting ability modifier, its speed is reduced to 0 until the end of your next turn, and makes a Strength saving throw or be frozen in ice until the end of its next turn, or until it or another creature within reach of it uses an action to break away the ice.A frozen target's speed is reduced to 0 and it can't use reactions."
       ],
       "damageInflict": ["cold"],
       "spellAttack": ["R"],
