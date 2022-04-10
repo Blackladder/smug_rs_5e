@@ -1,62 +1,6 @@
 {
   "spell": [
     {
-      "name": "Edgeville Home Teleport",
-      "source": "StandardSpellbook",
-      "level": 0,
-      "school": "C",
-      "time": [{ "number": 1, "unit": "action" }],
-      "range": {
-        "type": "radius",
-        "distance": { "type": "feet", "amount": 10 }
-      },
-      "components": {
-        "s": true
-      },
-      "duration": [{ "type": "instant" }],
-      "classes": {
-        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-      },
-      "meta": { "ritual": true },
-      "entries": [
-        "[icon](https://i.imgur.com/PsiYVfV.png)",
-        "May only be cast as a ritual.",
-        "You and up to 8 willing creatures teleport to the Edgeville well."
-      ],
-      "areaTags": ["MT"]
-    },
-    {
-      "name": "Ice Charge",
-      "source": "Ancient Spellbook",
-      "level": 1,
-      "school": "V",
-      "time": [{ "number": 1, "unit": "action" }],
-      "range": {
-        "type": "point",
-        "distance": { "type": "feet", "amount": 120 }
-      },
-      "components": {
-        "s": true,
-        "m": "Runes, which the spell consumes"
-      },
-      "duration": [{ "type": "instant" }],
-      "entries": [
-        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[6d4 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[6d4]])",
-        "[image](https://i.imgur.com/tragsCh.png)",
-        "You crush the following runes:",
-        "• 1 Water runes",
-        "• 1 Mind runes",
-        "• 1 Chaos rune",
-        "You buffet a creature within range with an assault of icy wind. Make a ranged spell attack against the target. On a hit, a target takes cold damage equal to 6d4 + your spellcasting ability modifier, its speed is reduced to 0 until the end of your next turn, and makes a Strength saving throw or be frozen in ice until the end of its next turn, or until it or another creature within reach of it uses an action to break away the ice.A frozen target's speed is reduced to 0 and it can't use reactions."
-      ],
-      "damageInflict": ["cold"],
-      "spellAttack": ["R"],
-      "areaTags": ["ST"],
-      "classes": {
-        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
-      }
-    },
-    {
       "name": "Blood Rush",
       "source": "Ancient Spellbook",
       "level": 5,
