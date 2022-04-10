@@ -1,0 +1,662 @@
+{
+  "spell": [
+    {
+      "name": "Edgeville Home Teleport",
+      "source": "StandardSpellbook",
+      "level": 0,
+      "school": "C",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "radius",
+        "distance": { "type": "feet", "amount": 10 }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [{ "type": "instant" }],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "meta": { "ritual": true },
+      "entries": [
+        "[icon](https://i.imgur.com/PsiYVfV.png)",
+        "May only be cast as a ritual.",
+        "You and up to 8 willing creatures teleport to the Edgeville well."
+      ],
+      "areaTags": ["MT"]
+    },
+    {
+      "name": "Ice Charge",
+      "source": "Ancient Spellbook",
+      "level": 1,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "Runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[6d4 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[6d4]])",
+        "[image](https://i.imgur.com/tragsCh.png)",
+        "You crush the following runes:
+• 1 Water runes
+• 1 Mind runes
+• 1 Chaos rune
+
+You buffet a creature within range with an assault of icy wind. Make a ranged spell attack against the target. On a hit, a target takes cold damage equal to 6d4 + your spellcasting ability modifier, its speed is reduced to 0 until the end of your next turn, and makes a Strength saving throw or be frozen in ice until the end of its next turn, or until it or another creature within reach of it uses an action to break away the ice.
+
+An frozen target's speed is reduced to 0 and it can't use reactions.
+"
+      ],
+      "damageInflict": ["cold"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Ice Volley",
+      "source": "Ancient Spellbook",
+      "level": 2,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "Runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[6d4 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[6d4]])",
+        "[image](https://i.imgur.com/d3El5ih.png)",
+        "You crush the following runes:
+• 2 Water runes
+• 2 Mind runes
+• 1 Chaos rune
+
+You buffet a group of creatures within range with an assault of icy wind. Make a ranged spell attack against each creature within in a 10-foot cube within range. On a hit, a target takes cold damage equal to 6d4 + your spellcasting ability modifier, its speed is reduced to 0 until the end of your next turn, and makes a Strength saving throw or be frozen in ice until the end of its next turn, or until it or another creature within reach of it uses an action to break away the ice.
+
+An frozen target's speed is reduced to 0 and it can't use reactions."
+      ],
+      "damageInflict": ["cold"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Ice Raid",
+      "source": "Ancient Spellbook",
+      "level": 3,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "Runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[8d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[8d6]])",
+        "[image](https://i.imgur.com/LyNRyRb.png)",
+        "You crush the following runes:
+• 3 Water runes
+• 2 Mind runes
+• 2 Chaos rune
+
+You entrap a creature within range with frigid ice crystals. Make a ranged spell attack against the target. On a hit, a target takes cold damage equal to 8d6 + your spellcasting ability modifier, its speed is reduced to 0 until the end of your next turn, and makes a Strength saving throw or be frozen in ice for its next two turns, or until it or another creature within reach of it uses an action to break away the ice.
+
+An frozen target's speed is reduced to 0, all attacks against it are made with advantage, and it can't use reactions. 
+
+A creature frozen by this spell makes another Strength saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["cold"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Ice Salvo",
+      "source": "Ancient Spellbook",
+      "level": 4,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "Runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[8d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[8d6]])",
+        "[image](https://i.imgur.com/A2Te5IA.png)",
+        "You crush the following runes:
+• 4 Water runes
+• 4 Mind runes
+• 2 Chaos runes
+
+You entrap a group of creatures within range with frigid ice crystals. Make a ranged spell attack against each creature within in a 20-foot cube within range. On a hit, a target takes cold damage equal to 8d6 + your spellcasting ability modifier, its speed is reduced to 0 until the end of your next turn, and makes a Strength saving throw or be frozen in ice for its next two turns, or until it or another creature within reach of it uses an action to break away the ice.
+
+An frozen target's speed is reduced to 0, all attacks against it are made with advantage, and it can't use reactions. 
+
+A creature frozen by this spell makes another Strength saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["cold"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Blood Rush",
+      "source": "Ancient Spellbook",
+      "level": 5,
+      "school": "N",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Chaos runes, 2 Death runes, 1 Blood rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[7d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d10]])",
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191433146/BcY6h4SiBO5iqdEdpIfFgQ/max.png)",
+        "You crush your runes and extract some blood from a creature within range. Make a ranged spell attack against the target. On a hit, the target takes necrotic damage equal to 7d10 + your spellcasting ability modifier, and you regain a number of hit points equal to the necrotic damage dealt. The hit target then rolls a d12, gaining a level of exhaustion on a 1."
+      ],
+      "damageInflict": ["necrotic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Ice Rush",
+      "source": "Ancient Spellbook",
+      "level": 5,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "Runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[10d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[10d8]])",
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191433721/KLKeAsN7P_c6uag7CyXsJA/max.png)",
+        "You crush the following runes:
+• 2 Water runes
+• 2 Chaos runes
+• 2 Death runes
+
+You surround a creature within range with freezing air and snow. Make a ranged spell attack against the target. On a hit, the target takes cold damage equal to 10d8 + your spellcasting ability modifier, its speed is reduced to 0 until the end of your next turn, and makes a Strength saving throw or be frozen in ice for its next three turns, or until it or another creature within reach of it uses an action to break away the ice.
+
+The frozen target's speed is reduced to 0, all attacks against it are made with advantage, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both.
+
+A creature frozen by this spell makes another Strength saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["cold"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Shadow Rush",
+      "source": "Ancient Spellbook",
+      "level": 5,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Chaos runes, 2 Death runes, 1 Soul rune, 1 Air rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[7d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d10]])",
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191427274/TO1fneti5nwpIAHbDXrlow/med.png)",
+        "You crush your runes and project your shadow upon a creature within range to disorient them. Make a ranged spell attack against the target. On a hit, the target takes psychic damage equal to 7d10 + your spellcasting ability modifier. A hit target must then make an Intelligence saving throw. On a failure, for the next minute, the target has disadvantage on all attack rolls and ability checks, and all attack rolls have advantage against the target. A creature affected by this spell makes an Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["psychic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Smoke Rush",
+      "source": "Ancient Spellbook",
+      "level": 5,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Chaos runes, 2 Death runes, 1 Air rune, 1 Fire rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[7d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d10]])",
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191425242/1D8vUlEVDFXB9IioZP0xUQ/max.png)",
+        "You crush your runes and conjure a rope of smoke that debilitates a creature within range. Make a ranged spell attack against the target. On a hit, the target takes poison damage equal to 7d10 + your spellcasting ability modifier. A hit target must then make a Constitution saving throw. On a failure, for the next minute, the target takes 3d10 poison damage at the start of each of its turns and has disadvantage on saving throws. A creature affected by this spell makes a Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["psychic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Blood Burst",
+      "source": "Ancient Spellbook",
+      "level": 6,
+      "school": "N",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "4 Chaos runes, 2 Death runes, 2 Blood runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[7d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d10]])",
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191440313/fCqLDjw_5-h1e73ELoPv5Q/max.png)",
+        "You crush your runes and extract some blood from a group of creatures within range. Make a ranged spell attack against each creature within in a 30-foot cube within range. On a hit, a target takes necrotic damage equal to 7d10 + your spellcasting ability modifier, and you regain a number of hit points equal to the necrotic damage dealt. A hit target then rolls a d12, gaining a level of exhaustion on a 1."
+      ],
+      "damageInflict": ["necrotic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Ice Burst",
+      "source": "Ancient Spellbook",
+      "level": 6,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "Runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[10d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[10d8]])",
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191433721/KLKeAsN7P_c6uag7CyXsJA/max.png)",
+        "You crush the following runes:
+• 4 Water runes
+• 4 Chaos runes
+• 2 Death runes
+
+You crush your runes and encase a group of creatures within range in solid blocks of ice. Make a ranged spell attack against each creature within in a 30-foot cube within range. On a hit, a target takes cold damage equal to 10d8 + your spellcasting ability modifier, its speed is reduced to 0 until the end of your next turn, and makes a Strength saving throw or be frozen in ice for its next three turns, or until it or another creature within reach of it uses an action to break away the ice.
+
+An frozen target's speed is reduced to 0, all attacks against it are made with advantage, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both.
+
+A creature frozen by this spell makes another Strength saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["cold"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Shadow Burst",
+      "source": "Ancient Spellbook",
+      "level": 6,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "4 Chaos runes, 2 Death runes, 2 Soul runes, 1 Air rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[7d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d10]])",
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191440100/11WYUcLlRM2wWdueCW_ROg/med.png)",
+        "You crush your runes and cause a group of creature's shadows to rise and attack and disorient them. Make a ranged spell attack against each creature within in a 30-foot cube within range. On a hit, a target takes psychic damage equal to 7d10 + your spellcasting ability modifier. A hit target must then make an Intelligence saving throw. On a failure, for the next minute, that target has disadvantage on all attack rolls and ability checks, and all attack rolls have advantage against that target. A creature affected by this spell makes an Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["psychic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Smoke Burst",
+      "source": "Ancient Spellbook",
+      "level": 6,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Chaos runes, 2 Death runes, 1 Air rune, 1 Fire rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[7d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d10]])",
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191439101/Zvd9ASjyt9t43xO3wvrPXw/max.png)",
+        "You crush your runes and conjure a cloud of smoke that debilitates creatures within range. Make a ranged spell attack against each creature within in a 30-foot cube within range. On a hit, a target takes poison damage equal to 7d10 + your spellcasting ability modifier. A hit target must then make a Constitution saving throw. On a failure, for the next minute, that target takes 3d10 poison damage at the start of each of its turns and has disadvantage on saving throws. A creature affected by this spell makes a Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["psychic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Kharyrll (Canifis) Teleport",
+      "source": "Ancient Spellbook",
+      "level": 6,
+      "school": "C",
+      "time": [{ "numer": 1, "unit": "action" }],
+      "range": {
+        "type": "radius",
+        "distance": { "type": "feet", "amount": 10 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Law runes per creature, 1 Blood rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      },
+      "entries": [
+        "[icon](https://s3.amazonaws.com/files.d20.io/images/233853152/OlsBK8j0MLvkVng5OX4LJQ/max.png)",
+        "You crush your runes and you and up to 8 willing creatures teleport to the Hair of the Dog Tavern in Canifis, which is where the an ancient fortress called Kharyrll used to stand in the second and third ages."
+      ],
+      "areaTags": ["MT"]
+    },
+    {
+      "name": "Blood Blitz",
+      "source": "Ancient Spellbook",
+      "level": 7,
+      "school": "N",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Death runes, 4 Blood rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191444332/Z9-gg6a81PPhHhqAGFeD6g/max.png)",
+        "You crush your runes and drain a large amount of blood from a creature within range. Make a ranged spell attack against the target. On a hit, the target takes necrotic damage equal to 12d10 + your spellcasting ability modifier, and you regain a number of hit points equal to the necrotic damage dealt. The hit target then rolls a d6, gaining a level of exhaustion on a 1."
+      ],
+      "damageInflict": ["necrotic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Ice Blitz",
+      "source": "Ancient Spellbook",
+      "level": 7,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "Runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191433721/KLKeAsN7P_c6uag7CyXsJA/max.png)",
+        "You crush the following runes:
+• 3 Water runes
+• 2 Blood runes
+• 2 Death runes
+
+You encase a creature within range in a solid block of ice. Make a ranged spell attack against the target. On a hit, a target takes cold damage equal to 12d10 + your spellcasting ability modifier, its speed is reduced to 0 until the end of your next turn, and makes a Strength saving throw or be frozen in ice for its next four turns, or until it or another creature within reach of it uses an action to break away the ice.
+
+An frozen target's speed is reduced to 0, all attacks against it are made with advantage, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn.
+
+A creature frozen by this spell makes another Strength saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["cold"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Shadow Blitz",
+      "source": "Ancient Spellbook",
+      "level": 7,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Death runes, 2 Blood runes, 2 Soul runes, 2 Air runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191441861/feGQktGPEN12G-Zj4TVhpw/max.png)",
+        "You crush your runes and have your shadow assault a creature within range to disorient them. Make a ranged spell attack against the target. On a hit, the target takes psychic damage equal to 12d10 + your spellcasting ability modifier. A hit target must then make an Intelligence saving throw. On a failure, for the next minute, the target has disadvantage on all attack rolls and ability checks as well as rolls a d10 and subtracts the number rolled from those rolls, and all attack rolls have advantage against the target. A creature affected by this spell makes an Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["psychic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Smoke Blitz",
+      "source": "Ancient Spellbook",
+      "level": 7,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "2 Death runes, 2 Blood runes, 2 Air runes, 2 Fire runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191441560/fas4s55qvfhyL37cUelSIw/max.png)",
+        "You crush your runes and conjure a rope of toxic smoke that debilitates a creature within range. Make a ranged spell attack against the target. On a hit, the target takes poison damage equal to 12d10 + your spellcasting ability modifier. A hit target must then make a Constitution saving throw. On a failure, for the next two minutes, the target takes 6d10 poison damage at the start of each of its turns and has disadvantage on saving throws. A creature affected by this spell makes a Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["psychic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Blood Barrage",
+      "source": "Ancient Spellbook",
+      "level": 8,
+      "school": "N",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "4 Death runes, 4 Blood rune, 1 Soul rune, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191447823/Xe1auxqbwdLLcs6xOhxfsA/max.png)",
+        "You crush your runes and drain a large amount of blood from a group of creatures within range. Make a ranged spell attack against each creature within in a 60-foot cube within range. On a hit, a target takes necrotic damage equal to 12d10 + your spellcasting ability modifier, and you regain a number of hit points equal to the necrotic damage dealt. A hit target then rolls a d6, gaining a level of exhaustion on a 1."
+      ],
+      "damageInflict": ["necrotic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Ice Barrage",
+      "source": "Ancient Spellbook",
+      "level": 8,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "Runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191433721/KLKeAsN7P_c6uag7CyXsJA/max.png)",
+        "You crush the following runes:
+• 6 Water runes
+• 2 Blood runes
+• 4 Death runes
+
+You crush your runes and encase a group of creatures within range in solid blocks of ice. Make a ranged spell attack against each creature within in a 40-foot cube within range. On a hit, a target takes cold damage equal to 12d10 + your spellcasting ability modifier, its speed is reduced to 0 until the end of your next turn, and makes a Strength saving throw or be frozen in ice for its next four turns, or until it or another creature within reach of it uses an action to break away the ice.
+
+An frozen target's speed is reduced to 0, all attacks against it are made with advantage, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn.
+
+A creature frozen by this spell makes another Strength saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["cold"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Shadow Barrage",
+      "source": "Ancient Spellbook",
+      "level": 8,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "4 Death runes, 2 Blood runes, 3 Soul runes, 4 Air runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191447431/HCp6ImPhbVMJkyYCjg994w/med.png)",
+        "You crush your runes and cause a group of creature's shadows to emerge and assault and disorient them. Make a ranged spell attack against each creature within in a 60-foot cube within range. On a hit, a target takes psychic damage equal to 12d10 + your spellcasting ability modifier. A hit target must then make an Intelligence saving throw. On a failure, for the next minute, that target has disadvantage on all attack rolls and ability checks as well as rolls a d10 and subtracts the number rolled from those rolls, and all attack rolls have advantage against that target. A creature affected by this spell makes an Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["psychic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Smoke Barrage",
+      "source": "Ancient Spellbook",
+      "level": 8,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "4 Death runes, 2 Blood runes, 4 Air runes, 4 Fire runes, all of which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
+        "[image](https://s3.amazonaws.com/files.d20.io/images/191446347/usQVV1yg5ImaOa95QSaMkw/max.png)",
+        "You crush your runes and conjure a toxic cloud of smoke that debilitates creatures within range. Make a ranged spell attack against each creature within in a 60-foot cube within range. On a hit, a target takes poison damage equal to 12d10 + your spellcasting ability modifier. A hit target must then make a Constitution saving throw. On a failure, for the next two minutes, that target takes 6d10 poison damage at the start of each of its turns and has disadvantage on saving throws. A creature affected by this spell makes a Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["psychic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    }
+  ]
+}
