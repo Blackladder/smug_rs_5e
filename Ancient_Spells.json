@@ -46,6 +46,7 @@
         "• 1 Mind rune",
         "You drain a tiny amount of blood from a creature. Make a ranged spell attack against the target. On a hit, the target loses hit points equal to half your level (this counts as necrotic damage for the purposes of resistances and immunities), regain an equal amount of hit points."
       ],
+      "damageInflict": ["necrotic"],
       "spellAttack": ["R"],
       "areaTags": ["ST"],
       "classes": {
@@ -75,6 +76,7 @@
         "• 1 Mind rune",
         "You freeze a creature in place. Make a ranged spell attack against the target. On a hit, until the start of your next turn, the target's speed is reduced to 0 and it can't use reactions."
       ],
+      "damageInflict": ["cold"],
       "spellAttack": ["R"],
       "areaTags": ["ST"],
       "classes": {
@@ -104,6 +106,7 @@
         "• 1 Soul rune",
         "You cause a creature's shadow disorient its creator. Make a ranged spell attack against the target. On a hit, until the start of your next turn, the target had disadvantage on ability checks and when it makes an ability check it rolls a d4 and subtracts the number rolled from those rolls."
       ],
+      "damageInflict": ["psychic"],
       "spellAttack": ["R"],
       "areaTags": ["ST"],
       "classes": {
@@ -133,6 +136,7 @@
         "• 1 Mind rune",
         "You wrap a creature in a light mist of toxic smoke. Make a ranged spell attack against the target. On a hit, the target has disadvantage on the next saving throw it makes before the start of your next turn and takes poison damage equal to half your level at the start of its turn."
       ],
+      "damageInflict": ["acid"],
       "spellAttack": ["R"],
       "areaTags": ["ST"],
       "classes": {
