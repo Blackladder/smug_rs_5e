@@ -24,6 +24,122 @@
       "areaTags": ["MT"]
     },
     {
+      "name": "Drain",
+      "source": "Standard Spellbook",
+      "level": 0,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
+        "[image](https://i.imgur.com/6lC0LZf.png)",
+        "You crush the following runes:",
+        "• 1 Blood rune",
+        "• 1 Mind rune",
+        "You drain a tiny amount of blood from a creature. Make a ranged spell attack against the target. On a hit, the target loses hit points equal to half your level (this counts as necrotic damage for the purposes of resistances and immunities), regain an equal amount of hit points."
+      ],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Freeze",
+      "source": "Standard Spellbook",
+      "level": 0,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
+        "[image](https://i.imgur.com/us5GuXk.png)",
+        "You crush the following runes:",
+        "• 1 Water rune",
+        "• 1 Mind rune",
+        "You freeze a creature in place. Make a ranged spell attack against the target. On a hit, until the start of your next turn, the target's speed is reduced to 0 and it can't use reactions."
+      ],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Muddle",
+      "source": "Standard Spellbook",
+      "level": 0,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
+        "[image](https://i.imgur.com/rc37edP.png)",
+        "You crush the following runes:",
+        "• 1 Mind rune",
+        "• 1 Soul rune",
+        "You cause a creature's shadow disorient its creator. Make a ranged spell attack against the target. On a hit, until the start of your next turn, the target had disadvantage on ability checks and when it makes an ability check it rolls a d4 and subtracts the number rolled from those rolls."
+      ],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Envenom",
+      "source": "Standard Spellbook",
+      "level": 0,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
+        "[image](https://i.imgur.com/FCFFH88.png)",
+        "You crush the following runes:",
+        "• 1 Air rune",
+        "• 1 Mind rune",
+        "You wrap a creature in a light mist of toxic smoke. Make a ranged spell attack against the target. On a hit, the target has disadvantage on the next saving throw it makes before the start of your next turn and takes poison damage equal to half your level at the start of its turn."
+      ],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
       "name": "Blood Charge",
       "source": "Ancient Spellbook",
       "level": 1,
@@ -40,7 +156,7 @@
       "duration": [{ "type": "instant" }],
       "entries": [
         "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[6d4 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[6d4]])",
-        "[image](https://i.imgur.com/9b1Hz23.png)",
+        "[image](https://i.imgur.com/axG5YM1.png)",
         "You crush the following runes:",
         "• 1 Blood rune",
         "• 1 Mind rune",
@@ -71,15 +187,81 @@
       "duration": [{ "type": "instant" }],
       "entries": [
         "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[6d4 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[6d4]])",
-        "[image](https://i.imgur.com/tragsCh.png)",
+        "[image](https://i.imgur.com/h7Hbqdh.png)",
         "You crush the following runes:",
         "• 1 Water rune",
         "• 1 Mind rune",
         "• 1 Chaos rune",
         "You buffet a creature with an assault of icy wind. Make a ranged spell attack against the target. On a hit, a target takes cold damage equal to 6d4 + your spellcasting ability modifier, its speed is reduced to 0 until the end of your next turn, and makes a Strength saving throw or be frozen in ice until the end of its next turn, or until it or another creature within reach of it uses an action to break away the ice.",
-        "An frozen target's speed is reduced to 0 and it can't use reactions."
+        "A frozen target's speed is reduced to 0 and it can't use reactions."
       ],
       "damageInflict": ["cold"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Shadow Charge",
+      "source": "Ancient Spellbook",
+      "level": 1,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[6d4 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[6d4]])",
+        "[image](https://i.imgur.com/j2xwh8I.png)",
+        "You crush the following runes:",
+        "• 1 Air rune",
+        "• 1 Mind rune",
+        "• 1 Chaos rune",
+        "• 1 Soul rune",
+        "You cause a creature's shadow to rise and annoy and disorient it. Make a ranged spell attack against the target. On a hit, a target takes psychic damage equal to 6d4 + your spellcasting ability modifier, it has disadvantage on ability checks until the end of your next turn, and must make an Intelligence saving throw or be muddled until the end of its next turn.",
+        "When a muddled target makes an ability check it rolls a d4 and subtracts the number rolled from those rolls."
+      ],
+      "damageInflict": ["psychic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Smoke Charge",
+      "source": "Ancient Spellbook",
+      "level": 1,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[6d4 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[6d4]])",
+        "[image](https://i.imgur.com/JCF9tDX.png)",
+        "You crush the following runes:",
+        "• 1 Air rune",
+        "• 1 Fire rune",
+        "• 1 Mind rune",
+        "• 1 Chaos rune",
+        "You conjure an acrid wisp of toxic smoke that debilitates a creature. Make a ranged spell attack against the target. On a hit, a target takes acid damage equal to 6d4 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn (excluding the one caused by this spell), and it must make a Constitution saving throw or be envenomed until the end of its next turn.",
+        "An envenomed target has disadvantage on saving throws and takes 3d4 poison damage at the start of its turn.",
+      ],
+      "damageInflict": ["acid"],
       "spellAttack": ["R"],
       "areaTags": ["ST"],
       "classes": {
@@ -103,7 +285,7 @@
       "duration": [{ "type": "instant" }],
       "entries": [
         "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[6d4 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[6d4]])",
-        "[image](https://i.imgur.com/9b1Hz23.png)",
+        "[image](https://i.imgur.com/r5A7S9M.png)",
         "You crush the following runes:",
         "• 1 Blood rune",
         "• 1 Mind rune",
@@ -134,15 +316,81 @@
       "duration": [{ "type": "instant" }],
       "entries": [
         "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[6d4 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[6d4]])",
-        "[image](https://i.imgur.com/d3El5ih.png)",
+        "[image](https://i.imgur.com/xxVEVSa.png)",
         "You crush the following runes:",
         "• 2 Water runes",
         "• 2 Mind runes",
         "• 1 Chaos rune",
         "You buffet a group of creatures with an assault of icy wind. Make a ranged spell attack against each target within in a 10-foot cube centered on a point you choose within range. On a hit, a target takes cold damage equal to 6d4 + your spellcasting ability modifier, its speed is reduced to 0 until the end of your next turn, and makes a Strength saving throw or be frozen in ice until the end of its next turn, or until it or another creature within reach of it uses an action to break away the ice.",
-        "An frozen target's speed is reduced to 0 and it can't use reactions."
+        "A frozen target's speed is reduced to 0 and it can't use reactions."
       ],
       "damageInflict": ["cold"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Shadow Volley",
+      "source": "Ancient Spellbook",
+      "level": 2,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[6d4 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[6d4]])",
+        "[image](https://i.imgur.com/WkzIrAN.png)",
+        "You crush the following runes:",
+        "• 2 Air runes",
+        "• 2 Mind runes",
+        "• 2 Chaos runes",
+        "• 1 Soul rune",
+        "You cause a group of creature's shadows to rise and annoy and disorient them. Make a ranged spell attack against each target within in a 10-foot cube centered on a point you choose within range. On a hit, a target takes psychic damage equal to 6d4 + your spellcasting ability modifier, it has disadvantage on ability checks until the end of your next turn, and must make an Intelligence saving throw or be muddled until the end of its next turn.",
+        "When a muddled target makes an ability check it rolls a d4 and subtracts the number rolled from those rolls."
+      ],
+      "damageInflict": ["psychic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Smoke Volley",
+      "source": "Ancient Spellbook",
+      "level": 2,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[6d4 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[6d4]])",
+        "[image](https://i.imgur.com/52AScBo.png)",
+        "You crush the following runes:",
+        "• 1 Air rune",
+        "• 1 Fire rune",
+        "• 2 Mind runes",
+        "• 2 Chaos runes",
+        "You conjure an acrid wisp of toxic smoke that debilitates creatures. Make a ranged spell attack against each target within in a 10-foot cube centered on a point you choose within range. On a hit, a target takes acid damage equal to 6d4 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn (excluding the one caused by this spell), and it must make a Constitution saving throw or be envenomed until the end of its next turn.",
+        "An envenomed target has disadvantage on saving throws and takes 3d4 poison damage at the start of its turn.",
+      ],
+      "damageInflict": ["acid"],
       "spellAttack": ["R"],
       "areaTags": ["ST"],
       "classes": {
@@ -166,7 +414,7 @@
       "duration": [{ "type": "instant" }],
       "entries": [
         "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[8d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[8d6]])",
-        "[image](https://i.imgur.com/R5LLEoB.png)",
+        "[image](https://i.imgur.com/15pQZ3x.png)",
         "You crush the following runes:",
         "• 1 Blood rune",
         "• 3 Mind runes",
@@ -197,16 +445,84 @@
       "duration": [{ "type": "instant" }],
       "entries": [
         "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[8d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[8d6]])",
-        "[image](https://i.imgur.com/LyNRyRb.png)",
+        "[image](https://i.imgur.com/Cflryqo.png)",
         "You crush the following runes:",
         "• 3 Water runes",
         "• 2 Mind runes",
         "• 2 Chaos runes",
         "You entrap a creature with frigid ice crystals. Make a ranged spell attack against the target. On a hit, a target takes cold damage equal to 8d6 + your spellcasting ability modifier, its speed is reduced to 0 until the end of your next turn, and makes a Strength saving throw or be frozen in ice for its next two turns, or until it or another creature within reach of it uses an action to break away the ice.",
-        "An frozen target's speed is reduced to 0, all attacks against it are made with advantage, and it can't use reactions.",
+        "A frozen target's speed is reduced to 0, all attacks against it are made with advantage, and it can't use reactions.",
         "A creature frozen by this spell makes another Strength saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["cold"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Shadow Raid",
+      "source": "Ancient Spellbook",
+      "level": 3,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[8d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[8d6]])",
+        "[image](https://i.imgur.com/phHocCm.png)",
+        "You crush the following runes:",
+        "• 1 Air rune",
+        "• 3 Mind runes",
+        "• 2 Chaos runes",
+        "• 1 Soul rune",
+        "You cause a creature's shadow to rise and harass and disorient it. Make a ranged spell attack against the target. On a hit, a target takes psychic damage equal to 8d6 + your spellcasting ability modifier, it has disadvantage on ability checks until the end of your next turn, and must make an Intelligence saving throw or be muddled for its next two turns.",
+        "A muddled target has disadvantage on ability checks, and when it makes an ability check it rolls a d6 and subtracts the number rolled from those rolls.",
+        "A creature muddled by this spell makes another Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["psychic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Smoke Raid",
+      "source": "Ancient Spellbook",
+      "level": 3,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[8d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[8d6]])",
+        "[image](https://i.imgur.com/sCNZQFp.png)",
+        "You crush the following runes:",
+        "• 2 Air runes",
+        "• 2 Fire runes",
+        "• 2 Mind runes",
+        "• 2 Chaos runes",
+        "You conjure an acrid puff of toxic smoke that debilitates a creature. Make a ranged spell attack against the target. On a hit, a target takes acid damage equal to 8d6 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn (excluding the one caused by this spell), and it must make a Constitution saving throw or be envenomed for its next two turns.",
+        "An envenomed target has disadvantage on saving throws, loses immunity to the poisoned condition, and takes 4d6 poison damage at the start of each of its turns.",
+        "A creature envenomed by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["acid"],
       "spellAttack": ["R"],
       "areaTags": ["ST"],
       "classes": {
@@ -230,7 +546,7 @@
       "duration": [{ "type": "instant" }],
       "entries": [
         "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[8d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[8d6]])",
-        "[image](https://i.imgur.com/XzsQKzA.png)",
+        "[image](https://i.imgur.com/qhFk6Pu.png)",
         "You crush the following runes:",
         "• 1 Blood rune",
         "• 4 Mind runes",
@@ -261,16 +577,84 @@
       "duration": [{ "type": "instant" }],
       "entries": [
         "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[8d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[8d6]])",
-        "[image](https://i.imgur.com/A2Te5IA.png)",
+        "[image](https://i.imgur.com/83AeoLX.png)",
         "You crush the following runes:",
         "• 4 Water runes",
         "• 4 Mind runes",
         "• 2 Chaos runes",
         "You entrap a group of creatures with frigid ice crystals. Make a ranged spell attack against each target within in a 20-foot cube centered on a point you choose within range. On a hit, a target takes cold damage equal to 8d6 + your spellcasting ability modifier, its speed is reduced to 0 until the end of your next turn, and makes a Strength saving throw or be frozen in ice for its next two turns, or until it or another creature within reach of it uses an action to break away the ice.",
-        "An frozen target's speed is reduced to 0, all attacks against it are made with advantage, and it can't use reactions.",
+        "A frozen target's speed is reduced to 0, all attacks against it are made with advantage, and it can't use reactions.",
         "A creature frozen by this spell makes another Strength saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["cold"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Shadow Salvo",
+      "source": "Ancient Spellbook",
+      "level": 4,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[8d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[8d6]])",
+        "[image](https://i.imgur.com/FgcVDsf.png)",
+        "You crush the following runes:",
+        "• 2 Air runes",
+        "• 4 Mind runes",
+        "• 4 Chaos runes",
+        "• 1 Soul rune",
+        "You cause a group of creature's shadows to rise and harass and disorient them. Make a ranged spell attack against each target within in a 20-foot cube centered on a point you choose within range. On a hit, a target takes psychic damage equal to 8d6 + your spellcasting ability modifier, it has disadvantage on ability checks until the end of your next turn, and must make an Intelligence saving throw or be muddled for its next two turns.",
+        "A muddled target has disadvantage on ability checks, and when it makes an ability check it rolls a d6 and subtracts the number rolled from those rolls.",
+        "A creature muddled by this spell makes another Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["psychic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Smoke Salvo",
+      "source": "Ancient Spellbook",
+      "level": 4,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 120 }
+      },
+      "components": {
+        "s": true,
+        "m": "runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[8d6 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[8d6]])",
+        "[image](https://i.imgur.com/EIA8QDb.png)",
+        "You crush the following runes:",
+        "• 3 Air runes",
+        "• 2 Fire runes",
+        "• 4 Mind runes",
+        "• 4 Chaos runes",
+        "You conjure an acrid puff of toxic smoke that debilitates creatures. Make a ranged spell attack against each target within in a 20-foot cube centered on a point you choose within range. On a hit, a target takes acid damage equal to 8d6 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn (excluding the one caused by this spell), and it must make a Constitution saving throw or be envenomed for its next two turns.",
+        "An envenomed target has disadvantage on saving throws, loses immunity to the poisoned condition, and takes 4d6 poison damage at the start of each of its turns.",
+        "A creature envenomed by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+      ],
+      "damageInflict": ["acid"],
       "spellAttack": ["R"],
       "areaTags": ["ST"],
       "classes": {
@@ -294,7 +678,7 @@
       "duration": [{ "type": "instant" }],
       "entries": [
         "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[10d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[10d8]])",
-        "[image](https://s3.amazonaws.com/files.d20.io/images/191433146/BcY6h4SiBO5iqdEdpIfFgQ/max.png)",
+        "[image](https://i.imgur.com/cmIVJiM.png)",
         "You crush the following runes:",
         "• 1 Blood rune",
         "• 2 Chaos runes",
@@ -325,7 +709,7 @@
       "duration": [{ "type": "instant" }],
       "entries": [
         "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[10d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[10d8]])",
-        "[image](https://s3.amazonaws.com/files.d20.io/images/191433721/KLKeAsN7P_c6uag7CyXsJA/max.png)",
+        "[image](https://i.imgur.com/3VuiwCP.png)",
         "You crush the following runes:",
         "• 2 Water runes",
         "• 2 Chaos runes",
@@ -353,13 +737,20 @@
       },
       "components": {
         "s": true,
-        "m": "2 Chaos runes, 2 Death runes, 1 Soul rune, 1 Air rune, all of which the spell consumes"
+        "m": "runes, which the spell consumes"
       },
       "duration": [{ "type": "instant" }],
       "entries": [
-        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[7d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d10]])",
-        "[image](https://s3.amazonaws.com/files.d20.io/images/191427274/TO1fneti5nwpIAHbDXrlow/med.png)",
-        "You crush your runes and project your shadow upon a creature within range to disorient them. Make a ranged spell attack against the target. On a hit, the target takes psychic damage equal to 7d10 + your spellcasting ability modifier. A hit target must then make an Intelligence saving throw. On a failure, for the next minute, the target has disadvantage on all attack rolls and ability checks, and all attack rolls have advantage against the target. A creature affected by this spell makes an Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[10d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[10d8]])",
+        "[image](https://i.imgur.com/lPtKdYq.png)",
+        "You crush the following runes:",
+        "• 1 Air rune",
+        "• 2 Chaos runes",
+        "• 2 Death runes",
+        "• 1 Soul rune",
+        "You cause a creature's shadow to rise and attack and disorient it. Make a ranged spell attack against the target. On a hit, a target takes psychic damage equal to 10d8 + your spellcasting ability modifier, it has disadvantage on ability checks until the end of your next turn, and must make an Intelligence saving throw or be muddled for its next three turns.",
+        "A muddled target has disadvantage on attack rolls and ability checks, and when it makes an attack roll or ability check it rolls a d8 and subtracts the number rolled from those rolls.",
+        "A creature muddled by this spell makes another Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["psychic"],
       "spellAttack": ["R"],
@@ -380,15 +771,22 @@
       },
       "components": {
         "s": true,
-        "m": "2 Chaos runes, 2 Death runes, 1 Air rune, 1 Fire rune, all of which the spell consumes"
+        "m": "runes, which the spell consumes"
       },
       "duration": [{ "type": "instant" }],
       "entries": [
-        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[7d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d10]])",
-        "[image](https://s3.amazonaws.com/files.d20.io/images/191425242/1D8vUlEVDFXB9IioZP0xUQ/max.png)",
-        "You crush your runes and conjure a rope of smoke that debilitates a creature within range. Make a ranged spell attack against the target. On a hit, the target takes poison damage equal to 7d10 + your spellcasting ability modifier. A hit target must then make a Constitution saving throw. On a failure, for the next minute, the target takes 3d10 poison damage at the start of each of its turns and has disadvantage on saving throws. A creature affected by this spell makes a Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[10d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[10d8]])",
+        "[image](https://i.imgur.com/8ePAseS.png)",
+        "You crush the following runes:",
+        "• 1 Air rune",
+        "• 1 Fire rune",
+        "• 2 Chaos runes",
+        "• 2 Death runes",
+        "You conjure an acrid smog of toxic smoke that debilitates a creature. Make a ranged spell attack against the target. On a hit, a target takes acid damage equal to 10d8 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn (excluding the one caused by this spell), and it must make a Constitution saving throw or be envenomed for its next three turns.",
+        "An envenomed target has disadvantage on saving throws, loses immunity to the poisoned condition, and takes 5d8 poison damage at the start of each of its turns. If the target is immune to poison damage, it loses that immunity and has resistance instead.",
+        "A creature envenomed by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
-      "damageInflict": ["psychic"],
+      "damageInflict": ["acid"],
       "spellAttack": ["R"],
       "areaTags": ["ST"],
       "classes": {
@@ -412,7 +810,7 @@
       "duration": [{ "type": "instant" }],
       "entries": [
         "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[10d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[10d8]])",
-        "[image](https://s3.amazonaws.com/files.d20.io/images/191440313/fCqLDjw_5-h1e73ELoPv5Q/max.png)",
+        "[image](https://i.imgur.com/cgrjXJq.png)",
         "You crush the following runes:",
         "• 2 Blood runes",
         "• 4 Chaos runes",
@@ -443,14 +841,14 @@
       "duration": [{ "type": "instant" }],
       "entries": [
         "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[10d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[10d8]])",
-        "[image](https://s3.amazonaws.com/files.d20.io/images/191440622/_uNAsYpCiOQ__QKsRkJs9Q/max.png)",
+        "[image](https://i.imgur.com/6Io5sGr.png)",
         "You crush the following runes:",
         "• 4 Water runes",
         "• 4 Chaos runes",
         "• 2 Death runes",
 
         "You surround a group of creatures with freezing air and snow. Make a ranged spell attack against each target within in a 30-foot cube centered on a point you choose within range. On a hit, a target takes cold damage equal to 10d8 + your spellcasting ability modifier, its speed is reduced to 0 until the end of your next turn, and makes a Strength saving throw or be frozen in ice for its next three turns, or until it or another creature within reach of it uses an action to break away the ice.",
-        "An frozen target's speed is reduced to 0, all attacks against it are made with advantage, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both.",
+        "A frozen target's speed is reduced to 0, all attacks against it are made with advantage, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both.",
         "A creature frozen by this spell makes another Strength saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["cold"],
@@ -472,13 +870,20 @@
       },
       "components": {
         "s": true,
-        "m": "4 Chaos runes, 2 Death runes, 2 Soul runes, 1 Air rune, all of which the spell consumes"
+        "m": "runes, which the spell consumes"
       },
       "duration": [{ "type": "instant" }],
       "entries": [
-        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[7d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d10]])",
-        "[image](https://s3.amazonaws.com/files.d20.io/images/191440100/11WYUcLlRM2wWdueCW_ROg/med.png)",
-        "You crush your runes and cause a group of creature's shadows to rise and attack and disorient them. Make a ranged spell attack against each creature within in a 30-foot cube within range. On a hit, a target takes psychic damage equal to 7d10 + your spellcasting ability modifier. A hit target must then make an Intelligence saving throw. On a failure, for the next minute, that target has disadvantage on all attack rolls and ability checks, and all attack rolls have advantage against that target. A creature affected by this spell makes an Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[10d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[10d8]])",
+        "[image](https://i.imgur.com/aJKNr0u.png)",
+        "You crush the following runes:",
+        "• 1 Air rune",
+        "• 4 Chaos runes",
+        "• 2 Death runes",
+        "• 2 Soul runes",
+        "You cause a group of creature's shadows to rise and attack and disorient them. Make a ranged spell attack against each target within in a 30-foot cube centered on a point you choose within range. On a hit, a target takes psychic damage equal to 10d8 + your spellcasting ability modifier, it has disadvantage on ability checks until the end of your next turn, and must make an Intelligence saving throw or be muddled for its next three turns.",
+        "A muddled target has disadvantage on attack rolls and ability checks, and when it makes an attack roll or ability check it rolls a d8 and subtracts the number rolled from those rolls.",
+        "A creature muddled by this spell makes another Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["psychic"],
       "spellAttack": ["R"],
@@ -499,15 +904,22 @@
       },
       "components": {
         "s": true,
-        "m": "2 Chaos runes, 2 Death runes, 1 Air rune, 1 Fire rune, all of which the spell consumes"
+        "m": "runes, which the spell consumes"
       },
       "duration": [{ "type": "instant" }],
       "entries": [
-        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[7d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[7d10]])",
-        "[image](https://s3.amazonaws.com/files.d20.io/images/191439101/Zvd9ASjyt9t43xO3wvrPXw/max.png)",
-        "You crush your runes and conjure a cloud of smoke that debilitates creatures within range. Make a ranged spell attack against each creature within in a 30-foot cube within range. On a hit, a target takes poison damage equal to 7d10 + your spellcasting ability modifier. A hit target must then make a Constitution saving throw. On a failure, for the next minute, that target takes 3d10 poison damage at the start of each of its turns and has disadvantage on saving throws. A creature affected by this spell makes a Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[10d8 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[10d8]])",
+        "[image](https://i.imgur.com/ejGYyxn.png)",
+        "You crush the following runes:",
+        "• 2 Air runes",
+        "• 2 Fire runes",
+        "• 4 Chaos runes",
+        "• 2 Death runes",
+        "You conjure an acrid smog of toxic smoke that debilitates creatures. Make a ranged spell attack against each target within in a 30-foot cube centered on a point you choose within range. On a hit, a target takes acid damage equal to 10d8 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn (excluding the one caused by this spell), and it must make a Constitution saving throw or be envenomed for its next three turns.",
+        "An envenomed target has disadvantage on saving throws, loses immunity to the poisoned condition, and takes 5d8 poison damage at the start of each of its turns. If the target is immune to poison damage, it loses that immunity and has resistance instead.",
+        "A creature envenomed by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
-      "damageInflict": ["psychic"],
+      "damageInflict": ["acid"],
       "spellAttack": ["R"],
       "areaTags": ["ST"],
       "classes": {
@@ -555,7 +967,7 @@
       "duration": [{ "type": "instant" }],
       "entries": [
         "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
-        "[image](https://s3.amazonaws.com/files.d20.io/images/191444332/Z9-gg6a81PPhHhqAGFeD6g/max.png)",
+        "[image](https://i.imgur.com/NGQ3a9E.png)",
         "You crush the following runes:",
         "• 4 Blood runes",
         "• 2 Death runes",
@@ -585,13 +997,13 @@
       "duration": [{ "type": "instant" }],
       "entries": [
         "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
-        "[image](https://s3.amazonaws.com/files.d20.io/images/191444520/OaGAVwLeiEQHNBlne0qH2g/max.png)",
+        "[image](https://i.imgur.com/91tJyyf.png)",
         "You crush the following runes:",
         "• 3 Water runes",
         "• 2 Blood runes",
         "• 2 Death runes",
         "You encase a creature in a solid block of ice. Make a ranged spell attack against the target. On a hit, a target takes cold damage equal to 12d10 + your spellcasting ability modifier, its speed is reduced to 0 until the end of your next turn, and makes a Strength saving throw or be frozen in ice for its next four turns, or until it or another creature within reach of it uses an action to break away the ice.",
-        "An frozen target's speed is reduced to 0, all attacks against it are made with advantage, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn.",
+        "A frozen target's speed is reduced to 0, all attacks against it are made with advantage, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn.",
         "A creature frozen by this spell makes another Strength saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["cold"],
@@ -613,13 +1025,20 @@
       },
       "components": {
         "s": true,
-        "m": "2 Death runes, 2 Blood runes, 2 Soul runes, 2 Air runes, all of which the spell consumes"
+        "m": "runes, which the spell consumes"
       },
       "duration": [{ "type": "instant" }],
       "entries": [
         "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
-        "[image](https://s3.amazonaws.com/files.d20.io/images/191441861/feGQktGPEN12G-Zj4TVhpw/max.png)",
-        "You crush your runes and have your shadow assault a creature within range to disorient them. Make a ranged spell attack against the target. On a hit, the target takes psychic damage equal to 12d10 + your spellcasting ability modifier. A hit target must then make an Intelligence saving throw. On a failure, for the next minute, the target has disadvantage on all attack rolls and ability checks as well as rolls a d10 and subtracts the number rolled from those rolls, and all attack rolls have advantage against the target. A creature affected by this spell makes an Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+        "[image](https://i.imgur.com/XHK5qof.png)",
+        "You crush the following runes:",
+        "• 2 Air runes",
+        "• 2 Blood runes",
+        "• 2 Death runes",
+        "• 2 Soul runes",
+        "You cause a creature's shadow to emerge and assault and disorient it. Make a ranged spell attack against the target. On a hit, a target takes psychic damage equal to 12d10 + your spellcasting ability modifier, it has disadvantage on ability checks until the end of your next turn, and must make an Intelligence saving throw or be muddled for its next four turns.",
+        "Attack rolls against a muddled target are made with advantage, it has disadvantage on attack rolls and ability checks, and when it makes an attack roll or ability check it rolls a d10 and subtracts the number rolled from those rolls.",
+        "A creature muddled by this spell makes another Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["psychic"],
       "spellAttack": ["R"],
@@ -640,15 +1059,22 @@
       },
       "components": {
         "s": true,
-        "m": "2 Death runes, 2 Blood runes, 2 Air runes, 2 Fire runes, all of which the spell consumes"
+        "m": "runes, which the spell consumes"
       },
       "duration": [{ "type": "instant" }],
       "entries": [
         "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
-        "[image](https://s3.amazonaws.com/files.d20.io/images/191441560/fas4s55qvfhyL37cUelSIw/max.png)",
-        "You crush your runes and conjure a rope of toxic smoke that debilitates a creature within range. Make a ranged spell attack against the target. On a hit, the target takes poison damage equal to 12d10 + your spellcasting ability modifier. A hit target must then make a Constitution saving throw. On a failure, for the next two minutes, the target takes 6d10 poison damage at the start of each of its turns and has disadvantage on saving throws. A creature affected by this spell makes a Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+        "[image](https://i.imgur.com/ox3EWp4.png)",
+        "You crush the following runes:",
+        "• 2 Air runes",
+        "• 2 Fire runes",
+        "• 2 Blood runes",
+        "• 2 Death runes",
+        "You conjure an acrid cloud of toxic smoke that debilitates a creature. Make a ranged spell attack against the target. On a hit, a target takes acid damage equal to 12d10 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn (excluding the one caused by this spell), and it must make a Constitution saving throw or be envenomed for its next four turns.",
+        "An envenomed target has disadvantage (and cannot have advantage) on saving throws, loses immunity to the poisoned condition, and takes 6d10 poison damage at the start of each of its turns. If the target is immune to poison damage, it loses that immunity and has resistance instead.",
+        "A creature envenomed by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
-      "damageInflict": ["psychic"],
+      "damageInflict": ["acid"],
       "spellAttack": ["R"],
       "areaTags": ["ST"],
       "classes": {
@@ -672,7 +1098,7 @@
       "duration": [{ "type": "instant" }],
       "entries": [
         "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
-        "[image](https://s3.amazonaws.com/files.d20.io/images/191447823/Xe1auxqbwdLLcs6xOhxfsA/max.png)",
+        "[image](https://i.imgur.com/0tf4iur.png)",
         "You crush the following runes:",
         "• 4 Blood runes",
         "• 4 Death runes",
@@ -703,13 +1129,13 @@
       "duration": [{ "type": "instant" }],
       "entries": [
         "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
-        "[image](https://s3.amazonaws.com/files.d20.io/images/191449374/FCVFldMxsv1XL8Jtn6W2fA/max.png)",
+        "[image](https://i.imgur.com/cySgafJ.png)",
         "You crush the following runes:",
         "• 6 Water runes",
         "• 2 Blood runes",
         "• 4 Death runes",
         "You encase a group of creatures in solid blocks of ice. Make a ranged spell attack against each target within in a 40-foot cube centered on a point you choose within range. On a hit, a target takes cold damage equal to 12d10 + your spellcasting ability modifier, its speed is reduced to 0 until the end of your next turn, and makes a Strength saving throw or be frozen in ice for its next four turns, or until it or another creature within reach of it uses an action to break away the ice.",
-        "An frozen target's speed is reduced to 0, all attacks against it are made with advantage, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn.",
+        "A frozen target's speed is reduced to 0, all attacks against it are made with advantage, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn.",
         "A creature frozen by this spell makes another Strength saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["cold"],
@@ -731,13 +1157,20 @@
       },
       "components": {
         "s": true,
-        "m": "4 Death runes, 2 Blood runes, 3 Soul runes, 4 Air runes, all of which the spell consumes"
+        "m": "runes, which the spell consumes"
       },
       "duration": [{ "type": "instant" }],
       "entries": [
         "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
-        "[image](https://s3.amazonaws.com/files.d20.io/images/191447431/HCp6ImPhbVMJkyYCjg994w/med.png)",
-        "You crush your runes and cause a group of creature's shadows to emerge and assault and disorient them. Make a ranged spell attack against each creature within in a 60-foot cube within range. On a hit, a target takes psychic damage equal to 12d10 + your spellcasting ability modifier. A hit target must then make an Intelligence saving throw. On a failure, for the next minute, that target has disadvantage on all attack rolls and ability checks as well as rolls a d10 and subtracts the number rolled from those rolls, and all attack rolls have advantage against that target. A creature affected by this spell makes an Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+        "[image](https://i.imgur.com/TeVRx32.png)",
+        "You crush the following runes:",
+        "• 4 Air runes",
+        "• 2 Blood runes",
+        "• 4 Death runes",
+        "• 3 Soul runes",
+        "You cause a group of creature's shadows to emerge and assault and disorient them. Make a ranged spell attack against each target within in a 40-foot cube centered on a point you choose within range. On a hit, a target takes psychic damage equal to 12d10 + your spellcasting ability modifier, it has disadvantage on ability checks until the end of your next turn, and must make an Intelligence saving throw or be muddled for its next four turns.",
+        "Attack rolls against a muddled target are made with advantage, it has disadvantage on attack rolls and ability checks, and when it makes an attack roll or ability check it rolls a d10 and subtracts the number rolled from those rolls.",
+        "A creature muddled by this spell makes another Intelligence saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["psychic"],
       "spellAttack": ["R"],
@@ -758,15 +1191,22 @@
       },
       "components": {
         "s": true,
-        "m": "4 Death runes, 2 Blood runes, 4 Air runes, 4 Fire runes, all of which the spell consumes"
+        "m": "runes, which the spell consumes"
       },
       "duration": [{ "type": "instant" }],
       "entries": [
         "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]\n**Damage roll:** [[12d10 + [[@{spellcasting_ability}]][MOD]]] (Crit: +[[12d10]])",
-        "[image](https://s3.amazonaws.com/files.d20.io/images/191446347/usQVV1yg5ImaOa95QSaMkw/max.png)",
-        "You crush your runes and conjure a toxic cloud of smoke that debilitates creatures within range. Make a ranged spell attack against each creature within in a 60-foot cube within range. On a hit, a target takes poison damage equal to 12d10 + your spellcasting ability modifier. A hit target must then make a Constitution saving throw. On a failure, for the next two minutes, that target takes 6d10 poison damage at the start of each of its turns and has disadvantage on saving throws. A creature affected by this spell makes a Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+        "[image](https://i.imgur.com/e4PHeGr.png)",
+        "You crush the following runes:",
+        "• 4 Air runes",
+        "• 4 Fire runes",
+        "• 2 Blood runes",
+        "• 4 Death runes",
+        "You conjure an acrid cloud of toxic smoke that debilitates creatures. Make a ranged spell attack against each target within in a 40-foot cube centered on a point you choose within range. On a hit, a target takes acid damage equal to 12d10 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn (excluding the one caused by this spell), and it must make a Constitution saving throw or be envenomed for its next four turns.",
+        "An envenomed target has disadvantage (and cannot have advantage) on saving throws, loses immunity to the poisoned condition, and takes 6d10 poison damage at the start of each of its turns. If the target is immune to poison damage, it loses that immunity and has resistance instead.",
+        "A creature envenomed by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
-      "damageInflict": ["psychic"],
+      "damageInflict": ["acid"],
       "spellAttack": ["R"],
       "areaTags": ["ST"],
       "classes": {
