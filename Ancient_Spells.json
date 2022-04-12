@@ -24,6 +24,126 @@
       "areaTags": ["MT"]
     },
     {
+      "name": "Drain",
+      "source": "Ancient Spellbook",
+      "level": 0,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
+        "[image](https://i.imgur.com/6lC0LZf.png)",
+        "You crush the following runes:",
+        "• 1 Blood rune",
+        "• 1 Mind rune",
+        "You drain a tiny amount of blood from a creature. Make a ranged spell attack against the target. On a hit, the target loses hit points equal to half your level (this counts as necrotic damage for the purposes of resistances and immunities), regain an equal amount of hit points."
+      ],
+      "damageInflict": ["necrotic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Freeze",
+      "source": "Ancient Spellbook",
+      "level": 0,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
+        "[image](https://i.imgur.com/us5GuXk.png)",
+        "You crush the following runes:",
+        "• 1 Water rune",
+        "• 1 Mind rune",
+        "You freeze a creature in place. Make a ranged spell attack against the target. On a hit, until the start of your next turn, the target's speed is reduced to 0 and it can't use reactions."
+      ],
+      "damageInflict": ["cold"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Muddle",
+      "source": "Ancient Spellbook",
+      "level": 0,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
+        "[image](https://i.imgur.com/rc37edP.png)",
+        "You crush the following runes:",
+        "• 1 Mind rune",
+        "• 1 Soul rune",
+        "You cause a creature's shadow disorient its creator. Make a ranged spell attack against the target. On a hit, until the start of your next turn, the target had disadvantage on ability checks and when it makes an ability check it rolls a d4 and subtracts the number rolled from those rolls."
+      ],
+      "damageInflict": ["psychic"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
+      "name": "Envenom",
+      "source": "Ancient Spellbook",
+      "level": 0,
+      "school": "V",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": {
+        "type": "point",
+        "distance": { "type": "feet", "amount": 60 }
+      },
+      "components": {
+        "s": true,
+        "m": "runes, which the spell consumes"
+      },
+      "duration": [{ "type": "instant" }],
+      "entries": [
+        "**Attack Roll:** [[1d20 + @{spell_attack_bonus}[SPELL]]] | [[1d20 + @{spell_attack_bonus}[SPELL]]]",
+        "[image](https://i.imgur.com/FCFFH88.png)",
+        "You crush the following runes:",
+        "• 1 Air rune",
+        "• 1 Mind rune",
+        "You wrap a creature in a light mist of toxic smoke. Make a ranged spell attack against the target. On a hit, the target has disadvantage on the next saving throw it makes before the start of your next turn and takes poison damage equal to half your level at the start of its turn."
+      ],
+      "damageInflict": ["acid"],
+      "spellAttack": ["R"],
+      "areaTags": ["ST"],
+      "classes": {
+        "fromClassList": [{ "name": "Spellcaster", "source": "All" }]
+      }
+    },
+    {
       "name": "Blood Charge",
       "source": "Ancient Spellbook",
       "level": 1,
@@ -142,7 +262,7 @@
         "• 1 Fire rune",
         "• 1 Mind rune",
         "• 1 Chaos rune",
-        "You conjure an acrid wisp of toxic smoke that debilitates a creature. Make a ranged spell attack against the target. On a hit, a target takes acid damage equal to 6d4 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn (excluding the one caused by this spell), and it must make a Constitution saving throw or be envenomed until the end of its next turn.",
+        "You conjure an acrid wisp of toxic smoke that debilitates a creature. Make a ranged spell attack against the target. On a hit, a target takes acid damage equal to 6d4 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn, excluding the one caused by this spell, and it must make a Constitution saving throw or be envenomed until the end of its next turn.",
         "An envenomed target has disadvantage on saving throws and takes 3d4 poison damage at the start of its turn.",
       ],
       "damageInflict": ["acid"],
@@ -271,7 +391,7 @@
         "• 1 Fire rune",
         "• 2 Mind runes",
         "• 2 Chaos runes",
-        "You conjure an acrid wisp of toxic smoke that debilitates creatures. Make a ranged spell attack against each target within in a 10-foot cube centered on a point you choose within range. On a hit, a target takes acid damage equal to 6d4 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn (excluding the one caused by this spell), and it must make a Constitution saving throw or be envenomed until the end of its next turn.",
+        "You conjure an acrid wisp of toxic smoke that debilitates creatures. Make a ranged spell attack against each target within in a 10-foot cube centered on a point you choose within range. On a hit, a target takes acid damage equal to 6d4 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn, excluding the one caused by this spell, and it must make a Constitution saving throw or be envenomed until the end of its next turn.",
         "An envenomed target has disadvantage on saving throws and takes 3d4 poison damage at the start of its turn.",
       ],
       "damageInflict": ["acid"],
@@ -402,7 +522,7 @@
         "• 2 Fire runes",
         "• 2 Mind runes",
         "• 2 Chaos runes",
-        "You conjure an acrid puff of toxic smoke that debilitates a creature. Make a ranged spell attack against the target. On a hit, a target takes acid damage equal to 8d6 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn (excluding the one caused by this spell), and it must make a Constitution saving throw or be envenomed for its next two turns.",
+        "You conjure an acrid puff of toxic smoke that debilitates a creature. Make a ranged spell attack against the target. On a hit, a target takes acid damage equal to 8d6 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn, excluding the one caused by this spell, and it must make a Constitution saving throw or be envenomed for its next two turns.",
         "An envenomed target has disadvantage on saving throws, loses immunity to the poisoned condition, and takes 4d6 poison damage at the start of each of its turns.",
         "A creature envenomed by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
@@ -534,7 +654,7 @@
         "• 2 Fire runes",
         "• 4 Mind runes",
         "• 4 Chaos runes",
-        "You conjure an acrid puff of toxic smoke that debilitates creatures. Make a ranged spell attack against each target within in a 20-foot cube centered on a point you choose within range. On a hit, a target takes acid damage equal to 8d6 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn (excluding the one caused by this spell), and it must make a Constitution saving throw or be envenomed for its next two turns.",
+        "You conjure an acrid puff of toxic smoke that debilitates creatures. Make a ranged spell attack against each target within in a 20-foot cube centered on a point you choose within range. On a hit, a target takes acid damage equal to 8d6 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn, excluding the one caused by this spell, and it must make a Constitution saving throw or be envenomed for its next two turns.",
         "An envenomed target has disadvantage on saving throws, loses immunity to the poisoned condition, and takes 4d6 poison damage at the start of each of its turns.",
         "A creature envenomed by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
@@ -666,7 +786,7 @@
         "• 1 Fire rune",
         "• 2 Chaos runes",
         "• 2 Death runes",
-        "You conjure an acrid smog of toxic smoke that debilitates a creature. Make a ranged spell attack against the target. On a hit, a target takes acid damage equal to 10d8 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn (excluding the one caused by this spell), and it must make a Constitution saving throw or be envenomed for its next three turns.",
+        "You conjure an acrid smog of toxic smoke that debilitates a creature. Make a ranged spell attack against the target. On a hit, a target takes acid damage equal to 10d8 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn, excluding the one caused by this spell, and it must make a Constitution saving throw or be envenomed for its next three turns.",
         "An envenomed target has disadvantage on saving throws, loses immunity to the poisoned condition, and takes 5d8 poison damage at the start of each of its turns. If the target is immune to poison damage, it loses that immunity and has resistance instead.",
         "A creature envenomed by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
@@ -799,7 +919,7 @@
         "• 2 Fire runes",
         "• 4 Chaos runes",
         "• 2 Death runes",
-        "You conjure an acrid smog of toxic smoke that debilitates creatures. Make a ranged spell attack against each target within in a 30-foot cube centered on a point you choose within range. On a hit, a target takes acid damage equal to 10d8 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn (excluding the one caused by this spell), and it must make a Constitution saving throw or be envenomed for its next three turns.",
+        "You conjure an acrid smog of toxic smoke that debilitates creatures. Make a ranged spell attack against each target within in a 30-foot cube centered on a point you choose within range. On a hit, a target takes acid damage equal to 10d8 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn, excluding the one caused by this spell, and it must make a Constitution saving throw or be envenomed for its next three turns.",
         "An envenomed target has disadvantage on saving throws, loses immunity to the poisoned condition, and takes 5d8 poison damage at the start of each of its turns. If the target is immune to poison damage, it loses that immunity and has resistance instead.",
         "A creature envenomed by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
@@ -954,8 +1074,8 @@
         "• 2 Fire runes",
         "• 2 Blood runes",
         "• 2 Death runes",
-        "You conjure an acrid cloud of toxic smoke that debilitates a creature. Make a ranged spell attack against the target. On a hit, a target takes acid damage equal to 12d10 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn (excluding the one caused by this spell), and it must make a Constitution saving throw or be envenomed for its next four turns.",
-        "An envenomed target has disadvantage (and cannot have advantage) on saving throws, loses immunity to the poisoned condition, and takes 6d10 poison damage at the start of each of its turns. If the target is immune to poison damage, it loses that immunity and has resistance instead.",
+        "You conjure an acrid cloud of toxic smoke that debilitates a creature. Make a ranged spell attack against the target. On a hit, a target takes acid damage equal to 12d10 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn, excluding the one caused by this spell, and it must make a Constitution saving throw or be envenomed for its next four turns.",
+        "An envenomed target has disadvantage, and cannot have advantage, on saving throws, loses immunity to the poisoned condition, and takes 6d10 poison damage at the start of each of its turns. If the target is immune to poison damage, it loses that immunity and has resistance instead.",
         "A creature envenomed by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["acid"],
@@ -1086,8 +1206,8 @@
         "• 4 Fire runes",
         "• 2 Blood runes",
         "• 4 Death runes",
-        "You conjure an acrid cloud of toxic smoke that debilitates creatures. Make a ranged spell attack against each target within in a 40-foot cube centered on a point you choose within range. On a hit, a target takes acid damage equal to 12d10 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn (excluding the one caused by this spell), and it must make a Constitution saving throw or be envenomed for its next four turns.",
-        "An envenomed target has disadvantage (and cannot have advantage) on saving throws, loses immunity to the poisoned condition, and takes 6d10 poison damage at the start of each of its turns. If the target is immune to poison damage, it loses that immunity and has resistance instead.",
+        "You conjure an acrid cloud of toxic smoke that debilitates creatures. Make a ranged spell attack against each target within in a 40-foot cube centered on a point you choose within range. On a hit, a target takes acid damage equal to 12d10 + your spellcasting ability modifier, it has disadvantage on the next saving throw it makes before the end of your next turn, excluding the one caused by this spell, and it must make a Constitution saving throw or be envenomed for its next four turns.",
+        "An envenomed target has disadvantage, and cannot have advantage,  on saving throws, loses immunity to the poisoned condition, and takes 6d10 poison damage at the start of each of its turns. If the target is immune to poison damage, it loses that immunity and has resistance instead.",
         "A creature envenomed by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it."
       ],
       "damageInflict": ["acid"],
